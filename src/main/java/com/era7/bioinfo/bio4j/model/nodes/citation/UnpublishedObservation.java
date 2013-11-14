@@ -19,13 +19,14 @@ package com.era7.bioinfo.bio4j.model.nodes.citation;
 import com.era7.bioinfo.bio4j.model.nodes.BasicNode;
 import com.era7.bioinfo.bio4j.model.nodes.Person;
 import com.era7.bioinfo.bio4j.model.nodes.Protein;
+
 import java.util.List;
 
 /**
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public interface UnpublishedObservation extends BasicNode{
+public interface UnpublishedObservation<CustomRel extends UnpublishedObservation<CustomRel>>  extends BasicNode{
     
     //------GETTERS-----
     public String getDate();

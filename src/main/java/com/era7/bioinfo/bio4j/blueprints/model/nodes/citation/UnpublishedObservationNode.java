@@ -35,7 +35,7 @@ import java.util.List;
  * Protein unpublished observation citations
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class UnpublishedObservationNode extends BasicVertex implements UnpublishedObservation{
+public class UnpublishedObservationNode extends BasicVertex implements UnpublishedObservation<UnpublishedObservationNode>{
 
     public static final String DATE_PROPERTY = "unpublished_observation_date";
 
