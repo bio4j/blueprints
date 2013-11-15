@@ -24,7 +24,7 @@ import java.util.Set;
  *
  * @author ppareja
  */
-public abstract class BasicRelationshipBlueprints implements Edge, com.era7.bioinfo.bio4j.model.relationships.BasicRelationship{
+public abstract class BasicRelationshipBlueprints implements Edge, com.era7.bioinfo.bio4j.model.relationships.BasicRelationship {
     
     protected Edge edge = null;
 
@@ -43,7 +43,7 @@ public abstract class BasicRelationshipBlueprints implements Edge, com.era7.bioi
     }
 
     @Override
-    public Object getProperty(String string) {
+    public <T> T getProperty(String string) {
         return edge.getProperty(string);
     }
 
@@ -58,7 +58,7 @@ public abstract class BasicRelationshipBlueprints implements Edge, com.era7.bioi
     }
 
     @Override
-    public Object removeProperty(String string) {
+    public <T> T removeProperty(String string) {
         return edge.removeProperty(string);
     }
 
