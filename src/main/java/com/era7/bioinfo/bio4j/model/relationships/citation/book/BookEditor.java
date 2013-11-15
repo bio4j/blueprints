@@ -27,6 +27,6 @@ import com.era7.bioinfo.bio4j.model.relationships.BasicRelationship;
 public interface BookEditor extends BasicRelationship{
     
     //------GETTERS------
-    public <T extends Book> T getBook();
-    public <T extends Person> T getEditor();
+    public Book getBook();
+    public Person getEditor();
 }

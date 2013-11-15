@@ -45,18 +45,18 @@ import java.util.List;
  */
 public interface NodeRetriever{
     
-    public <T extends Enzyme> T getEnzymeById(String id);
+    public Enzyme getEnzymeById(String id);
     
-    public <T extends Dataset> T getDatasetByName(String name);
-    public <T extends Dataset> T getSwissProtDataset();
-    public <T extends Dataset> T getTremblDataset();
+    public Dataset getDatasetByName(String name);
+    public Dataset getSwissProtDataset();
+    public Dataset getTremblDataset();
     
-    public <T extends GenomeElement> T getGenomeElementByVersion(String version);
+    public GenomeElement getGenomeElementByVersion(String version);
     
-    public <T extends GoTerm> T getGoTermById(String goId); 
-    public <T extends GoTerm> T getMolecularFunctionGoTerm();
-    public <T extends GoTerm> T getBiologicalProcessGoTerm();
-    public <T extends GoTerm> T getCellularComponentGoTerm();
+    public GoTerm getGoTermById(String goId); 
+    public GoTerm getMolecularFunctionGoTerm();
+    public GoTerm getBiologicalProcessGoTerm();
+    public GoTerm getCellularComponentGoTerm();
     
     public Protein getProteinByAccession(String proteinAccession);
     public List<? extends Protein> getProteinByEnsemblPlantsRef(String ensemblPlantsRef);
@@ -196,73 +196,73 @@ public interface NodeRetriever{
     public List<? extends Protein> getProteinsByXenBaseReference(String id);
     public List<? extends Protein> getProteinsByZfinReference(String id);    
     
-    public <T extends Keyword> T getKeywordById(String keywordId);
-    public <T extends Keyword> T getKeywordByName(String keywordName);
+    public Keyword getKeywordById(String keywordId);
+    public Keyword getKeywordByName(String keywordName);
     
-    public <T extends Interpro> T getInterproById(String interproId);
+    public Interpro getInterproById(String interproId);
     
-    public <T extends Pfam> T getPfamById(String pfamId);
+    public Pfam getPfamById(String pfamId);
     
-    public <T extends Organism> T getOrganismByScientificName(String scientificName);
-    public <T extends Organism> T getOrganismByNCBITaxonomyId(String ncbiTaxonomyId);
+    public Organism getOrganismByScientificName(String scientificName);
+    public Organism getOrganismByNCBITaxonomyId(String ncbiTaxonomyId);
     
-    public <T extends Taxon> T getTaxonByName(String taxonName);
+    public Taxon getTaxonByName(String taxonName);
     
-    public <T extends NCBITaxon> T getNCBITaxonByTaxId(String taxId);
-    public <T extends NCBITaxon> T getNCBITaxonByGiId(String giId);
+    public NCBITaxon getNCBITaxonByTaxId(String taxId);
+    public NCBITaxon getNCBITaxonByGiId(String giId);
     
-    public <T extends Isoform> T getIsoformById(String isoformId);
+    public Isoform getIsoformById(String isoformId);
     
     public List<? extends Person> getPersonByName(String personName);
     
-    public <T extends Consortium> T getConsortiumByName(String consortiumName);
+    public Consortium getConsortiumByName(String consortiumName);
     
-    public <T extends Institute> T getInstituteByName(String instituteName);
+    public Institute getInstituteByName(String instituteName);
     
-    public <T extends Country> T getCountryNodeByName(String countryName);
+    public Country getCountryNodeByName(String countryName);
     
-    public <T extends City> T getCityNodeByName(String cityName);
+    public City getCityNodeByName(String cityName);
     
     public List<? extends Thesis> getThesisByTitle(String thesisTitle);
     
-    public <T extends Patent> T getPatentByNumber(String patentNumber);
+    public Patent getPatentByNumber(String patentNumber);
     
     public List<? extends Book> getBooksByName(String bookName);
     
-    public <T extends Publisher> T getPublisherByName(String publisherName);
+    public Publisher getPublisherByName(String publisherName);
     
     public List<? extends OnlineArticle> getOnlineArticlesByTitle(String onlineArticleTitle);
     
-    public <T extends OnlineJournal> T getOnlineJournalByName(String onlineJournalName);
+    public OnlineJournal getOnlineJournalByName(String onlineJournalName);
     
     public List<? extends Article> getArticlesByTitle(String articleTitle);    
-    public <T extends Article> T getArticleByMedlineId(String articleMedlineId);
-    public <T extends Article> T getArticleByDoiId(String articleDoiId);    
-    public <T extends Article> T getArticleByPubmedId(String articlePubmedId);
+    public Article getArticleByMedlineId(String articleMedlineId);
+    public Article getArticleByDoiId(String articleDoiId);    
+    public Article getArticleByPubmedId(String articlePubmedId);
     
-    public <T extends Journal> T getJournalByName(String journalName);
+    public Journal getJournalByName(String journalName);
     
-    public <T extends ReactomeTerm> T getReactomeTermById(String reactomeTermId);
+    public ReactomeTerm getReactomeTermById(String reactomeTermId);
     
-    public <T extends FeatureType> T getFeatureTypeByName(String featureTypeName);
+    public FeatureType getFeatureTypeByName(String featureTypeName);
     
-    public <T extends CommentType> T getCommentTypeByName(String commentTypeName);
+    public CommentType getCommentTypeByName(String commentTypeName);
     
-    public <T extends SubcellularLocation> T getSubcellularLocationByName(String subcellularLocationName);
+    public SubcellularLocation getSubcellularLocationByName(String subcellularLocationName);
     
-    public <T extends AlternativeProduct> T getAlternativeProductInitiationNode();
-    public <T extends AlternativeProduct> T getAlternativeProductPromoterNode();
-    public <T extends AlternativeProduct> T getAlternativeProductRibosomalFrameshiftingNode();
-    public <T extends AlternativeProduct> T getAlternativeProductSplicingNode();
+    public AlternativeProduct getAlternativeProductInitiationNode();
+    public AlternativeProduct getAlternativeProductPromoterNode();
+    public AlternativeProduct getAlternativeProductRibosomalFrameshiftingNode();
+    public AlternativeProduct getAlternativeProductSplicingNode();
     
-    public <T extends SequenceCaution> T getSequenceCautionErroneousGeneModelPredictionNode();
-    public <T extends SequenceCaution> T getSequenceCautionErroneousInitiationNode();
-    public <T extends SequenceCaution> T getSequenceCautionErroneousTranslationNode();
-    public <T extends SequenceCaution> T getSequenceCautionErroneousTerminationNode();
-    public <T extends SequenceCaution> T getSequenceCautionFrameshiftNode();
-    public <T extends SequenceCaution> T getSequenceCautionMiscellaneousDiscrepancyNode();
+    public SequenceCaution getSequenceCautionErroneousGeneModelPredictionNode();
+    public SequenceCaution getSequenceCautionErroneousInitiationNode();
+    public SequenceCaution getSequenceCautionErroneousTranslationNode();
+    public SequenceCaution getSequenceCautionErroneousTerminationNode();
+    public SequenceCaution getSequenceCautionFrameshiftNode();
+    public SequenceCaution getSequenceCautionMiscellaneousDiscrepancyNode();
     
-    public <T extends Submission> T getSubmissionByTitle(String submissionTitle);
+    public Submission getSubmissionByTitle(String submissionTitle);
     
-    public <T extends DB> T getDBByName(String dbName);
+    public DB getDBByName(String dbName);
 }

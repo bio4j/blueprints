@@ -26,7 +26,7 @@ import com.era7.bioinfo.bio4j.model.relationships.BasicRelationship;
  */
 public interface ProteinReactome extends BasicRelationship{
     
-    public <T extends Protein> T getProtein();    
-    public <T extends ReactomeTerm> T getReactomeTerm();
+    public Protein getProtein();    
+    public ReactomeTerm getReactomeTerm();
     
 }

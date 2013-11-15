@@ -26,6 +26,6 @@ import com.era7.bioinfo.bio4j.model.relationships.BasicRelationship;
  */
 public interface ProteinEnzymaticActivity extends BasicRelationship{
     
-    public <T extends Protein> T getProtein();
-    public <T extends Enzyme> T getEnzyme();
+    public Protein getProtein();
+    public Enzyme getEnzyme();
 }

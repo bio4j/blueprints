@@ -27,7 +27,7 @@ import com.era7.bioinfo.bio4j.model.relationships.BasicRelationship;
 public interface PatentProteinCitation extends BasicRelationship{
     
     //------------GETTERS-----------------
-    public <T extends Patent> T getPatent();    
-    public <T extends Protein> T getProtein();
+    public Patent getPatent();    
+    public Protein getProtein();
     
 }
