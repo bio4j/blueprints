@@ -28,7 +28,7 @@ import com.tinkerpop.blueprints.Edge;
  * Unpublished observation authors
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class UnpublishedObservationAuthorRel extends BasicRelationshipBlueprints implements UnpublishedObservationAuthor<UnpublishedObservationAuthorRel>{
+public class UnpublishedObservationAuthorRel extends BasicRelationshipBlueprints implements UnpublishedObservationAuthor {
 
     public static final String NAME = "UNPUBLISHED_OBSERVATION_AUTHOR";
 
