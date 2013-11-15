@@ -27,7 +27,7 @@ import com.era7.bioinfo.bio4j.model.relationships.BasicRelationship;
 public interface OnlineArticleAuthor extends BasicRelationship{
     
     //-------GETTERS--------
-    public <T extends OnlineArticle> T getOnlineArticle();
-    public <T extends Person> T getAuthor();
+    public OnlineArticle getOnlineArticle();
+    public Person getAuthor();
     
 }

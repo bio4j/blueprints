@@ -27,7 +27,7 @@ import com.era7.bioinfo.bio4j.model.relationships.BasicRelationship;
 public interface BookCity extends BasicRelationship{
     
     //-------GETTERS-----
-    public <T extends Book> T getBook();
-    public <T extends City> T getCity();
+    public Book getBook();
+    public City getCity();
     
 }

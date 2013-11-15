@@ -34,8 +34,8 @@ public interface BasicProteinSequenceCaution extends BasicRelationship{
     public String getResource();
     public String getVersion();
     
-    public <T extends Protein> T getProtein();
-    public <T extends SequenceCaution> T getSequenceCaution();
+    public Protein getProtein();
+    public SequenceCaution getSequenceCaution();
 
     public void setText(String value);
     public void setStatus(String value);

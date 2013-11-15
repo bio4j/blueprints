@@ -27,7 +27,7 @@ import com.era7.bioinfo.bio4j.model.relationships.BasicRelationship;
 public interface OnlineArticleProteinCitation extends BasicRelationship{
     
     //---------GETTERS------------
-    public <T extends OnlineArticle> T getOnlineArticle();    
-    public <T extends Protein> T getProtein();
+    public OnlineArticle getOnlineArticle();    
+    public Protein getProtein();
     
 }

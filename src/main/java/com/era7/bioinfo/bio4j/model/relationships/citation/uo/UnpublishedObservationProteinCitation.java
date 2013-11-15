@@ -27,7 +27,7 @@ import com.era7.bioinfo.bio4j.model.relationships.BasicRelationship;
 public interface UnpublishedObservationProteinCitation extends BasicRelationship{
     
     //--------------GETTERS------------------
-    public <T extends UnpublishedObservation> T getUnpublishedObservation();    
-    public <T extends Protein> T getProtein();
+    public UnpublishedObservation getUnpublishedObservation();    
+    public Protein getProtein();
     
 }

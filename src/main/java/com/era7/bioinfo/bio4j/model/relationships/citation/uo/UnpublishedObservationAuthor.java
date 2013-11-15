@@ -16,7 +16,6 @@
  */
 package com.era7.bioinfo.bio4j.model.relationships.citation.uo;
 
-import com.era7.bioinfo.bio4j.blueprints.model.nodes.citation.UnpublishedObservationNode;
 import com.era7.bioinfo.bio4j.model.nodes.Person;
 import com.era7.bioinfo.bio4j.model.nodes.citation.UnpublishedObservation;
 import com.era7.bioinfo.bio4j.model.relationships.BasicRelationship;
@@ -25,10 +24,10 @@ import com.era7.bioinfo.bio4j.model.relationships.BasicRelationship;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public interface UnpublishedObservationAuthor<CustomRel extends UnpublishedObservationAuthor<CustomRel>> extends BasicRelationship  {
+public interface UnpublishedObservationAuthor extends BasicRelationship  {
     
     //-----------GETTERS----------------
-    public <T extends UnpublishedObservation<UnpublishedObservationNode>> T getUnpublishedObservation();    
-    public <T extends Person> T getAuthor();
+    public UnpublishedObservation getUnpublishedObservation();    
+    public Person getAuthor();
     
 }

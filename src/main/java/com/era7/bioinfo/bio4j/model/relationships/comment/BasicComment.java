@@ -31,8 +31,8 @@ public interface BasicComment extends BasicRelationship{
     public String getStatus();
     public String getEvidence();
     
-    public <T extends Protein> T getProtein();
-    public <T extends CommentType> T getCommentType();
+    public Protein getProtein();
+    public CommentType getCommentType();
 
     //----------SETTERS-------------
     public void setText(String value);
