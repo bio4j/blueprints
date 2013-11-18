@@ -20,8 +20,6 @@ package com.era7.bioinfo.bio4j.blueprints.model.relationships.protein;
 import com.era7.bioinfo.bio4j.blueprints.model.nodes.ProteinNode;
 import com.era7.bioinfo.bio4j.blueprints.model.nodes.SequenceCautionNode;
 import com.era7.bioinfo.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
-import com.era7.bioinfo.bio4j.model.nodes.Protein;
-import com.era7.bioinfo.bio4j.model.nodes.SequenceCaution;
 import com.era7.bioinfo.bio4j.model.relationships.protein.BasicProteinSequenceCaution;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
