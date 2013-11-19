@@ -6,7 +6,7 @@ name := "bio4j-model"
 
 description := "bio4j-model project"
 
-organization := "era7"
+organization := "ohnosequences"
 
 bucketSuffix := "era7.com"
 
