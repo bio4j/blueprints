@@ -1,7 +1,5 @@
 Nice.javaProject
 
-Nice.publishingSettings
-
 name := "bio4j-model"
 
 description := "bio4j-model project"
