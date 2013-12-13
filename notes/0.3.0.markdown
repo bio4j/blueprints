@@ -1,0 +1,3 @@
+* Refactored package tree to ohnosequences
+* No funny classpath file
+* Added CommonData class that was left forgotten somewhere else
