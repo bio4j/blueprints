@@ -78,8 +78,8 @@ public class NCBITaxonNode extends BasicVertex implements NCBITaxon{
     @Override
     public void setName(String value){  vertex.setProperty(NAME_PROPERTY, value);}
     
-    public void addOldTaxId(String value){  }
-    public void addGiId(String value){}
+//    public void addOldTaxId(String value){  }
+//    public void addGiId(String value){}
     
     
 
