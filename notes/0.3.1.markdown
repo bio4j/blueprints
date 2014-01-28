@@ -1,0 +1,1 @@
+Removed GI and Old tax id methods from NCBITaxonNode class
