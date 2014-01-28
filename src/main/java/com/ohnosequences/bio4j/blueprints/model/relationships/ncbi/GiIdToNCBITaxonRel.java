@@ -18,6 +18,7 @@
 package com.ohnosequences.bio4j.blueprints.model.relationships.ncbi;
 
 import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
+import com.ohnosequences.bio4j.blueprints.model.nodes.ncbi.GiIdNode;
 import com.ohnosequences.bio4j.model.relationships.ncbi.GiIdToNCBITaxon;
 import com.tinkerpop.blueprints.Edge;
 
@@ -29,13 +30,14 @@ public class GiIdToNCBITaxonRel extends BasicRelationshipBlueprints implements G
 
     public static final String NAME = "GI_ID_TO_NCBI_TAXON";
 
-    public GiIdToNCBITaxonRel(Edge e){
-        super(e);
-    }
+    public GiIdToNCBITaxonRel(Edge e){ super(e); }
 
     @Override
-    public String getType() {
-        return NAME;
-    }
+    public String getGiId(){ return edge.getProperty(GiIdNode.GI_ID_PROPERTY); }
 
+    @Override
+    public String getType() { return NAME; }
+
+    @Override
+    public void setGiId(String value){ edge.setProperty(GiIdNode.GI_ID_PROPERTY, value); }
 }

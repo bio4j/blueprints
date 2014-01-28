@@ -23,6 +23,7 @@ import com.ohnosequences.bio4j.model.nodes.ncbi.NCBITaxon;
 import com.ohnosequences.bio4j.model.nodes.ncbi.GiId;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Vertex;
+import com.tinkerpop.blueprints.Edge;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -48,7 +49,11 @@ public class GiIdNode extends BasicVertex implements GiId{
     
     //----------------SETTERS-------------------
     @Override
-    public void setGiId(String value){ vertex.setProperty(GI_ID_PROPERTY, value); }
+    public void setGiId(String value){ 
+        vertex.setProperty(GI_ID_PROPERTY, value);
+        Iterator<Edge> iterator = vertex.getEdges(Direction.OUT, GiIdToNCBITaxonRel.NAME).iterator();
+        if(iterator.hasNext()) iterator.next().setProperty(GI_ID_PROPERTY, value);
+    }
 
 
 

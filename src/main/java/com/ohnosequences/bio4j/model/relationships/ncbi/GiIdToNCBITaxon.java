@@ -18,4 +18,7 @@ package com.ohnosequences.bio4j.model.relationships.ncbi;
 
 import com.ohnosequences.bio4j.model.relationships.BasicRelationship;
 
-public interface GiIdToNCBITaxon extends BasicRelationship{}
+public interface GiIdToNCBITaxon extends BasicRelationship{
+    public String getGiId();
+    public void setGiId(String value);
+}
