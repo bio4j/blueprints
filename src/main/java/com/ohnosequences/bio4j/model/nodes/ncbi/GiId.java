@@ -17,33 +17,16 @@
 package com.ohnosequences.bio4j.model.nodes.ncbi;
 
 import com.ohnosequences.bio4j.model.nodes.BasicNode;
-import com.ohnosequences.bio4j.model.nodes.Taxon;
+import com.ohnosequences.bio4j.model.nodes.ncbi.NCBITaxon;
 import java.util.List;
 
-/**
- *
- * @author Pablo Pareja Tobes <ppareja@era7.com>
- */
-public interface NCBITaxon extends BasicNode{
+public interface GiId extends BasicNode{
     
     //----------------GETTERS---------------------
-    public String getName();
-    public String getTaxId();
-    public String getRank();
-    public String getEmblCode();
-    public String getComments();
-    public String getScientificName();
-    public NCBITaxon getParent();
-    public List<NCBITaxon> getChildren();    
-    public Taxon getTaxon();
-    public List<GiId> getGiIds();    
+    public String getGiId();
+    public NCBITaxon getNCBITaxon();
     
     //----------------SETTERS-------------------
-    public void setTaxId(String value);
-    public void setRank(String value);
-    public void setEmblCode(String value);
-    public void setComments(String value);
-    public void setScientificName(String value);
-    public void setName(String value);
-        
+    public void setGiId(String value);
+
 }

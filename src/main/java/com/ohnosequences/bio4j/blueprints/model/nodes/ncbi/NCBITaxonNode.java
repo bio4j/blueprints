@@ -18,10 +18,13 @@ package com.ohnosequences.bio4j.blueprints.model.nodes.ncbi;
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.BasicVertex;
 import com.ohnosequences.bio4j.blueprints.model.nodes.TaxonNode;
+import com.ohnosequences.bio4j.blueprints.model.nodes.ncbi.GiIdNode;
 import com.ohnosequences.bio4j.blueprints.model.relationships.ncbi.NCBITaxonParentRel;
 import com.ohnosequences.bio4j.blueprints.model.relationships.ncbi.NCBITaxonRel;
+import com.ohnosequences.bio4j.blueprints.model.relationships.ncbi.GiIdToNCBITaxonRel;
 import com.ohnosequences.bio4j.model.nodes.Taxon;
 import com.ohnosequences.bio4j.model.nodes.ncbi.NCBITaxon;
+import com.ohnosequences.bio4j.model.nodes.ncbi.GiId;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Vertex;
 import java.util.Iterator;
@@ -129,6 +132,19 @@ public class NCBITaxonNode extends BasicVertex implements NCBITaxon{
         }
         
         return taxon;
+    }
+
+    @Override
+    public List<GiId> getGiIds(){
+        List<GiId> list = new LinkedList<GiId>();
+        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, GiIdToNCBITaxonRel.NAME).iterator();
+        while(iterator.hasNext()){
+            Vertex tempNode = iterator.next();
+            if(tempNode.getProperty(BasicVertex.NODE_TYPE_PROPERTY).equals(GiIdNode.NODE_TYPE)){
+                list.add(new GiIdNode(tempNode));
+            }           
+        }
+        return list;
     }
 
     @Override
