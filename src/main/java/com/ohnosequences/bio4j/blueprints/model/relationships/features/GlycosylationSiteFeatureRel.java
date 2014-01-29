@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class GlycosylationSiteFeatureRel extends BasicFeatureRel implements GlycosylationSiteFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_GLYCOSYLATION_SITE";
+    public static final String NAME = "FEATURE_GLYCOSYLATION_SITE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "glycosylation site";
 
 
@@ -36,7 +36,7 @@ public class GlycosylationSiteFeatureRel extends BasicFeatureRel implements Glyc
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

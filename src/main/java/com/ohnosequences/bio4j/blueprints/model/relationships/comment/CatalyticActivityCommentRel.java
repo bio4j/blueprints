@@ -27,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class CatalyticActivityCommentRel extends BasicCommentRel implements CatalyticActivityComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_CATALYTIC_ACTIVITY";
+    public static final String NAME = "COMMENT_CATALYTIC_ACTIVITY";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "catalytic activity";
 
     public CatalyticActivityCommentRel(Edge e){
@@ -40,7 +40,7 @@ public class CatalyticActivityCommentRel extends BasicCommentRel implements Cata
      */
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

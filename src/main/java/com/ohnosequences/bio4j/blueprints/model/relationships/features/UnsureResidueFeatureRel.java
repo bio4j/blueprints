@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class UnsureResidueFeatureRel extends BasicFeatureRel implements UnsureResidueFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_UNSURE_RESIDUE";
+    public static final String NAME = "FEATURE_UNSURE_RESIDUE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "unsure residue";
 
 
@@ -36,7 +36,7 @@ public class UnsureResidueFeatureRel extends BasicFeatureRel implements UnsureRe
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
 

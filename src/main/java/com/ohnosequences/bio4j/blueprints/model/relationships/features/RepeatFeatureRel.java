@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class RepeatFeatureRel extends BasicFeatureRel implements RepeatFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_REPEAT";
+    public static final String NAME = "FEATURE_REPEAT";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "repeat";
 
 
@@ -36,7 +36,7 @@ public class RepeatFeatureRel extends BasicFeatureRel implements RepeatFeature{
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

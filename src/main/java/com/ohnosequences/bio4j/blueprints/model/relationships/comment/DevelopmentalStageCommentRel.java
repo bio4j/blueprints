@@ -27,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class DevelopmentalStageCommentRel extends BasicCommentRel implements DevelopmentalStageComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_DEVELOPMENTAL_STAGE";
+    public static final String NAME = "COMMENT_DEVELOPMENTAL_STAGE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "developmental stage";
 
     public DevelopmentalStageCommentRel(Edge e){
@@ -36,7 +36,7 @@ public class DevelopmentalStageCommentRel extends BasicCommentRel implements Dev
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

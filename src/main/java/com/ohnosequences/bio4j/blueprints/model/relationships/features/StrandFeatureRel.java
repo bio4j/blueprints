@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class StrandFeatureRel extends BasicFeatureRel implements StrandFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_STRAND";
+    public static final String NAME = "FEATURE_STRAND";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "strand";
 
     public StrandFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class StrandFeatureRel extends BasicFeatureRel implements StrandFeature{
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

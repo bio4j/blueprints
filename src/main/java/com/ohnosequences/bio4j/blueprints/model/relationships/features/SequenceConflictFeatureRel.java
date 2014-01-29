@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class SequenceConflictFeatureRel extends BasicFeatureRel implements SequenceConflictFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_SEQUENCE_CONFLICT";
+    public static final String NAME = "FEATURE_SEQUENCE_CONFLICT";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "sequence conflict";
 
     public SequenceConflictFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class SequenceConflictFeatureRel extends BasicFeatureRel implements Seque
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class TopologicalDomainFeatureRel extends BasicFeatureRel implements TopologicalDomainFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_TOPOLOGICAL_DOMAIN";
+    public static final String NAME = "FEATURE_TOPOLOGICAL_DOMAIN";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "topological domain";
 
     public TopologicalDomainFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class TopologicalDomainFeatureRel extends BasicFeatureRel implements Topo
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
 

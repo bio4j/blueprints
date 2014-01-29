@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class SubunitCommentRel extends BasicCommentRel implements SubunitComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_SUBUNIT";
+    public static final String NAME = "COMMENT_SUBUNIT";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "subunit";
 
     public SubunitCommentRel(Edge e){
@@ -35,7 +35,7 @@ public class SubunitCommentRel extends BasicCommentRel implements SubunitComment
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

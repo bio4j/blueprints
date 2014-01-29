@@ -27,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class CofactorCommentRel extends BasicCommentRel implements CofactorComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_COFACTOR";
+    public static final String NAME = "COMMENT_COFACTOR";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "cofactor";
 
     public CofactorCommentRel(Edge e){
@@ -36,7 +36,7 @@ public class CofactorCommentRel extends BasicCommentRel implements CofactorComme
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

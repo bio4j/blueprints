@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class CompositionallyBiasedRegionFeatureRel extends BasicFeatureRel implements CompositionallyBiasedRegionFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_COMPOSITIONALLY_BIASED_REGION";
+    public static final String NAME = "FEATURE_COMPOSITIONALLY_BIASED_REGION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "compositionally biased region";
 
     public CompositionallyBiasedRegionFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class CompositionallyBiasedRegionFeatureRel extends BasicFeatureRel imple
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

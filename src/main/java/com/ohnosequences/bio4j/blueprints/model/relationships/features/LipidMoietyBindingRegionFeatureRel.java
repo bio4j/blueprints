@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class LipidMoietyBindingRegionFeatureRel extends BasicFeatureRel implements LipidMoietyBindingRegionFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_LIPID_MOIETY_BINDING_REGION";
+    public static final String NAME = "FEATURE_LIPID_MOIETY_BINDING_REGION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "lipid moiety-binding region";
 
     public LipidMoietyBindingRegionFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class LipidMoietyBindingRegionFeatureRel extends BasicFeatureRel implemen
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
 

@@ -25,7 +25,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class ModifiedResidueFeatureRel extends BasicFeatureRel implements ModifiedResidueFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_MODIFIED_RESIDUE";
+    public static final String NAME = "FEATURE_MODIFIED_RESIDUE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "modified residue";
 
     public ModifiedResidueFeatureRel(Edge e){
@@ -34,7 +34,7 @@ public class ModifiedResidueFeatureRel extends BasicFeatureRel implements Modifi
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

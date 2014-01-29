@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class HelixFeatureRel extends BasicFeatureRel implements HelixFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_HELIX";
+    public static final String NAME = "FEATURE_HELIX";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "helix";
 
     public HelixFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class HelixFeatureRel extends BasicFeatureRel implements HelixFeature{
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class BioPhysicoChemicalPropertiesCommentRel extends BasicCommentRel implements BioPhysicoChemicalPropertiesComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_BIO_PHYSICO_CHEMICAL_PROPERTIES";
+    public static final String NAME = "COMMENT_BIO_PHYSICO_CHEMICAL_PROPERTIES";
 
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "biophysicochemical properties";
 
@@ -92,7 +92,7 @@ public class BioPhysicoChemicalPropertiesCommentRel extends BasicCommentRel impl
      */
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

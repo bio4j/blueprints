@@ -27,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class DisruptionPhenotypeCommentRel extends BasicCommentRel implements DisruptionPhenotypeComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_DISRUPTION_PHENOTYPE";
+    public static final String NAME = "COMMENT_DISRUPTION_PHENOTYPE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "disruption phenotype";
 
     public DisruptionPhenotypeCommentRel(Edge e){
@@ -36,7 +36,7 @@ public class DisruptionPhenotypeCommentRel extends BasicCommentRel implements Di
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

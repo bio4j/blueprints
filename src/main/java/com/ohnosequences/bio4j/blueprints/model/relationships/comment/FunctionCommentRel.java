@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class FunctionCommentRel extends BasicCommentRel implements FunctionComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_FUNCTION";
+    public static final String NAME = "COMMENT_FUNCTION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "function";
 
     public FunctionCommentRel(Edge e){
@@ -35,7 +35,7 @@ public class FunctionCommentRel extends BasicCommentRel implements FunctionComme
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

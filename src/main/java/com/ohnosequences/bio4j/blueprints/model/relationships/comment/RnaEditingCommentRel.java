@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class RnaEditingCommentRel extends BasicCommentRel implements RnaEditingComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_RNA_EDITING";
+    public static final String NAME = "COMMENT_RNA_EDITING";
 
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "RNA editing";
 
@@ -46,8 +46,13 @@ public class RnaEditingCommentRel extends BasicCommentRel implements RnaEditingC
     }
 
     @Override
+    public String getType() {
+        return NAME;
+    }
+
+    @Override
     public String getLabel() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

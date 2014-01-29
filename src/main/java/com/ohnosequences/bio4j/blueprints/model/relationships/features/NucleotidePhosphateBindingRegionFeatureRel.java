@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class NucleotidePhosphateBindingRegionFeatureRel extends BasicFeatureRel implements NucleotidePhosphateBindingRegionFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_NUCLEOTIDE_PHOSPHATE_BINDING_REGION";
+    public static final String NAME = "FEATURE_NUCLEOTIDE_PHOSPHATE_BINDING_REGION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "nucleotide phosphate-binding region";
 
     public NucleotidePhosphateBindingRegionFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class NucleotidePhosphateBindingRegionFeatureRel extends BasicFeatureRel 
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

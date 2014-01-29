@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class TransmembraneRegionFeatureRel extends BasicFeatureRel implements TransmembraneRegionFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_TRANSMEMBRANE_REGION";
+    public static final String NAME = "FEATURE_TRANSMEMBRANE_REGION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "transmembrane region";
 
 
@@ -36,7 +36,7 @@ public class TransmembraneRegionFeatureRel extends BasicFeatureRel implements Tr
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

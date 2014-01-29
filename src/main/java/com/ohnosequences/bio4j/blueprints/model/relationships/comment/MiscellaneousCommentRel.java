@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class MiscellaneousCommentRel extends BasicCommentRel implements MiscellaneousComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_MISCELLANEOUS";
+    public static final String NAME = "COMMENT_MISCELLANEOUS";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "miscellaneous";
 
     public MiscellaneousCommentRel(Edge e){
@@ -35,7 +35,7 @@ public class MiscellaneousCommentRel extends BasicCommentRel implements Miscella
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

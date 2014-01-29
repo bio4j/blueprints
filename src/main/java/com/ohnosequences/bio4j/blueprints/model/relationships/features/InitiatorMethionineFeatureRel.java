@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class InitiatorMethionineFeatureRel extends BasicFeatureRel implements InitiatorMethionineFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_INITIATOR_METHIONINE";
+    public static final String NAME = "FEATURE_INITIATOR_METHIONINE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "initiator methionine";
 
     public InitiatorMethionineFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class InitiatorMethionineFeatureRel extends BasicFeatureRel implements In
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
 

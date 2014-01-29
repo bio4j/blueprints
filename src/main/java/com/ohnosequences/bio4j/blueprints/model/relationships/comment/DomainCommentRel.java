@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class DomainCommentRel extends BasicCommentRel implements DomainComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_DOMAIN";
+    public static final String NAME = "COMMENT_DOMAIN";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "domain";
 
     public DomainCommentRel(Edge e){
@@ -35,7 +35,7 @@ public class DomainCommentRel extends BasicCommentRel implements DomainComment{
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

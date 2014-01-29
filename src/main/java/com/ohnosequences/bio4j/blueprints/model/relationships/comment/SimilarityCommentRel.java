@@ -27,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class SimilarityCommentRel extends BasicCommentRel implements SimilarityComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_SIMILARITY";
+    public static final String NAME = "COMMENT_SIMILARITY";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "similarity";
 
     public SimilarityCommentRel(Edge e){
@@ -36,7 +36,7 @@ public class SimilarityCommentRel extends BasicCommentRel implements SimilarityC
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

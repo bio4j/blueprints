@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class ActiveSiteFeatureRel extends BasicFeatureRel implements ActiveSiteFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_ACTIVE_SITE";
+    public static final String NAME = "FEATURE_ACTIVE_SITE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "active site";
 
 
@@ -36,7 +36,7 @@ public class ActiveSiteFeatureRel extends BasicFeatureRel implements ActiveSiteF
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
 

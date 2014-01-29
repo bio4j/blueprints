@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class ProteinErroneousTranslationRel extends BasicProteinSequenceCautionRel implements ProteinErroneousTranslation{
 
-    public static final String RELATIONSHIP_NAME = "PROTEIN_ERRONEOUS_TRANSLATION";
+    public static final String NAME = "PROTEIN_ERRONEOUS_TRANSLATION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "erroneous translation";
 
     public ProteinErroneousTranslationRel(Edge e){
@@ -35,7 +35,7 @@ public class ProteinErroneousTranslationRel extends BasicProteinSequenceCautionR
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

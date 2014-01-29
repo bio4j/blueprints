@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class RegionOfInterestFeatureRel extends BasicFeatureRel implements RegionOfInterestFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_REGION_OF_INTEREST";
+    public static final String NAME = "FEATURE_REGION_OF_INTEREST";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "region of interest";
 
     public RegionOfInterestFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class RegionOfInterestFeatureRel extends BasicFeatureRel implements Regio
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

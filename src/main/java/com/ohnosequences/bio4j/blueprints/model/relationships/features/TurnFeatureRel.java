@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class TurnFeatureRel extends BasicFeatureRel implements TurnFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_TURN";
+    public static final String NAME = "FEATURE_TURN";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "turn";
 
 
@@ -36,7 +36,7 @@ public class TurnFeatureRel extends BasicFeatureRel implements TurnFeature{
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
 

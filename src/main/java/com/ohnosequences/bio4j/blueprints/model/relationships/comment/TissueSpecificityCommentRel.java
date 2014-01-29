@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class TissueSpecificityCommentRel extends BasicCommentRel implements TissueSpecificityComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_TISSUE_SPECIFICITY";
+    public static final String NAME = "COMMENT_TISSUE_SPECIFICITY";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "tissue specificity";
 
     public TissueSpecificityCommentRel(Edge e){
@@ -35,7 +35,7 @@ public class TissueSpecificityCommentRel extends BasicCommentRel implements Tiss
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

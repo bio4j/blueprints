@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class MutagenesisSiteFeatureRel extends BasicFeatureRel implements MutagenesisSiteFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_MUTAGENESIS_SITE";
+    public static final String NAME = "FEATURE_MUTAGENESIS_SITE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "mutagenesis site";
 
 
@@ -36,7 +36,7 @@ public class MutagenesisSiteFeatureRel extends BasicFeatureRel implements Mutage
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
 

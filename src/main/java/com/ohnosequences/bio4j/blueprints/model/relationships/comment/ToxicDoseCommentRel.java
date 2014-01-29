@@ -25,7 +25,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class ToxicDoseCommentRel extends BasicCommentRel implements ToxicDoseComment{ 
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_TOXIC_DOSE";
+    public static final String NAME = "COMMENT_TOXIC_DOSE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "toxic dose";
 
     public ToxicDoseCommentRel(Edge e){
@@ -34,7 +34,7 @@ public class ToxicDoseCommentRel extends BasicCommentRel implements ToxicDoseCom
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

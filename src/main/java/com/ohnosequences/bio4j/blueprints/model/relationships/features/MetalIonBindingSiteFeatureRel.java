@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class MetalIonBindingSiteFeatureRel extends BasicFeatureRel implements MetalIonBindingSiteFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_METAL_ION_BINDING_SITE";
+    public static final String NAME = "FEATURE_METAL_ION_BINDING_SITE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "metal ion-binding site";
 
 
@@ -36,7 +36,7 @@ public class MetalIonBindingSiteFeatureRel extends BasicFeatureRel implements Me
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

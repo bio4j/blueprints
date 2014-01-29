@@ -27,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class BindingSiteFeatureRel extends BasicFeatureRel implements BindingSiteFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_BINDING_SITE";
+    public static final String NAME = "FEATURE_BINDING_SITE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "binding site";
 
     public BindingSiteFeatureRel(Edge e){
@@ -36,7 +36,7 @@ public class BindingSiteFeatureRel extends BasicFeatureRel implements BindingSit
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

@@ -27,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class CautionCommentRel extends BasicCommentRel implements CautionComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_CAUTION";
+    public static final String NAME = "COMMENT_CAUTION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "caution";
 
     public CautionCommentRel(Edge e){
@@ -40,7 +40,7 @@ public class CautionCommentRel extends BasicCommentRel implements CautionComment
      */
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

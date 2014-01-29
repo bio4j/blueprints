@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class ProteinErroneousGeneModelPredictionRel extends BasicProteinSequenceCautionRel implements ProteinErroneousGeneModelPrediction{
 
-    public static final String RELATIONSHIP_NAME = "PROTEIN_ERRONEOUS_GENE_MODEL_PREDICTION";
+    public static final String NAME = "PROTEIN_ERRONEOUS_GENE_MODEL_PREDICTION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "erroneous gene model prediction";
 
     public ProteinErroneousGeneModelPredictionRel(Edge e){
@@ -35,7 +35,7 @@ public class ProteinErroneousGeneModelPredictionRel extends BasicProteinSequence
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

@@ -25,7 +25,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class ProteinErroneousTerminationRel extends BasicProteinSequenceCautionRel implements ProteinErroneousTermination{
 
-    public static final String RELATIONSHIP_NAME = "PROTEIN_ERRONEOUS_TERMINATION";
+    public static final String NAME = "PROTEIN_ERRONEOUS_TERMINATION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "erroneous termination";
 
     public ProteinErroneousTerminationRel(Edge e){
@@ -34,7 +34,7 @@ public class ProteinErroneousTerminationRel extends BasicProteinSequenceCautionR
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override
