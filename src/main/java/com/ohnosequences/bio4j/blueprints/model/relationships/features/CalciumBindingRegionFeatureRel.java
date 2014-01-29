@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class CalciumBindingRegionFeatureRel extends BasicFeatureRel implements CalciumBindingRegionFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_CALCIUM_BINDING_REGION";
+    public static final String NAME = "FEATURE_CALCIUM_BINDING_REGION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "calcium-binding region";
 
     public CalciumBindingRegionFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class CalciumBindingRegionFeatureRel extends BasicFeatureRel implements C
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
 

@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class ProteinMiscellaneousDiscrepancyRel extends BasicProteinSequenceCautionRel implements ProteinMiscellaneousDiscrepancy{
 
-    public static final String RELATIONSHIP_NAME = "PROTEIN_MISCELLANEOUS_DISCREPANCY";
+    public static final String NAME = "PROTEIN_MISCELLANEOUS_DISCREPANCY";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "miscellaneous discrepancy";
 
     public ProteinMiscellaneousDiscrepancyRel(Edge e){
@@ -35,7 +35,7 @@ public class ProteinMiscellaneousDiscrepancyRel extends BasicProteinSequenceCaut
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

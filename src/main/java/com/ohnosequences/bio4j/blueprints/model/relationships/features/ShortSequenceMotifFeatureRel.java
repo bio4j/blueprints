@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class ShortSequenceMotifFeatureRel extends BasicFeatureRel implements ShortSequenceMotifFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_SHORT_SEQUENCE_MOTIF";
+    public static final String NAME = "FEATURE_SHORT_SEQUENCE_MOTIF";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "short sequence motif";
 
     public ShortSequenceMotifFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class ShortSequenceMotifFeatureRel extends BasicFeatureRel implements Sho
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
 

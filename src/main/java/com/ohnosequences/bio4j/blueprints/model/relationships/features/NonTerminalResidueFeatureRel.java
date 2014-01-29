@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class NonTerminalResidueFeatureRel extends BasicFeatureRel implements NonTerminalResidueFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_NON_TERMINAL_RESIDUE";
+    public static final String NAME = "FEATURE_NON_TERMINAL_RESIDUE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "non-terminal residue";
 
     public NonTerminalResidueFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class NonTerminalResidueFeatureRel extends BasicFeatureRel implements Non
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

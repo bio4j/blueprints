@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class EnzymeRegulationCommentRel extends BasicCommentRel implements EnzymeRegulationComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_ENZYME_REGULATION";
+    public static final String NAME = "COMMENT_ENZYME_REGULATION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "enzyme regulation";
 
     public EnzymeRegulationCommentRel(Edge e){
@@ -35,7 +35,7 @@ public class EnzymeRegulationCommentRel extends BasicCommentRel implements Enzym
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

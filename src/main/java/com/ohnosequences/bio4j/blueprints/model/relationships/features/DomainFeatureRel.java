@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class DomainFeatureRel extends BasicFeatureRel implements DomainFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_DOMAIN";
+    public static final String NAME = "FEATURE_DOMAIN";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "domain";
 
     public DomainFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class DomainFeatureRel extends BasicFeatureRel implements DomainFeature{
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
 

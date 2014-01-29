@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class DnaBindingRegionFeatureRel extends BasicFeatureRel implements DnaBindingFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_DNA_BINDING_REGION";
+    public static final String NAME = "FEATURE_DNA_BINDING_REGION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "DNA-binding region";
 
     public DnaBindingRegionFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class DnaBindingRegionFeatureRel extends BasicFeatureRel implements DnaBi
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
 

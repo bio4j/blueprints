@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class NonStandardAminoAcidFeatureRel extends BasicFeatureRel implements NonStandardAminoAcidFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_NON_STANDARD_AMINO_ACID";
+    public static final String NAME = "FEATURE_NON_STANDARD_AMINO_ACID";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "non-standard amino acid";
 
     public NonStandardAminoAcidFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class NonStandardAminoAcidFeatureRel extends BasicFeatureRel implements N
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

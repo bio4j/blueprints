@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class InductionCommentRel extends BasicCommentRel implements InductionComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_INDUCTION";
+    public static final String NAME = "COMMENT_INDUCTION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "induction";
 
     public InductionCommentRel(Edge e){
@@ -35,7 +35,7 @@ public class InductionCommentRel extends BasicCommentRel implements InductionCom
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

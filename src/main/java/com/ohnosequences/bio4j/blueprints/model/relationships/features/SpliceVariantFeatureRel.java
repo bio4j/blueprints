@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class SpliceVariantFeatureRel extends BasicFeatureRel implements SpliceVariantFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_SPLICE_VARIANT";
+    public static final String NAME = "FEATURE_SPLICE_VARIANT";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "splice variant";
 
     public SpliceVariantFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class SpliceVariantFeatureRel extends BasicFeatureRel implements SpliceVa
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
 

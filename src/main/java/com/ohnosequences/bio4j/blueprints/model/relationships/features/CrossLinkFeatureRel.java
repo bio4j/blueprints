@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class CrossLinkFeatureRel extends BasicFeatureRel implements CrossLinkFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_CROSS_LINK";
+    public static final String NAME = "FEATURE_CROSS_LINK";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "cross-link";
 
     public static final String POSITION_PROPERTY = "cross_link_feature_position";
@@ -37,7 +37,7 @@ public class CrossLinkFeatureRel extends BasicFeatureRel implements CrossLinkFea
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

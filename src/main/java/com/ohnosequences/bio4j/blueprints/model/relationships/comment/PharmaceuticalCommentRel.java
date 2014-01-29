@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class PharmaceuticalCommentRel extends BasicCommentRel implements PharmaceuticalComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_PHARMACEUTICAL";
+    public static final String NAME = "COMMENT_PHARMACEUTICAL";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "pharmaceutical";
 
     public PharmaceuticalCommentRel(Edge e){
@@ -35,7 +35,7 @@ public class PharmaceuticalCommentRel extends BasicCommentRel implements Pharmac
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

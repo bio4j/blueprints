@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class ProteinFrameshiftRel extends BasicProteinSequenceCautionRel implements ProteinFrameshift{
 
-    public static final String RELATIONSHIP_NAME = "PROTEIN_FRAMESHIFT";
+    public static final String NAME = "PROTEIN_FRAMESHIFT";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "frameshift";
 
     public ProteinFrameshiftRel(Edge e){
@@ -35,7 +35,7 @@ public class ProteinFrameshiftRel extends BasicProteinSequenceCautionRel impleme
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

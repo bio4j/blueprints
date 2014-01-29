@@ -27,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class MassSpectrometryCommentRel extends BasicCommentRel implements MassSpectometryComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_MASS_SPECTROMETRY";
+    public static final String NAME = "COMMENT_MASS_SPECTROMETRY";
 
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "mass spectrometry";
 
@@ -76,7 +76,7 @@ public class MassSpectrometryCommentRel extends BasicCommentRel implements MassS
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

@@ -25,7 +25,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class SequenceVariantFeatureRel extends BasicFeatureRel implements SequenceVariantFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_SEQUENCE_VARIANT";
+    public static final String NAME = "FEATURE_SEQUENCE_VARIANT";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "sequence variant";
 
     public SequenceVariantFeatureRel(Edge e){
@@ -34,7 +34,7 @@ public class SequenceVariantFeatureRel extends BasicFeatureRel implements Sequen
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

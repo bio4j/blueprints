@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class DisulfideBondFeatureRel extends BasicFeatureRel implements DisulfideBondFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_DISULFIDE_BOND";
+    public static final String NAME = "FEATURE_DISULFIDE_BOND";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "disulfide bond";
 
     public DisulfideBondFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class DisulfideBondFeatureRel extends BasicFeatureRel implements Disulfid
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

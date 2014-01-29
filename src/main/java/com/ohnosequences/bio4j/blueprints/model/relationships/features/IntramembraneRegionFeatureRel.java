@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class IntramembraneRegionFeatureRel extends BasicFeatureRel implements IntramembraneRegionFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_INTRAMEMBRANE_REGION";
+    public static final String NAME = "FEATURE_INTRAMEMBRANE_REGION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "intramembrane region";
 
     public IntramembraneRegionFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class IntramembraneRegionFeatureRel extends BasicFeatureRel implements In
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

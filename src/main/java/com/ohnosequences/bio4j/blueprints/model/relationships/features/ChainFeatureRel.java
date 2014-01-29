@@ -27,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class ChainFeatureRel extends BasicFeatureRel implements ChainFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_CHAIN";
+    public static final String NAME = "FEATURE_CHAIN";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "chain";
 
 
@@ -37,7 +37,7 @@ public class ChainFeatureRel extends BasicFeatureRel implements ChainFeature{
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

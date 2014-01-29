@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class BiotechnologyCommentRel extends BasicCommentRel implements BiotechnologyComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_BIOTECHNOLOGY";
+    public static final String NAME = "COMMENT_BIOTECHNOLOGY";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "biotechnology";
 
     public BiotechnologyCommentRel(Edge e){
@@ -39,7 +39,7 @@ public class BiotechnologyCommentRel extends BasicCommentRel implements Biotechn
      */
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

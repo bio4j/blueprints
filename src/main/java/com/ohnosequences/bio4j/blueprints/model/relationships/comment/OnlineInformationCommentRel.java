@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class OnlineInformationCommentRel extends BasicCommentRel implements OnlineInformationComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_ONLINE_INFORMATION";
+    public static final String NAME = "COMMENT_ONLINE_INFORMATION";
 
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "online information";
 
@@ -58,7 +58,7 @@ public class OnlineInformationCommentRel extends BasicCommentRel implements Onli
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

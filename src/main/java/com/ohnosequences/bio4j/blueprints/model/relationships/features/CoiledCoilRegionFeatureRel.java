@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class CoiledCoilRegionFeatureRel extends BasicFeatureRel implements CoiledCoilRegionFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_COILED_COIL_REGION";
+    public static final String NAME = "FEATURE_COILED_COIL_REGION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "coiled-coil region";
 
     public CoiledCoilRegionFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class CoiledCoilRegionFeatureRel extends BasicFeatureRel implements Coile
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

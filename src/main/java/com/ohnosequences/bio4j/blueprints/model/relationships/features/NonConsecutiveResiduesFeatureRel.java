@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class NonConsecutiveResiduesFeatureRel extends BasicFeatureRel implements NonConsecutiveResiduesFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_NON_CONSECUTIVE_RESIDUES";
+    public static final String NAME = "FEATURE_NON_CONSECUTIVE_RESIDUES";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "non-consecutive residues";
 
     public NonConsecutiveResiduesFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class NonConsecutiveResiduesFeatureRel extends BasicFeatureRel implements
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

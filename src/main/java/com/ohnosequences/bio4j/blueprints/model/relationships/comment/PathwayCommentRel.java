@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class PathwayCommentRel extends BasicCommentRel implements PathwayComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_PATHWAY";
+    public static final String NAME = "COMMENT_PATHWAY";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "pathway";
 
     public PathwayCommentRel(Edge e){
@@ -35,7 +35,7 @@ public class PathwayCommentRel extends BasicCommentRel implements PathwayComment
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

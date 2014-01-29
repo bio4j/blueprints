@@ -25,7 +25,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class PostTranslationalModificationCommentRel extends BasicCommentRel{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_POST_TRANSLATIONAL_MODIFICATION";
+    public static final String NAME = "COMMENT_POST_TRANSLATIONAL_MODIFICATION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "PTM";
 
     public PostTranslationalModificationCommentRel(Edge e){
@@ -33,8 +33,13 @@ public class PostTranslationalModificationCommentRel extends BasicCommentRel{
     }
 
     @Override
+    public String getType() {
+        return NAME;
+    }
+
+    @Override
     public String getLabel() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

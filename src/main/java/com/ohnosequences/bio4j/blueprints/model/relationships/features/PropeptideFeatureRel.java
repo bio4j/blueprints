@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class PropeptideFeatureRel extends BasicFeatureRel implements PropeptideFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_PROPEPTIDE";
+    public static final String NAME = "FEATURE_PROPEPTIDE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "propeptide";
 
     public PropeptideFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class PropeptideFeatureRel extends BasicFeatureRel implements PropeptideF
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
 

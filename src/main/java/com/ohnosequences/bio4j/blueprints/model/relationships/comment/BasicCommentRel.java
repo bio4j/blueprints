@@ -28,9 +28,10 @@ import com.tinkerpop.blueprints.Edge;
  *
  * @author ppareja
  */
-public class BasicCommentRel extends BasicRelationshipBlueprints implements BasicComment{
+public abstract class BasicCommentRel extends BasicRelationshipBlueprints implements BasicComment{
 
-    public static final String NAME = "BASIC_COMMENT";
+    // public static final String NAME = "BASIC_COMMENT";
+    public static String NAME;
 
     public static final String TEXT_PROPERTY = "comment_text";
     public static final String STATUS_PROPERTY = "comment_status";

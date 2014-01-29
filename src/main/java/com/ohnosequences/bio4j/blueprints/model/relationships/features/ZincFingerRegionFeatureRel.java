@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class ZincFingerRegionFeatureRel extends BasicFeatureRel implements ZincFingerRegionFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_ZINC_FINGER_REGION";
+    public static final String NAME = "FEATURE_ZINC_FINGER_REGION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "zinc finger region";
 
     public ZincFingerRegionFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class ZincFingerRegionFeatureRel extends BasicFeatureRel implements ZincF
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

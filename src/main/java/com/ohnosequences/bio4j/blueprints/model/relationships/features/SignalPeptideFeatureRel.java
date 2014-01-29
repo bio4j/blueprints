@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class SignalPeptideFeatureRel extends BasicFeatureRel implements SignalPeptideFeature{
 
-    public static final String RELATIONSHIP_NAME = "FEATURE_SIGNAL_PEPTIDE";
+    public static final String NAME = "FEATURE_SIGNAL_PEPTIDE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "signal peptide";
 
     public SignalPeptideFeatureRel(Edge e){
@@ -35,7 +35,7 @@ public class SignalPeptideFeatureRel extends BasicFeatureRel implements SignalPe
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override

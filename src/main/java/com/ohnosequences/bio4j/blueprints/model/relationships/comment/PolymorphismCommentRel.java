@@ -26,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  */
 public class PolymorphismCommentRel extends BasicCommentRel implements PolymorphismComment{
 
-    public static final String RELATIONSHIP_NAME = "COMMENT_POLYMORPHISM";
+    public static final String NAME = "COMMENT_POLYMORPHISM";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "polymorphism";
 
     public PolymorphismCommentRel(Edge e){
@@ -35,7 +35,7 @@ public class PolymorphismCommentRel extends BasicCommentRel implements Polymorph
 
     @Override
     public String getType() {
-        return RELATIONSHIP_NAME;
+        return NAME;
     }
 
     @Override
