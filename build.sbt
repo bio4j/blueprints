@@ -1,10 +1,10 @@
 Nice.javaProject
 
-name := "bio4j-model"
+organization := "bio4j"
 
-description := "bio4j-model project"
+name := "model"
 
-organization := "ohnosequences"
+description := "bio4j abstract model and the default blueprints implementation"
 
 bucketSuffix := "era7.com"
 

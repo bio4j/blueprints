@@ -1,0 +1,1 @@
+Changed the org/name of the sbt-project to `bio4j/model` to correspond to the github repo
