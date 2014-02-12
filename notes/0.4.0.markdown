@@ -1,0 +1,4 @@
+* Separated project:
+  + abstract part now is in bio4j/bio4j
+  + blueprints layer is left here
+* Renamed project to bio4j/blueprints
