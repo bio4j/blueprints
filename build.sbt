@@ -2,12 +2,13 @@ Nice.javaProject
 
 organization := "bio4j"
 
-name := "model"
+name := "blueprints"
 
-description := "bio4j abstract model and the default blueprints implementation"
+description := "Bio4j model default Blueprints implementation"
 
 bucketSuffix := "era7.com"
 
-libraryDependencies += "com.tinkerpop.blueprints" % "blueprints-core" % "2.4.0"
-
-javacOptions ++= Seq("-Xlint:unchecked")
+libraryDependencies ++= Seq(
+  "bio4j" % "bio4j" % "0.10.0-SNAPSHOT",
+  "com.tinkerpop.blueprints" % "blueprints-core" % "2.4.0"
+)
