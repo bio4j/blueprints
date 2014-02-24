@@ -20,7 +20,6 @@ package com.ohnosequences.bio4j.blueprints.model.nodes;
 import com.ohnosequences.bio4j.blueprints.model.relationships.TaxonParentRel;
 import com.ohnosequences.bio4j.model.nodes.Taxon;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -29,14 +28,14 @@ import java.util.List;
  * Uniprot taxonomy taxon
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class TaxonNode extends BasicVertex implements Taxon{
+public class TaxonNode extends Vertex implements Taxon{
 
     public static final String NODE_TYPE = TaxonNode.class.getCanonicalName();
 
     public static final String NAME_PROPERTY = "taxon_name";
 
 
-    public TaxonNode(Vertex v){
+    public TaxonNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 
@@ -54,7 +53,7 @@ public class TaxonNode extends BasicVertex implements Taxon{
     public TaxonNode getParent(){
         TaxonNode parent = null;
         
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, TaxonParentRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, TaxonParentRel.NAME).iterator();
         if(iterator.hasNext()){
             parent = new TaxonNode(iterator.next());
         }
@@ -69,11 +68,11 @@ public class TaxonNode extends BasicVertex implements Taxon{
     public List<TaxonNode> getChildren(){
         List<TaxonNode> list = new ArrayList<TaxonNode>();
         
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, TaxonParentRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, TaxonParentRel.NAME).iterator();
         
         while(iterator.hasNext()){
-            Vertex tempNode = iterator.next();
-            if(tempNode.getProperty(BasicVertex.NODE_TYPE_PROPERTY).equals(TaxonNode.NODE_TYPE)){
+        	com.tinkerpop.blueprints.Vertex tempNode = iterator.next();
+            if(tempNode.getProperty(Vertex.NODE_TYPE_PROPERTY).equals(TaxonNode.NODE_TYPE)){
                 list.add(new TaxonNode(tempNode));
             }           
         }
@@ -88,11 +87,11 @@ public class TaxonNode extends BasicVertex implements Taxon{
     public List<OrganismNode> getOrganisms(){
         List<OrganismNode> list = new ArrayList<OrganismNode>();
         
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, TaxonParentRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, TaxonParentRel.NAME).iterator();
         
         while(iterator.hasNext()){
-            Vertex tempNode = iterator.next();            
-            if(tempNode.getProperty(BasicVertex.NODE_TYPE_PROPERTY).equals(OrganismNode.NODE_TYPE)){
+        	com.tinkerpop.blueprints.Vertex tempNode = iterator.next();            
+            if(tempNode.getProperty(Vertex.NODE_TYPE_PROPERTY).equals(OrganismNode.NODE_TYPE)){
                 list.add(new OrganismNode(tempNode));
             }           
         }

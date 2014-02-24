@@ -22,7 +22,6 @@ import com.ohnosequences.bio4j.blueprints.model.relationships.citation.book.Book
 import com.ohnosequences.bio4j.model.nodes.City;
 import com.ohnosequences.bio4j.model.nodes.citation.Book;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -31,14 +30,14 @@ import java.util.List;
  * Just nodes representing different cities of the world
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class CityNode extends BasicVertex implements City{
+public class CityNode extends Vertex implements City{
 
     public static final String NODE_TYPE = CityNode.class.getCanonicalName();
 
     public static final String NAME_PROPERTY = "city_name";
 
 
-    public CityNode(Vertex v){
+    public CityNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 
@@ -54,7 +53,7 @@ public class CityNode extends BasicVertex implements City{
     @Override
     public List<Book> getBooks(){
         List<Book> list = new LinkedList<Book>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, BookCityRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, BookCityRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new BookNode(iterator.next()));
         }

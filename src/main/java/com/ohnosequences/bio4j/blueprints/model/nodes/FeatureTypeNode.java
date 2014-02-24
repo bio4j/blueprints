@@ -18,7 +18,6 @@
 package com.ohnosequences.bio4j.blueprints.model.nodes;
 
 import com.ohnosequences.bio4j.model.nodes.FeatureType;
-import com.tinkerpop.blueprints.Vertex;
 
 
 /**
@@ -90,7 +89,7 @@ import com.tinkerpop.blueprints.Vertex;
  * </table>
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class FeatureTypeNode extends BasicVertex implements FeatureType{
+public class FeatureTypeNode extends Vertex implements FeatureType{
 
     public static final String NODE_TYPE = FeatureTypeNode.class.getCanonicalName();
 
@@ -98,7 +97,7 @@ public class FeatureTypeNode extends BasicVertex implements FeatureType{
     public static final String NAME_PROPERTY = "feature_type_name";
 
 
-    public FeatureTypeNode(Vertex v){
+    public FeatureTypeNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 

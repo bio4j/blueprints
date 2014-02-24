@@ -18,20 +18,19 @@
 package com.ohnosequences.bio4j.blueprints.model.nodes;
 
 import com.ohnosequences.bio4j.model.nodes.Person;
-import com.tinkerpop.blueprints.Vertex;
 
 
 /**
  * Normally people involved on protein citations (authors, editors...)
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class PersonNode extends BasicVertex implements Person{
+public class PersonNode extends Vertex implements Person{
 
     public static final String NAME_PROPERTY = "person_name";
     public static final String NODE_TYPE = PersonNode.class.getCanonicalName();
 
 
-    public PersonNode(Vertex v){
+    public PersonNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 

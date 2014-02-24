@@ -17,7 +17,7 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.citation;
 
-import com.ohnosequences.bio4j.blueprints.model.nodes.BasicVertex;
+import com.ohnosequences.bio4j.blueprints.model.nodes.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ConsortiumNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.PersonNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
@@ -40,7 +40,7 @@ import java.util.List;
  * the locator and the title, (plus author list information).
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class OnlineArticleNode extends BasicVertex implements OnlineArticle{
+public class OnlineArticleNode extends Vertex implements OnlineArticle{
 
     public static final String NODE_TYPE = OnlineArticleNode.class.getCanonicalName();
 
@@ -87,7 +87,7 @@ public class OnlineArticleNode extends BasicVertex implements OnlineArticle{
         Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, OnlineArticleAuthorRel.NAME).iterator();
         while(iterator.hasNext()){
             Vertex currentNode = iterator.next();
-            if (currentNode.getProperty(BasicVertex.NODE_TYPE_PROPERTY).equals(ConsortiumNode.NODE_TYPE)) {
+            if (currentNode.getProperty(Vertex.NODE_TYPE_PROPERTY).equals(ConsortiumNode.NODE_TYPE)) {
                 list.add(new ConsortiumNode(currentNode));
             }           
         }
@@ -103,7 +103,7 @@ public class OnlineArticleNode extends BasicVertex implements OnlineArticle{
         Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, OnlineArticleAuthorRel.NAME).iterator();
         while(iterator.hasNext()){
             Vertex currentNode = iterator.next();
-            if(currentNode.getProperty(BasicVertex.NODE_TYPE_PROPERTY).equals(PersonNode.NODE_TYPE)){
+            if(currentNode.getProperty(Vertex.NODE_TYPE_PROPERTY).equals(PersonNode.NODE_TYPE)){
                 list.add(new PersonNode(currentNode));
             } 
         }         

@@ -18,7 +18,6 @@
 package com.ohnosequences.bio4j.blueprints.model.nodes;
 
 import com.ohnosequences.bio4j.model.nodes.CommentType;
-import com.tinkerpop.blueprints.Vertex;
 
 /**
  * This class models comments that provide any useful information about the protein,
@@ -51,13 +50,13 @@ import com.tinkerpop.blueprints.Vertex;
  * - Caution: Warning about possible errors and/or grounds of confusion
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class CommentTypeNode extends BasicVertex implements CommentType{
+public class CommentTypeNode extends Vertex implements CommentType{
 
     public static final String NODE_TYPE = CommentTypeNode.class.getCanonicalName();
 
     public static final String NAME_PROPERTY = "comment_type_name"; 
 
-    public CommentTypeNode(Vertex v){
+    public CommentTypeNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 

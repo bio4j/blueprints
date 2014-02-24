@@ -17,7 +17,7 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.citation;
 
-import com.ohnosequences.bio4j.blueprints.model.nodes.BasicVertex;
+import com.ohnosequences.bio4j.blueprints.model.nodes.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.relationships.citation.onarticle.OnlineArticleJournalRel;
 import com.ohnosequences.bio4j.model.nodes.citation.OnlineArticle;
 import com.ohnosequences.bio4j.model.nodes.citation.OnlineJournal;
@@ -32,7 +32,7 @@ import java.util.List;
  * Online journals where online article protein citations are published
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class OnlineJournalNode extends BasicVertex implements OnlineJournal{
+public class OnlineJournalNode extends Vertex implements OnlineJournal{
 
     public static final String NODE_TYPE = OnlineJournalNode.class.getCanonicalName();
 

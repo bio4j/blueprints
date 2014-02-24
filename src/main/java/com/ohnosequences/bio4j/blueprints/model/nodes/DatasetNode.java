@@ -18,14 +18,13 @@
 package com.ohnosequences.bio4j.blueprints.model.nodes;
 
 import com.ohnosequences.bio4j.model.nodes.Dataset;
-import com.tinkerpop.blueprints.Vertex;
 
 
 /**
  * Datasets proteins come from (either SwissProt or Trembl)
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class DatasetNode extends BasicVertex implements Dataset{
+public class DatasetNode extends Vertex implements Dataset{
     
     public static final String SWISS_PROT_DATASET_NAME = "Swiss-Prot";
     public static final String TREMBL_DATASET_NAME = "TrEMBL";
@@ -35,7 +34,7 @@ public class DatasetNode extends BasicVertex implements Dataset{
     public static final String NAME_PROPERTY = "dataset_name";
 
 
-    public DatasetNode(Vertex v){
+    public DatasetNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 

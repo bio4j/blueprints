@@ -22,7 +22,7 @@ import com.ohnosequences.bio4j.blueprints.model.relationships.protein.ProteinGoR
 import com.ohnosequences.bio4j.model.nodes.GoTerm;
 import com.ohnosequences.bio4j.model.nodes.Protein;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -31,7 +31,7 @@ import java.util.List;
  * Gene ontology term
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class GoTermNode extends BasicVertex implements GoTerm{
+public class GoTermNode extends Vertex implements GoTerm{
     
     public static final String MOLECULAR_FUNCTION_GO_ID = "GO:0003674";
     public static final String BIOLOGICAL_PROCESS_GO_ID = "GO:0008150";
@@ -63,7 +63,7 @@ public class GoTermNode extends BasicVertex implements GoTerm{
     public static final String CELLULAR_COMPONENT_NAMESPACE = "cellular_component";
 
 
-    public GoTermNode(Vertex v){
+    public GoTermNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 
@@ -104,7 +104,7 @@ public class GoTermNode extends BasicVertex implements GoTerm{
     public List<Protein> getAssociatedProteins(){
         List<Protein> proteins = new LinkedList<Protein>();
         
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, ProteinGoRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, ProteinGoRel.NAME).iterator();
         while(iterator.hasNext()){
             ProteinNode protein = new ProteinNode(iterator.next());
             proteins.add(protein);                        
@@ -119,7 +119,7 @@ public class GoTermNode extends BasicVertex implements GoTerm{
     @Override
     public List<GoTerm> getIsAGoNodes(){
         List<GoTerm> list = new LinkedList<GoTerm>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, IsAGoRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, IsAGoRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new GoTermNode(iterator.next()));
         }
@@ -132,7 +132,7 @@ public class GoTermNode extends BasicVertex implements GoTerm{
     @Override
     public List<GoTerm> getNegativelyRegulatesNodes(){
         List<GoTerm> list = new LinkedList<GoTerm>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, NegativelyRegulatesGoRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, NegativelyRegulatesGoRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new GoTermNode(iterator.next()));
         }
@@ -145,7 +145,7 @@ public class GoTermNode extends BasicVertex implements GoTerm{
     @Override
     public List<GoTerm> getPositivelyRegulatesNodes(){
         List<GoTerm> list = new LinkedList<GoTerm>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, PositivelyRegulatesGoRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, PositivelyRegulatesGoRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new GoTermNode(iterator.next()));
         }
@@ -158,7 +158,7 @@ public class GoTermNode extends BasicVertex implements GoTerm{
     @Override
     public List<GoTerm> getPartOfNodes(){
         List<GoTerm> list = new LinkedList<GoTerm>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, PartOfGoRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, PartOfGoRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new GoTermNode(iterator.next()));
         }
@@ -171,7 +171,7 @@ public class GoTermNode extends BasicVertex implements GoTerm{
     @Override
     public List<GoTerm> getHasPartOfNodes(){
         List<GoTerm> list = new LinkedList<GoTerm>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, HasPartOfGoRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, HasPartOfGoRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new GoTermNode(iterator.next()));
         }

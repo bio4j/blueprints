@@ -16,7 +16,7 @@
  */
 package com.ohnosequences.bio4j.blueprints.model.nodes.ncbi;
 
-import com.ohnosequences.bio4j.blueprints.model.nodes.BasicVertex;
+import com.ohnosequences.bio4j.blueprints.model.nodes.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.nodes.TaxonNode;
 import com.ohnosequences.bio4j.blueprints.model.relationships.ncbi.NCBITaxonParentRel;
 import com.ohnosequences.bio4j.blueprints.model.relationships.ncbi.NCBITaxonRel;
@@ -32,7 +32,7 @@ import java.util.List;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class NCBITaxonNode extends BasicVertex implements NCBITaxon{
+public class NCBITaxonNode extends Vertex implements NCBITaxon{
 
     public static final String NODE_TYPE = NCBITaxonNode.class.getCanonicalName();
 
@@ -111,7 +111,7 @@ public class NCBITaxonNode extends BasicVertex implements NCBITaxon{
         
         while(iterator.hasNext()){
             Vertex tempNode = iterator.next();
-            if(tempNode.getProperty(BasicVertex.NODE_TYPE_PROPERTY).equals(NCBITaxonNode.NODE_TYPE)){
+            if(tempNode.getProperty(Vertex.NODE_TYPE_PROPERTY).equals(NCBITaxonNode.NODE_TYPE)){
                 list.add(new NCBITaxonNode(tempNode));
             }           
         }

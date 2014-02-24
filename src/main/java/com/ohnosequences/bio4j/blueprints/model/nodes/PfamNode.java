@@ -21,7 +21,6 @@ import com.ohnosequences.bio4j.blueprints.model.relationships.protein.ProteinPfa
 import com.ohnosequences.bio4j.model.nodes.Pfam;
 import com.ohnosequences.bio4j.model.nodes.Protein;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -30,7 +29,7 @@ import java.util.List;
  * Pfam family
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class PfamNode extends BasicVertex implements Pfam{
+public class PfamNode extends Vertex implements Pfam{
 
     public static final String NODE_TYPE = PfamNode.class.getCanonicalName();
 
@@ -40,7 +39,7 @@ public class PfamNode extends BasicVertex implements Pfam{
     public static final String NAME_PROPERTY = "pfam_name";
 
 
-    public PfamNode(Vertex v){
+    public PfamNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 
@@ -61,7 +60,7 @@ public class PfamNode extends BasicVertex implements Pfam{
     public List<Protein> getAssociatedProteins(){
         List<Protein> proteins = new ArrayList<Protein>();
         
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, ProteinPfamRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, ProteinPfamRel.NAME).iterator();
         while(iterator.hasNext()){
             ProteinNode protein = new ProteinNode(iterator.next());
             proteins.add(protein);                        

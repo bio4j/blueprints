@@ -17,7 +17,7 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.reactome;
 
-import com.ohnosequences.bio4j.blueprints.model.nodes.BasicVertex;
+import com.ohnosequences.bio4j.blueprints.model.nodes.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.relationships.protein.ProteinReactomeRel;
 import com.ohnosequences.bio4j.model.nodes.Protein;
@@ -32,7 +32,7 @@ import java.util.List;
  * Gene ontology term
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ReactomeTermNode extends BasicVertex implements ReactomeTerm{
+public class ReactomeTermNode extends Vertex implements ReactomeTerm{
 
     public static final String NODE_TYPE = ReactomeTermNode.class.getCanonicalName();
 

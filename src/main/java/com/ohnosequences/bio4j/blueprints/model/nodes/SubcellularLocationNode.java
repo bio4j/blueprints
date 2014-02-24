@@ -18,20 +18,19 @@
 package com.ohnosequences.bio4j.blueprints.model.nodes;
 
 import com.ohnosequences.bio4j.model.nodes.SubcellularLocation;
-import com.tinkerpop.blueprints.Vertex;
 
 /**
  * Protein subcellular locations
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class SubcellularLocationNode extends BasicVertex implements SubcellularLocation{
+public class SubcellularLocationNode extends Vertex implements SubcellularLocation{
 
     public static final String NODE_TYPE = SubcellularLocationNode.class.getCanonicalName();
 
     public static final String NAME_PROPERTY = "subcellular_location_name";
 
 
-    public SubcellularLocationNode(Vertex v){
+    public SubcellularLocationNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 

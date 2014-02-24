@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2010-2011  "Bio4j"
+ * Copyright (C) 2010-2013  "Bio4j"
  *
  * This file is part of Bio4j
  *
@@ -16,37 +16,34 @@
  */
 package com.ohnosequences.bio4j.blueprints.model.nodes;
 
-import com.ohnosequences.bio4j.model.nodes.Consortium;
-
+import com.ohnosequences.bio4j.model.nodes.BasicNode;
 
 /**
- * Models consortium entities that take part in publications.
+ *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ConsortiumNode extends Vertex implements Consortium{
-
-    public static final String NODE_TYPE = ConsortiumNode.class.getCanonicalName();
-
-    /** Consortium name **/
-    public static final String NAME_PROPERTY = "consortium_name";
-
-
-    public ConsortiumNode(com.tinkerpop.blueprints.Vertex v){
-        super(v);
+public class Vertex implements BasicNode{
+    
+    public static final String NODE_TYPE_PROPERTY = "nodeType";
+    
+    protected com.tinkerpop.blueprints.Vertex vertex;
+    
+    public Vertex(com.tinkerpop.blueprints.Vertex v){
+        vertex = v;
     }
-
-
-    @Override
-    public String getName(){    return String.valueOf(vertex.getProperty(NAME_PROPERTY));}
-
-
-    @Override
-    public void setName(String value){  vertex.setProperty(NAME_PROPERTY, value);}
-
-
-    @Override
-    public String toString(){
-        return "name = " + getName();
+    
+    public com.tinkerpop.blueprints.Vertex getNode(){
+        return vertex;
     }
-
+    
+    @Override
+    public String getType(){
+        return String.valueOf(vertex.getProperty(NODE_TYPE_PROPERTY));
+    }
+    
+    @Override
+    public void setType(String value){
+        vertex.setProperty(NODE_TYPE_PROPERTY, value);
+    }
+    
 }

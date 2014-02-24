@@ -17,14 +17,13 @@
 package com.ohnosequences.bio4j.blueprints.model.nodes;
 
 import com.ohnosequences.bio4j.model.nodes.Institute;
-import com.tinkerpop.blueprints.Vertex;
 
 /**
  * This class just models a Research Institute.
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class InstituteNode extends BasicVertex implements Institute{
+public class InstituteNode extends Vertex implements Institute{
 
     public static final String NODE_TYPE = InstituteNode.class.getCanonicalName();
     /**
@@ -32,7 +31,7 @@ public class InstituteNode extends BasicVertex implements Institute{
      */
     public static final String NAME_PROPERTY = "institute_name";
 
-    public InstituteNode(Vertex v) {
+    public InstituteNode(com.tinkerpop.blueprints.Vertex v) {
         super(v);
     }
 

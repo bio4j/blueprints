@@ -21,7 +21,6 @@ import com.ohnosequences.bio4j.blueprints.model.relationships.protein.ProteinInt
 import com.ohnosequences.bio4j.model.nodes.Interpro;
 import com.ohnosequences.bio4j.model.nodes.Protein;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -30,7 +29,7 @@ import java.util.List;
  * Interpro term
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class InterproNode extends BasicVertex implements Interpro{
+public class InterproNode extends Vertex implements Interpro{
 
     public static final String NODE_TYPE = InterproNode.class.getCanonicalName();
 
@@ -40,7 +39,7 @@ public class InterproNode extends BasicVertex implements Interpro{
     public static final String NAME_PROPERTY = "interpro_name";
 
 
-    public InterproNode(Vertex v){
+    public InterproNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 
@@ -62,7 +61,7 @@ public class InterproNode extends BasicVertex implements Interpro{
     public List<Protein> getAssociatedProteins(){
         List<Protein> proteins = new LinkedList<Protein>();
         
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, ProteinInterproRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, ProteinInterproRel.NAME).iterator();
         while(iterator.hasNext()){
             ProteinNode protein = new ProteinNode(iterator.next());
             proteins.add(protein);                        

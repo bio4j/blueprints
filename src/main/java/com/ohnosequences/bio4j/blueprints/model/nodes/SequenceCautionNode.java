@@ -18,20 +18,19 @@
 package com.ohnosequences.bio4j.blueprints.model.nodes;
 
 import com.ohnosequences.bio4j.model.nodes.SequenceCaution;
-import com.tinkerpop.blueprints.Vertex;
 
 /**
  * Sequence caution
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class SequenceCautionNode extends BasicVertex implements SequenceCaution{
+public class SequenceCautionNode extends Vertex implements SequenceCaution{
 
     public static final String NODE_TYPE = SequenceCautionNode.class.getCanonicalName();
 
     public static final String NAME_PROPERTY = "name";
 
 
-    public SequenceCautionNode(Vertex v){
+    public SequenceCautionNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 

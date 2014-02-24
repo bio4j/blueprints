@@ -17,7 +17,7 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.citation;
 
-import com.ohnosequences.bio4j.blueprints.model.nodes.BasicVertex;
+import com.ohnosequences.bio4j.blueprints.model.nodes.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.relationships.citation.book.BookPublisherRel;
 import com.ohnosequences.bio4j.model.nodes.citation.Book;
 import com.ohnosequences.bio4j.model.nodes.citation.Publisher;
@@ -31,7 +31,7 @@ import java.util.List;
  * Publishers regarding to book protein citations
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class PublisherNode extends BasicVertex implements Publisher{
+public class PublisherNode extends Vertex implements Publisher{
 
     public static final String NODE_TYPE = PublisherNode.class.getCanonicalName();
 

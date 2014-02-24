@@ -17,7 +17,7 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.refseq;
 
-import com.ohnosequences.bio4j.blueprints.model.nodes.BasicVertex;
+import com.ohnosequences.bio4j.blueprints.model.nodes.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.relationships.refseq.GenomeElementCDSRel;
 import com.ohnosequences.bio4j.model.nodes.refseq.CDS;
 import com.tinkerpop.blueprints.Direction;
@@ -28,7 +28,7 @@ import com.tinkerpop.blueprints.Vertex;
  * CDS
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class CDSNode extends BasicVertex implements CDS{
+public class CDSNode extends Vertex implements CDS{
 
     public static final String NODE_TYPE = CDSNode.class.getCanonicalName();
     

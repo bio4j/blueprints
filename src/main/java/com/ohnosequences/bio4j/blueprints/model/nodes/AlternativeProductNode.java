@@ -21,7 +21,6 @@ import com.ohnosequences.bio4j.blueprints.model.relationships.IsoformEventGenera
 import com.ohnosequences.bio4j.model.nodes.AlternativeProduct;
 import com.ohnosequences.bio4j.model.nodes.Isoform;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -30,14 +29,14 @@ import java.util.List;
  * Protein alternative products
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class AlternativeProductNode extends BasicVertex implements AlternativeProduct{
+public class AlternativeProductNode extends Vertex implements AlternativeProduct{
 
     public static final String NODE_TYPE = AlternativeProductNode.class.getCanonicalName();
 
     public static final String NAME_PROPERTY = "alternative_product_name";
 
 
-    public AlternativeProductNode(Vertex v){
+    public AlternativeProductNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 
@@ -53,7 +52,7 @@ public class AlternativeProductNode extends BasicVertex implements AlternativePr
     @Override
     public List<Isoform> getIsoforms(){
         List<Isoform> list = new LinkedList<Isoform>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, IsoformEventGeneratorRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, IsoformEventGeneratorRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new IsoformNode(iterator.next()));
         }

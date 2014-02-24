@@ -18,14 +18,13 @@
 package com.ohnosequences.bio4j.blueprints.model.nodes;
 
 import com.ohnosequences.bio4j.model.nodes.Country;
-import com.tinkerpop.blueprints.Vertex;
 
 
 /**
  * It simply models a country of the world
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class CountryNode extends BasicVertex implements Country{
+public class CountryNode extends Vertex implements Country{
 
     public static final String NODE_TYPE = CountryNode.class.getCanonicalName();
 
@@ -33,7 +32,7 @@ public class CountryNode extends BasicVertex implements Country{
     public static final String NAME_PROPERTY = "country_name";
 
 
-    public CountryNode(Vertex v){
+    public CountryNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 

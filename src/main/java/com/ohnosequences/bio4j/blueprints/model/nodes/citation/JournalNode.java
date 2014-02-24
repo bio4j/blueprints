@@ -16,7 +16,7 @@
  */
 package com.ohnosequences.bio4j.blueprints.model.nodes.citation;
 
-import com.ohnosequences.bio4j.blueprints.model.nodes.BasicVertex;
+import com.ohnosequences.bio4j.blueprints.model.nodes.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.relationships.citation.article.ArticleJournalRel;
 import com.ohnosequences.bio4j.model.nodes.citation.Article;
 import com.ohnosequences.bio4j.model.nodes.citation.Journal;
@@ -30,7 +30,7 @@ import java.util.List;
  * Journals where article citations are published
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class JournalNode extends BasicVertex implements Journal{
+public class JournalNode extends Vertex implements Journal{
 
     public static final String NODE_TYPE = JournalNode.class.getCanonicalName();
 

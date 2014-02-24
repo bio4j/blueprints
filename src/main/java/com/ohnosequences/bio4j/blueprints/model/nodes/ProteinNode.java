@@ -67,7 +67,6 @@ import com.ohnosequences.bio4j.model.relationships.protein.ProteinIsoformInterac
 import com.ohnosequences.bio4j.model.relationships.protein.ProteinProteinInteraction;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
-import com.tinkerpop.blueprints.Vertex;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -78,7 +77,7 @@ import java.util.List;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinNode extends BasicVertex implements Protein{
+public class ProteinNode extends Vertex implements Protein{
 
     public static final String NODE_TYPE = ProteinNode.class.getCanonicalName();
     public static final String NAME_PROPERTY = "protein_name";
@@ -93,7 +92,7 @@ public class ProteinNode extends BasicVertex implements Protein{
     public static final String ALTERNATIVE_ACCESSIONS_PROPERTY = "protein_alternative_accessions";
        
 
-    public ProteinNode(Vertex v) {
+    public ProteinNode(com.tinkerpop.blueprints.Vertex v) {
         super(v);
     }
 
@@ -173,7 +172,7 @@ public class ProteinNode extends BasicVertex implements Protein{
         List<Protein> list = new LinkedList<>();
         if (isUniref50Representant()) {
             list.add(this);
-            Iterator<Vertex> relIterator = vertex.getVertices(Direction.OUT, UniRef50MemberRel.NAME).iterator();
+            Iterator<com.tinkerpop.blueprints.Vertex> relIterator = vertex.getVertices(Direction.OUT, UniRef50MemberRel.NAME).iterator();
             while (relIterator.hasNext()) {
                 list.add(new ProteinNode(relIterator.next()));
             }
@@ -189,7 +188,7 @@ public class ProteinNode extends BasicVertex implements Protein{
         List<Protein> list = new LinkedList<>();
         if (isUniref90Representant()) {
             list.add(this);
-            Iterator<Vertex> relIterator = vertex.getVertices(Direction.OUT, UniRef90MemberRel.NAME).iterator();
+            Iterator<com.tinkerpop.blueprints.Vertex> relIterator = vertex.getVertices(Direction.OUT, UniRef90MemberRel.NAME).iterator();
             while (relIterator.hasNext()) {
                 list.add(new ProteinNode(relIterator.next()));
             }
@@ -205,7 +204,7 @@ public class ProteinNode extends BasicVertex implements Protein{
         List<Protein> list = new LinkedList<>();
         if (isUniref100Representant()) {
             list.add(this);
-            Iterator<Vertex> relIterator = vertex.getVertices(Direction.OUT, UniRef100MemberRel.NAME).iterator();
+            Iterator<com.tinkerpop.blueprints.Vertex> relIterator = vertex.getVertices(Direction.OUT, UniRef100MemberRel.NAME).iterator();
             while (relIterator.hasNext()) {
                 list.add(new ProteinNode(relIterator.next()));
             }
@@ -219,7 +218,7 @@ public class ProteinNode extends BasicVertex implements Protein{
     @Override
     public OrganismNode getOrganism() {
         OrganismNode org = null;
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, ProteinOrganismRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, ProteinOrganismRel.NAME).iterator();
         if (iterator.hasNext()) {
             org = new OrganismNode(iterator.next());
         }
@@ -229,7 +228,7 @@ public class ProteinNode extends BasicVertex implements Protein{
     @Override
     public DatasetNode getDataset() {
         DatasetNode dataset = null;
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, ProteinDatasetRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, ProteinDatasetRel.NAME).iterator();
         if (iterator.hasNext()) {
             dataset = new DatasetNode(iterator.next());
         }
@@ -239,7 +238,7 @@ public class ProteinNode extends BasicVertex implements Protein{
     @Override
     public List<GenomeElement> getGenomeElements() {
         List<GenomeElement> list = new LinkedList<>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, ProteinGenomeElementRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, ProteinGenomeElementRel.NAME).iterator();
         while (iterator.hasNext()) {
             list.add(new GenomeElementNode(iterator.next()));
         }
@@ -249,7 +248,7 @@ public class ProteinNode extends BasicVertex implements Protein{
     @Override
     public List<SubcellularLocation> getSubcellularLocations() {
         List<SubcellularLocation> list = new LinkedList<>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, ProteinSubcellularLocationRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, ProteinSubcellularLocationRel.NAME).iterator();
         while (iterator.hasNext()) {
             list.add(new SubcellularLocationNode(iterator.next()));
         }
@@ -260,7 +259,7 @@ public class ProteinNode extends BasicVertex implements Protein{
     public List<Interpro> getInterpro() {
         List<Interpro> interpros = new LinkedList<>();
 
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, ProteinInterproRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, ProteinInterproRel.NAME).iterator();
         while (iterator.hasNext()) {
             InterproNode interpro = new InterproNode(iterator.next());
             interpros.add(interpro);
@@ -272,7 +271,7 @@ public class ProteinNode extends BasicVertex implements Protein{
     public List<Pfam> getPfamTerms() {
         List<Pfam> pfamTerms = new LinkedList<>();
 
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, ProteinPfamRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, ProteinPfamRel.NAME).iterator();
         while (iterator.hasNext()) {
             PfamNode interpro = new PfamNode(iterator.next());
             pfamTerms.add(interpro);
@@ -283,7 +282,7 @@ public class ProteinNode extends BasicVertex implements Protein{
     @Override
     public List<ReactomeTerm> getReactomeTerms() {
         List<ReactomeTerm> list = new LinkedList<>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, ProteinReactomeRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, ProteinReactomeRel.NAME).iterator();
         while (iterator.hasNext()) {
             ReactomeTermNode reactomeTerm = new ReactomeTermNode(iterator.next());
             list.add(reactomeTerm);
@@ -294,7 +293,7 @@ public class ProteinNode extends BasicVertex implements Protein{
     @Override
     public List<Enzyme> getProteinEnzymaticActivity() {
         List<Enzyme> list = new LinkedList<>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, ProteinEnzymaticActivityRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, ProteinEnzymaticActivityRel.NAME).iterator();
         while (iterator.hasNext()) {
             EnzymeNode enzyme = new EnzymeNode(iterator.next());
             list.add(enzyme);
@@ -305,7 +304,7 @@ public class ProteinNode extends BasicVertex implements Protein{
     @Override
     public List<GoTerm> getGOAnnotations() {
         List<GoTerm> list = new LinkedList<>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, ProteinGoRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, ProteinGoRel.NAME).iterator();
         while (iterator.hasNext()) {
             GoTermNode goTerm = new GoTermNode(iterator.next());
             list.add(goTerm);
@@ -317,7 +316,7 @@ public class ProteinNode extends BasicVertex implements Protein{
     public List<Keyword> getKeywords() {
         List<Keyword> keywords = new LinkedList<>();
 
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, ProteinKeywordRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, ProteinKeywordRel.NAME).iterator();
         while (iterator.hasNext()) {
             KeywordNode keyword = new KeywordNode(iterator.next());
             keywords.add(keyword);
@@ -501,7 +500,7 @@ public class ProteinNode extends BasicVertex implements Protein{
     public List<Article> getArticleCitations() {
         List<Article> list = new LinkedList<>();
 
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, ArticleProteinCitationRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, ArticleProteinCitationRel.NAME).iterator();
         while (iterator.hasNext()) {
             list.add(new ArticleNode(iterator.next()));
         }
@@ -517,7 +516,7 @@ public class ProteinNode extends BasicVertex implements Protein{
     public List<Submission> getSubmissionCitations() {
         List<Submission> list = new ArrayList<>();
 
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, SubmissionProteinCitationRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, SubmissionProteinCitationRel.NAME).iterator();
         while (iterator.hasNext()) {
             list.add(new SubmissionNode(iterator.next()));
         }
@@ -533,7 +532,7 @@ public class ProteinNode extends BasicVertex implements Protein{
     public List<OnlineArticle> getOnlineArticleCitations() {
         List<OnlineArticle> list = new LinkedList<>();
 
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, OnlineArticleProteinCitationRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, OnlineArticleProteinCitationRel.NAME).iterator();
         while (iterator.hasNext()) {
             list.add(new OnlineArticleNode(iterator.next()));
         }
@@ -549,7 +548,7 @@ public class ProteinNode extends BasicVertex implements Protein{
     public List<Book> getBookCitations() {
         List<Book> list = new LinkedList<>();
 
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, BookProteinCitationRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, BookProteinCitationRel.NAME).iterator();
         while (iterator.hasNext()) {
             list.add(new BookNode(iterator.next()));
         }
@@ -565,7 +564,7 @@ public class ProteinNode extends BasicVertex implements Protein{
     public List<Patent> getPatentCitations() {
         List<Patent> list = new LinkedList<>();
 
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, PatentProteinCitationRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, PatentProteinCitationRel.NAME).iterator();
         while (iterator.hasNext()) {
             list.add(new PatentNode(iterator.next()));
         }
@@ -581,7 +580,7 @@ public class ProteinNode extends BasicVertex implements Protein{
     public List<Thesis> getThesisCitations() {
         List<Thesis> list = new LinkedList<>();
 
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, ThesisProteinCitationRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, ThesisProteinCitationRel.NAME).iterator();
         while (iterator.hasNext()) {
             list.add(new ThesisNode(iterator.next()));
         }
@@ -597,7 +596,7 @@ public class ProteinNode extends BasicVertex implements Protein{
     public List<UnpublishedObservation> getUnpublishedObservationsCitations() {
         List<UnpublishedObservation> list = new LinkedList<>();
 
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, UnpublishedObservationProteinCitationRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, UnpublishedObservationProteinCitationRel.NAME).iterator();
         while (iterator.hasNext()) {
             list.add(new UnpublishedObservationNode(iterator.next()));
         }

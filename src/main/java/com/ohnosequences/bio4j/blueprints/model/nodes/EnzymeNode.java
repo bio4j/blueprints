@@ -21,7 +21,6 @@ import com.ohnosequences.bio4j.blueprints.model.relationships.protein.ProteinEnz
 import com.ohnosequences.bio4j.model.nodes.Enzyme;
 import com.ohnosequences.bio4j.model.nodes.Protein;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -30,7 +29,7 @@ import java.util.List;
  * Enzyme node
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class EnzymeNode extends BasicVertex implements Enzyme{
+public class EnzymeNode extends Vertex implements Enzyme{
 
     public static final String NODE_TYPE = EnzymeNode.class.getCanonicalName();
 
@@ -44,7 +43,7 @@ public class EnzymeNode extends BasicVertex implements Enzyme{
     public static final String PROSITE_CROSS_REFERENCES_PROPERTY = "enzyme_prosite_cross_references";
 
 
-    public EnzymeNode(Vertex v){
+    public EnzymeNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 
@@ -83,7 +82,7 @@ public class EnzymeNode extends BasicVertex implements Enzyme{
     @Override
     public List<Protein> getAssociatedProteins(){
         List<Protein> list = new LinkedList<Protein>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, ProteinEnzymaticActivityRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, ProteinEnzymaticActivityRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new ProteinNode(iterator.next()));
         }

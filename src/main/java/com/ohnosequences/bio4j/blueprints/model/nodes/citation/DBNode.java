@@ -16,7 +16,7 @@
  */
 package com.ohnosequences.bio4j.blueprints.model.nodes.citation;
 
-import com.ohnosequences.bio4j.blueprints.model.nodes.BasicVertex;
+import com.ohnosequences.bio4j.blueprints.model.nodes.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.relationships.citation.submission.SubmissionDbRel;
 import com.ohnosequences.bio4j.model.nodes.citation.DB;
 import com.ohnosequences.bio4j.model.nodes.citation.Submission;
@@ -29,7 +29,7 @@ import java.util.List;
  * Databases where submission protein citations are submitted to
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class DBNode extends BasicVertex implements DB{
+public class DBNode extends Vertex implements DB{
 
     public static final String NODE_TYPE = DBNode.class.getCanonicalName();
 

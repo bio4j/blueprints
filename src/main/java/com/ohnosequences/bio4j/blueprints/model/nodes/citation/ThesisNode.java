@@ -17,7 +17,7 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.citation;
 
-import com.ohnosequences.bio4j.blueprints.model.nodes.BasicVertex;
+import com.ohnosequences.bio4j.blueprints.model.nodes.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.nodes.InstituteNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.PersonNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
@@ -38,7 +38,7 @@ import java.util.List;
  * Thesis protein citations
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ThesisNode extends BasicVertex implements Thesis{
+public class ThesisNode extends Vertex implements Thesis{
 
     public static final String NODE_TYPE = ThesisNode.class.getCanonicalName();
 

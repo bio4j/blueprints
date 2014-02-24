@@ -20,7 +20,6 @@ package com.ohnosequences.bio4j.blueprints.model.nodes;
 import com.ohnosequences.bio4j.blueprints.model.relationships.protein.ProteinKeywordRel;
 import com.ohnosequences.bio4j.model.nodes.Keyword;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -29,7 +28,7 @@ import java.util.List;
  * Keyword
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class KeywordNode extends BasicVertex implements Keyword{
+public class KeywordNode extends Vertex implements Keyword{
 
     public static final String NODE_TYPE = KeywordNode.class.getCanonicalName();
 
@@ -39,7 +38,7 @@ public class KeywordNode extends BasicVertex implements Keyword{
     public static final String NAME_PROPERTY = "keyword_name";
 
 
-    public KeywordNode(Vertex v){
+    public KeywordNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
     
@@ -58,7 +57,7 @@ public class KeywordNode extends BasicVertex implements Keyword{
     public List<ProteinNode> getAssociatedProteins(){
         List<ProteinNode> proteins = new LinkedList<ProteinNode>();
         
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, ProteinKeywordRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, ProteinKeywordRel.NAME).iterator();
         while(iterator.hasNext()){
             ProteinNode protein = new ProteinNode(iterator.next());
             proteins.add(protein);                        

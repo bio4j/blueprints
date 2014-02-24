@@ -21,7 +21,6 @@ import com.ohnosequences.bio4j.blueprints.model.relationships.protein.ProteinOrg
 import com.ohnosequences.bio4j.model.nodes.Organism;
 import com.ohnosequences.bio4j.model.nodes.Protein;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -30,7 +29,7 @@ import java.util.List;
  * Uniprot taxonomy organism
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class OrganismNode extends BasicVertex implements Organism{
+public class OrganismNode extends Vertex implements Organism{
 
     public static final String NODE_TYPE = OrganismNode.class.getCanonicalName();
 
@@ -40,7 +39,7 @@ public class OrganismNode extends BasicVertex implements Organism{
     public static final String NCBI_TAXONOMY_ID_PROPERTY = "organism_ncbi_taxonomy_id";
 
 
-    public OrganismNode(Vertex v){
+    public OrganismNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 
@@ -68,7 +67,7 @@ public class OrganismNode extends BasicVertex implements Organism{
     public List<Protein> getAssociatedProteins(){
         List<Protein> proteins = new LinkedList<Protein>();
         
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, ProteinOrganismRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, ProteinOrganismRel.NAME).iterator();
         while(iterator.hasNext()){
             ProteinNode protein = new ProteinNode(iterator.next());
             proteins.add(protein);                        

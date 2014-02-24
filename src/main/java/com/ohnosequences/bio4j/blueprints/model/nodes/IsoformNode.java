@@ -18,13 +18,12 @@
 package com.ohnosequences.bio4j.blueprints.model.nodes;
 
 import com.ohnosequences.bio4j.model.nodes.Isoform;
-import com.tinkerpop.blueprints.Vertex;
 
 /**
  * Protein isoforms. Their information is retrieved from entries' binary interactions.
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class IsoformNode extends BasicVertex implements Isoform{
+public class IsoformNode extends Vertex implements Isoform{
 
     public static final String NODE_TYPE = IsoformNode.class.getCanonicalName();
 
@@ -38,7 +37,7 @@ public class IsoformNode extends BasicVertex implements Isoform{
     public static final String SEQUENCE_PROPERTY = "isoform_sequence";
 
 
-    public IsoformNode(Vertex v){
+    public IsoformNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 

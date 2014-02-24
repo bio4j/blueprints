@@ -17,7 +17,7 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.refseq;
 
-import com.ohnosequences.bio4j.blueprints.model.nodes.BasicVertex;
+import com.ohnosequences.bio4j.blueprints.model.nodes.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.refseq.rna.*;
 import com.ohnosequences.bio4j.blueprints.model.relationships.protein.ProteinGenomeElementRel;
@@ -43,7 +43,7 @@ import java.util.List;
  * Organisms genome elements
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class GenomeElementNode extends BasicVertex implements GenomeElement{
+public class GenomeElementNode extends Vertex implements GenomeElement{
 
     public static final String NODE_TYPE = GenomeElementNode.class.getCanonicalName();
 

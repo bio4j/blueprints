@@ -16,7 +16,7 @@
  */
 package com.ohnosequences.bio4j.blueprints.model.nodes.citation;
 
-import com.ohnosequences.bio4j.blueprints.model.nodes.BasicVertex;
+import com.ohnosequences.bio4j.blueprints.model.nodes.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.nodes.CityNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.PersonNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
@@ -37,7 +37,7 @@ import java.util.List;
  * the book name, the volume number, the page range, the publisher, the city and the year.
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class BookNode extends BasicVertex implements Book{
+public class BookNode extends Vertex implements Book{
 
     public static final String NODE_TYPE = BookNode.class.getCanonicalName();
 
