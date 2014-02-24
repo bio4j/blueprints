@@ -17,10 +17,12 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.relationships.IsoformEventGeneratorRel;
 import com.ohnosequences.bio4j.model.nodes.AlternativeProduct;
 import com.ohnosequences.bio4j.model.nodes.Isoform;
 import com.tinkerpop.blueprints.Direction;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;

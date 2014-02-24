@@ -17,7 +17,6 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.refseq.rna;
 
-import com.ohnosequences.bio4j.blueprints.model.nodes.Vertex;
 import com.ohnosequences.bio4j.model.nodes.refseq.rna.RNA;
 import com.tinkerpop.blueprints.Vertex;
 

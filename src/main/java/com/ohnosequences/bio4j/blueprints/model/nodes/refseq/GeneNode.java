@@ -17,7 +17,6 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.refseq;
 
-import com.ohnosequences.bio4j.blueprints.model.nodes.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.relationships.refseq.GenomeElementCDSRel;
 import com.ohnosequences.bio4j.model.nodes.refseq.Gene;
 import com.tinkerpop.blueprints.Direction;

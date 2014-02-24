@@ -17,9 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.relationships.TaxonParentRel;
 import com.ohnosequences.bio4j.model.nodes.Taxon;
 import com.tinkerpop.blueprints.Direction;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

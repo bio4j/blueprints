@@ -17,11 +17,13 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.BookNode;
 import com.ohnosequences.bio4j.blueprints.model.relationships.citation.book.BookCityRel;
 import com.ohnosequences.bio4j.model.nodes.City;
 import com.ohnosequences.bio4j.model.nodes.citation.Book;
 import com.tinkerpop.blueprints.Direction;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;

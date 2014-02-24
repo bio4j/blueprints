@@ -17,6 +17,7 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.relationships.go.*;
 import com.ohnosequences.bio4j.blueprints.model.relationships.protein.ProteinGoRel;
 import com.ohnosequences.bio4j.model.nodes.GoTerm;

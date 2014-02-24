@@ -17,7 +17,6 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.refseq;
 
-import com.ohnosequences.bio4j.blueprints.model.nodes.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.refseq.rna.*;
 import com.ohnosequences.bio4j.blueprints.model.relationships.protein.ProteinGenomeElementRel;
@@ -34,6 +33,7 @@ import com.ohnosequences.bio4j.model.nodes.refseq.rna.TRNA;
 import com.ohnosequences.bio4j.model.nodes.refseq.rna.TmRNA;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Vertex;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;

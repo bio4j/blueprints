@@ -16,6 +16,7 @@
  */
 package com.ohnosequences.bio4j.blueprints.model.nodes;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.*;
 import com.ohnosequences.bio4j.blueprints.model.nodes.reactome.ReactomeTermNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.refseq.GenomeElementNode;
@@ -67,6 +68,7 @@ import com.ohnosequences.bio4j.model.relationships.protein.ProteinIsoformInterac
 import com.ohnosequences.bio4j.model.relationships.protein.ProteinProteinInteraction;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;

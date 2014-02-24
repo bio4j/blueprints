@@ -16,7 +16,6 @@
  */
 package com.ohnosequences.bio4j.blueprints.model.nodes.citation;
 
-import com.ohnosequences.bio4j.blueprints.model.nodes.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.nodes.CityNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.PersonNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
@@ -28,6 +27,7 @@ import com.ohnosequences.bio4j.model.nodes.citation.Book;
 import com.ohnosequences.bio4j.model.nodes.citation.Publisher;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Vertex;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;

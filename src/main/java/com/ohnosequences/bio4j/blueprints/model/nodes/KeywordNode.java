@@ -17,9 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.relationships.protein.ProteinKeywordRel;
 import com.ohnosequences.bio4j.model.nodes.Keyword;
 import com.tinkerpop.blueprints.Direction;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;

@@ -16,7 +16,6 @@
  */
 package com.ohnosequences.bio4j.blueprints.model.nodes.ncbi;
 
-import com.ohnosequences.bio4j.blueprints.model.nodes.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.nodes.TaxonNode;
 import com.ohnosequences.bio4j.blueprints.model.relationships.ncbi.NCBITaxonParentRel;
 import com.ohnosequences.bio4j.blueprints.model.relationships.ncbi.NCBITaxonRel;
@@ -24,6 +23,7 @@ import com.ohnosequences.bio4j.model.nodes.Taxon;
 import com.ohnosequences.bio4j.model.nodes.ncbi.NCBITaxon;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Vertex;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;

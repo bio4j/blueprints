@@ -17,7 +17,6 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.citation;
 
-import com.ohnosequences.bio4j.blueprints.model.nodes.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.relationships.citation.onarticle.OnlineArticleJournalRel;
 import com.ohnosequences.bio4j.model.nodes.citation.OnlineArticle;
 import com.ohnosequences.bio4j.model.nodes.citation.OnlineJournal;

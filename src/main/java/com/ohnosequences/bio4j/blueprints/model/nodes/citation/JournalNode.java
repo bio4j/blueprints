@@ -16,12 +16,12 @@
  */
 package com.ohnosequences.bio4j.blueprints.model.nodes.citation;
 
-import com.ohnosequences.bio4j.blueprints.model.nodes.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.relationships.citation.article.ArticleJournalRel;
 import com.ohnosequences.bio4j.model.nodes.citation.Article;
 import com.ohnosequences.bio4j.model.nodes.citation.Journal;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Vertex;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
