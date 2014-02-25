@@ -16,11 +16,11 @@
  */
 package com.ohnosequences.bio4j.blueprints.model.nodes.citation;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.relationships.citation.article.ArticleJournalRel;
 import com.ohnosequences.bio4j.model.nodes.citation.Article;
 import com.ohnosequences.bio4j.model.nodes.citation.Journal;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -37,7 +37,7 @@ public class JournalNode extends Vertex implements Journal{
     public static final String NAME_PROPERTY = "journal_name";
 
 
-    public JournalNode(Vertex v){
+    public JournalNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 
@@ -53,7 +53,7 @@ public class JournalNode extends Vertex implements Journal{
     @Override
     public List<Article> getArticles(){
         List<Article> list = new LinkedList<Article>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, ArticleJournalRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, ArticleJournalRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new ArticleNode(iterator.next()));
         }

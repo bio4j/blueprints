@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.citation;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.relationships.citation.book.BookPublisherRel;
 import com.ohnosequences.bio4j.model.nodes.citation.Book;
 import com.ohnosequences.bio4j.model.nodes.citation.Publisher;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -38,7 +38,7 @@ public class PublisherNode extends Vertex implements Publisher{
     public static final String NAME_PROPERTY = "publisher_name";
 
 
-    public PublisherNode(Vertex v){
+    public PublisherNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 
@@ -54,7 +54,7 @@ public class PublisherNode extends Vertex implements Publisher{
     @Override
     public List<Book> getBooks(){
         List<Book> list = new LinkedList<Book>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, BookPublisherRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, BookPublisherRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new BookNode(iterator.next()));
         }

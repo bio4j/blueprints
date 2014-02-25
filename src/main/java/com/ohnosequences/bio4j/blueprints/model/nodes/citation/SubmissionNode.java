@@ -16,6 +16,7 @@
  */
 package com.ohnosequences.bio4j.blueprints.model.nodes.citation;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ConsortiumNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.PersonNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
@@ -28,7 +29,6 @@ import com.ohnosequences.bio4j.model.nodes.Protein;
 import com.ohnosequences.bio4j.model.nodes.citation.DB;
 import com.ohnosequences.bio4j.model.nodes.citation.Submission;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -47,7 +47,7 @@ public class SubmissionNode extends Vertex implements Submission{
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "submission";
 
 
-    public SubmissionNode(Vertex v){
+    public SubmissionNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 
@@ -70,7 +70,7 @@ public class SubmissionNode extends Vertex implements Submission{
      */
     @Override
     public DB getDB(){
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, SubmissionDbRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, SubmissionDbRel.NAME).iterator();
         if(iterator.hasNext()){
             return new DBNode(iterator.next());
         }else{
@@ -85,9 +85,9 @@ public class SubmissionNode extends Vertex implements Submission{
     @Override
     public List<Consortium> getConsortiumAuthors(){
         List<Consortium> list = new LinkedList<Consortium>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, SubmissionAuthorRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, SubmissionAuthorRel.NAME).iterator();
         while(iterator.hasNext()){
-            Vertex currentNode = iterator.next();
+        	com.tinkerpop.blueprints.Vertex currentNode = iterator.next();
             if(currentNode.getProperty(Vertex.NODE_TYPE_PROPERTY).equals(ConsortiumNode.NODE_TYPE)){
                 list.add(new ConsortiumNode(currentNode));
             } 
@@ -101,9 +101,9 @@ public class SubmissionNode extends Vertex implements Submission{
     @Override
     public List<Person> getPersonAuthors(){
         List<Person> list = new LinkedList<Person>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, SubmissionAuthorRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, SubmissionAuthorRel.NAME).iterator();
         while(iterator.hasNext()){
-            Vertex currentNode = iterator.next();
+        	com.tinkerpop.blueprints.Vertex currentNode = iterator.next();
             if(currentNode.getProperty(Vertex.NODE_TYPE_PROPERTY).equals(PersonNode.NODE_TYPE)){
                 list.add(new PersonNode(currentNode));
             } 
@@ -114,7 +114,7 @@ public class SubmissionNode extends Vertex implements Submission{
     @Override
     public List<Protein> getProteinCitations(){
         List<Protein> list = new LinkedList<Protein>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, SubmissionProteinCitationRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, SubmissionProteinCitationRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new ProteinNode(iterator.next()));
         }

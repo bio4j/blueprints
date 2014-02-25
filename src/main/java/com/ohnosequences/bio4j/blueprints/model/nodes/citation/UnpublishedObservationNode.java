@@ -17,6 +17,7 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.citation;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.nodes.PersonNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.relationships.citation.uo.UnpublishedObservationAuthorRel;
@@ -25,7 +26,6 @@ import com.ohnosequences.bio4j.model.nodes.Person;
 import com.ohnosequences.bio4j.model.nodes.Protein;
 import com.ohnosequences.bio4j.model.nodes.citation.UnpublishedObservation;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -44,7 +44,7 @@ public class UnpublishedObservationNode extends Vertex implements UnpublishedObs
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "unpublished observations";
 
 
-    public UnpublishedObservationNode(Vertex v){
+    public UnpublishedObservationNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 
@@ -62,7 +62,7 @@ public class UnpublishedObservationNode extends Vertex implements UnpublishedObs
      */
     @Override
     public Person getAuthor(){
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, UnpublishedObservationAuthorRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, UnpublishedObservationAuthorRel.NAME).iterator();
         if(iterator.hasNext()){
             return new PersonNode(iterator.next());
         }else{
@@ -73,7 +73,7 @@ public class UnpublishedObservationNode extends Vertex implements UnpublishedObs
     @Override
     public List<Protein> getProteinCitations(){
         List<Protein> list = new LinkedList<Protein>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, UnpublishedObservationProteinCitationRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, UnpublishedObservationProteinCitationRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new ProteinNode(iterator.next()));
         }

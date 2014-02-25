@@ -17,6 +17,7 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.citation;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.nodes.PersonNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.relationships.citation.patent.PatentAuthorRel;
@@ -25,7 +26,6 @@ import com.ohnosequences.bio4j.model.nodes.Person;
 import com.ohnosequences.bio4j.model.nodes.Protein;
 import com.ohnosequences.bio4j.model.nodes.citation.Patent;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -47,7 +47,7 @@ public class PatentNode extends Vertex implements Patent{
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "patent";
 
 
-    public PatentNode(Vertex v){
+    public PatentNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 
@@ -75,7 +75,7 @@ public class PatentNode extends Vertex implements Patent{
     @Override
     public List<Person> getAuthors(){
         List<Person> list = new ArrayList<Person>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, PatentAuthorRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, PatentAuthorRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new PersonNode(iterator.next()));
         }
@@ -86,7 +86,7 @@ public class PatentNode extends Vertex implements Patent{
     @Override
     public List<Protein> getProteinCitations(){
         List<Protein> list = new LinkedList<Protein>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, PatentProteinCitationRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, PatentProteinCitationRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new ProteinNode(iterator.next()));
         }

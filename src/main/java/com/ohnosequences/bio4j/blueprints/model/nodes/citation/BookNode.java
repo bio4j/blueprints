@@ -16,6 +16,7 @@
  */
 package com.ohnosequences.bio4j.blueprints.model.nodes.citation;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.nodes.CityNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.PersonNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
@@ -26,7 +27,6 @@ import com.ohnosequences.bio4j.model.nodes.Protein;
 import com.ohnosequences.bio4j.model.nodes.citation.Book;
 import com.ohnosequences.bio4j.model.nodes.citation.Publisher;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -49,7 +49,7 @@ public class BookNode extends Vertex implements Book{
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "book";
 
 
-    public BookNode(Vertex v){
+    public BookNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 
@@ -69,7 +69,7 @@ public class BookNode extends Vertex implements Book{
     @Override
     public List<Protein> getProteinCitations(){
         List<Protein> list = new LinkedList<Protein>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, BookProteinCitationRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, BookProteinCitationRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new ProteinNode(iterator.next()));
         }
@@ -82,7 +82,7 @@ public class BookNode extends Vertex implements Book{
      */
     @Override
     public Publisher getPublisher(){
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, BookPublisherRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, BookPublisherRel.NAME).iterator();
         if(iterator.hasNext()){
             return new PublisherNode(iterator.next());
         }else{
@@ -96,7 +96,7 @@ public class BookNode extends Vertex implements Book{
      */
     @Override
     public City getCity(){
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, BookCityRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, BookCityRel.NAME).iterator();
         if(iterator.hasNext()){
             return new CityNode(iterator.next());
         }else{
@@ -111,7 +111,7 @@ public class BookNode extends Vertex implements Book{
     @Override
     public List<Person> getAuthors(){
         List<Person> list = new LinkedList<Person>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, BookAuthorRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, BookAuthorRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new PersonNode(iterator.next()));
         }
@@ -124,7 +124,7 @@ public class BookNode extends Vertex implements Book{
     @Override
     public List<Person> getEditors(){
         List<Person> list = new LinkedList<Person>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, BookEditorRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, BookEditorRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new PersonNode(iterator.next()));
         }

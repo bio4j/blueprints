@@ -16,11 +16,11 @@
  */
 package com.ohnosequences.bio4j.blueprints.model.nodes.citation;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.relationships.citation.submission.SubmissionDbRel;
 import com.ohnosequences.bio4j.model.nodes.citation.DB;
 import com.ohnosequences.bio4j.model.nodes.citation.Submission;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -36,7 +36,7 @@ public class DBNode extends Vertex implements DB{
     public static final String NAME_PROPERTY = "db_name";
 
 
-    public DBNode(Vertex v){
+    public DBNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 
@@ -52,7 +52,7 @@ public class DBNode extends Vertex implements DB{
     @Override
     public List<Submission> getAssociatedSubmissions(){
         List<Submission> list = new LinkedList<Submission>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, SubmissionDbRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, SubmissionDbRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new SubmissionNode(iterator.next()));
         }        

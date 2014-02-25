@@ -17,6 +17,7 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.citation;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.nodes.InstituteNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.PersonNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
@@ -28,7 +29,6 @@ import com.ohnosequences.bio4j.model.nodes.Person;
 import com.ohnosequences.bio4j.model.nodes.Protein;
 import com.ohnosequences.bio4j.model.nodes.citation.Thesis;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -48,7 +48,7 @@ public class ThesisNode extends Vertex implements Thesis{
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "thesis";
 
 
-    public ThesisNode(Vertex v){
+    public ThesisNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 
@@ -70,7 +70,7 @@ public class ThesisNode extends Vertex implements Thesis{
      * @return 
      */
     public Institute getInstitute(){
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, ThesisInstituteRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, ThesisInstituteRel.NAME).iterator();
         if(iterator.hasNext()){
             return new InstituteNode(iterator.next());
         }else{
@@ -84,7 +84,7 @@ public class ThesisNode extends Vertex implements Thesis{
      */
     @Override
     public Person getAuthor(){
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, ThesisAuthorRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, ThesisAuthorRel.NAME).iterator();
         if(iterator.hasNext()){
             return new PersonNode(iterator.next());
         }else{
@@ -96,7 +96,7 @@ public class ThesisNode extends Vertex implements Thesis{
     @Override
     public List<Protein> getProteinCitations(){
         List<Protein> list = new LinkedList<Protein>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, ThesisProteinCitationRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, ThesisProteinCitationRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new ProteinNode(iterator.next()));
         }

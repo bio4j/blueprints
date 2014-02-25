@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.citation;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.relationships.citation.onarticle.OnlineArticleJournalRel;
 import com.ohnosequences.bio4j.model.nodes.citation.OnlineArticle;
 import com.ohnosequences.bio4j.model.nodes.citation.OnlineJournal;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -54,7 +54,7 @@ public class OnlineJournalNode extends Vertex implements OnlineJournal{
     @Override
     public List<OnlineArticle> getOnlineArticles(){
         List<OnlineArticle> list = new LinkedList<OnlineArticle>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, OnlineArticleJournalRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, OnlineArticleJournalRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new OnlineArticleNode(iterator.next()));
         }
