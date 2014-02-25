@@ -17,10 +17,10 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.refseq;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.relationships.refseq.GenomeElementCDSRel;
 import com.ohnosequences.bio4j.model.nodes.refseq.CDS;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 
 
 /**
@@ -35,7 +35,7 @@ public class CDSNode extends Vertex implements CDS{
     public static final String POSITIONS_PROPERTY = "positions";
 
 
-    public CDSNode(Vertex v){
+    public CDSNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 

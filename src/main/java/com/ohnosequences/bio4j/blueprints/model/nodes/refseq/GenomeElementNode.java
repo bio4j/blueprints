@@ -17,6 +17,7 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.refseq;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.refseq.rna.*;
 import com.ohnosequences.bio4j.blueprints.model.relationships.protein.ProteinGenomeElementRel;
@@ -32,7 +33,6 @@ import com.ohnosequences.bio4j.model.nodes.refseq.rna.RRNA;
 import com.ohnosequences.bio4j.model.nodes.refseq.rna.TRNA;
 import com.ohnosequences.bio4j.model.nodes.refseq.rna.TmRNA;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -52,7 +52,7 @@ public class GenomeElementNode extends Vertex implements GenomeElement{
     public static final String DEFINITION_PROPERTY = "genome_element_definition";
 
 
-    public GenomeElementNode(Vertex v){
+    public GenomeElementNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 
@@ -77,7 +77,7 @@ public class GenomeElementNode extends Vertex implements GenomeElement{
     public List<Protein> getAssociatedProteins(){
         List<Protein> proteins = new LinkedList<Protein>();
         
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, ProteinGenomeElementRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, ProteinGenomeElementRel.NAME).iterator();
         while(iterator.hasNext()){
             ProteinNode protein = new ProteinNode(iterator.next());
             proteins.add(protein);                        
@@ -93,7 +93,7 @@ public class GenomeElementNode extends Vertex implements GenomeElement{
     @Override
     public List<CDS> getCDS(){
         List<CDS> list = new ArrayList<CDS>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, GenomeElementCDSRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, GenomeElementCDSRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new CDSNode(iterator.next()));
         }
@@ -106,7 +106,7 @@ public class GenomeElementNode extends Vertex implements GenomeElement{
     @Override
     public List<Gene> getGenes(){
         List<Gene> list = new LinkedList<Gene>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, GenomeElementGeneRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, GenomeElementGeneRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new GeneNode(iterator.next()));
         }
@@ -119,7 +119,7 @@ public class GenomeElementNode extends Vertex implements GenomeElement{
     @Override
     public List<MRNA> getMRnas(){
         List<MRNA> list = new LinkedList<MRNA>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, GenomeElementMRnaRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, GenomeElementMRnaRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new MRNANode(iterator.next()));
         }
@@ -132,7 +132,7 @@ public class GenomeElementNode extends Vertex implements GenomeElement{
     @Override
     public List<MiscRNA> getMiscRnas(){
         List<MiscRNA> list = new LinkedList<MiscRNA>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, GenomeElementMiscRnaRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, GenomeElementMiscRnaRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new MiscRNANode(iterator.next()));
         }
@@ -145,7 +145,7 @@ public class GenomeElementNode extends Vertex implements GenomeElement{
     @Override
     public List<NcRNA> getNcRnas(){
         List<NcRNA> list = new LinkedList<NcRNA>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, GenomeElementNcRnaRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, GenomeElementNcRnaRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new NcRNANode(iterator.next()));
         }
@@ -158,7 +158,7 @@ public class GenomeElementNode extends Vertex implements GenomeElement{
     @Override
     public List<RRNA> getRRnas(){
         List<RRNA> list = new LinkedList<RRNA>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, GenomeElementRRnaRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, GenomeElementRRnaRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new RRNANode(iterator.next()));
         }
@@ -171,7 +171,7 @@ public class GenomeElementNode extends Vertex implements GenomeElement{
     @Override
     public List<TRNA> getTRnas(){
         List<TRNA> list = new LinkedList<TRNA>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, GenomeElementTRnaRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, GenomeElementTRnaRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new TRNANode(iterator.next()));
         }
@@ -184,7 +184,7 @@ public class GenomeElementNode extends Vertex implements GenomeElement{
     @Override
     public List<TmRNA> getTmRnas(){
         List<TmRNA> list = new LinkedList<TmRNA>();
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, GenomeElementTmRnaRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, GenomeElementTmRnaRel.NAME).iterator();
         while(iterator.hasNext()){
             list.add(new TmRNANode(iterator.next()));
         }

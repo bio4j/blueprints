@@ -17,8 +17,8 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.refseq.rna;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.model.nodes.refseq.rna.RNA;
-import com.tinkerpop.blueprints.Vertex;
 
 /**
  * Misc RNA
@@ -30,7 +30,7 @@ public abstract class RNANode extends Vertex implements RNA{
     public static final String POSITIONS_PROPERTY = "positions";
 
 
-    public RNANode(Vertex v){
+    public RNANode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 

@@ -38,7 +38,7 @@ public class OnlineJournalNode extends Vertex implements OnlineJournal{
     public static final String NAME_PROPERTY = "online_journal_name";
 
 
-    public OnlineJournalNode(Vertex v){
+    public OnlineJournalNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 

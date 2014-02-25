@@ -17,12 +17,12 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.reactome;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.relationships.protein.ProteinReactomeRel;
 import com.ohnosequences.bio4j.model.nodes.Protein;
 import com.ohnosequences.bio4j.model.nodes.reactome.ReactomeTerm;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -42,7 +42,7 @@ public class ReactomeTermNode extends Vertex implements ReactomeTerm{
     public static final String PATHWAY_NAME_PROPERTY = "reactome_term_pathway_name";
 
 
-    public ReactomeTermNode(Vertex v){
+    public ReactomeTermNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 
@@ -63,7 +63,7 @@ public class ReactomeTermNode extends Vertex implements ReactomeTerm{
     public List<Protein> getAssociatedProteins(){
         List<Protein> proteins = new LinkedList<Protein>();
         
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, ProteinReactomeRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, ProteinReactomeRel.NAME).iterator();
         while(iterator.hasNext()){
             ProteinNode protein = new ProteinNode(iterator.next());
             proteins.add(protein);                        

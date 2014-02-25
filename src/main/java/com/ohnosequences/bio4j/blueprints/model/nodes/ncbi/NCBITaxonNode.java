@@ -16,13 +16,13 @@
  */
 package com.ohnosequences.bio4j.blueprints.model.nodes.ncbi;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.nodes.TaxonNode;
 import com.ohnosequences.bio4j.blueprints.model.relationships.ncbi.NCBITaxonParentRel;
 import com.ohnosequences.bio4j.blueprints.model.relationships.ncbi.NCBITaxonRel;
 import com.ohnosequences.bio4j.model.nodes.Taxon;
 import com.ohnosequences.bio4j.model.nodes.ncbi.NCBITaxon;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -46,7 +46,7 @@ public class NCBITaxonNode extends Vertex implements NCBITaxon{
     public static final String OLD_TAX_IDS_PROPERTY = "ncbi_taxon_old_tax_ids";
 
 
-    public NCBITaxonNode(Vertex v){
+    public NCBITaxonNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 
@@ -91,7 +91,7 @@ public class NCBITaxonNode extends Vertex implements NCBITaxon{
     public NCBITaxon getParent(){
         NCBITaxonNode parent = null;
         
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, NCBITaxonParentRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, NCBITaxonParentRel.NAME).iterator();
         if(iterator.hasNext()){
             parent = new NCBITaxonNode(iterator.next());
         }
@@ -107,10 +107,10 @@ public class NCBITaxonNode extends Vertex implements NCBITaxon{
     public List<NCBITaxon> getChildren(){
         List<NCBITaxon> list = new LinkedList<NCBITaxon>();
         
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.OUT, NCBITaxonParentRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.OUT, NCBITaxonParentRel.NAME).iterator();
         
         while(iterator.hasNext()){
-            Vertex tempNode = iterator.next();
+        	com.tinkerpop.blueprints.Vertex tempNode = iterator.next();
             if(tempNode.getProperty(Vertex.NODE_TYPE_PROPERTY).equals(NCBITaxonNode.NODE_TYPE)){
                 list.add(new NCBITaxonNode(tempNode));
             }           
@@ -123,7 +123,7 @@ public class NCBITaxonNode extends Vertex implements NCBITaxon{
     public Taxon getTaxon(){
         TaxonNode taxon = null;
         
-        Iterator<Vertex> iterator = vertex.getVertices(Direction.IN, NCBITaxonRel.NAME).iterator();
+        Iterator<com.tinkerpop.blueprints.Vertex> iterator = vertex.getVertices(Direction.IN, NCBITaxonRel.NAME).iterator();
         if(iterator.hasNext()){
             taxon = new TaxonNode(iterator.next());
         }

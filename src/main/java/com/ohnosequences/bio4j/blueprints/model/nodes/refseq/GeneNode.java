@@ -17,10 +17,10 @@
 
 package com.ohnosequences.bio4j.blueprints.model.nodes.refseq;
 
+import com.ohnosequences.bio4j.blueprints.model.Vertex;
 import com.ohnosequences.bio4j.blueprints.model.relationships.refseq.GenomeElementCDSRel;
 import com.ohnosequences.bio4j.model.nodes.refseq.Gene;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Vertex;
 
 /**
  * Gene
@@ -34,7 +34,7 @@ public class GeneNode extends Vertex implements Gene{
     public static final String POSITIONS_PROPERTY = "positions";
 
 
-    public GeneNode(Vertex v){
+    public GeneNode(com.tinkerpop.blueprints.Vertex v){
         super(v);
     }
 
