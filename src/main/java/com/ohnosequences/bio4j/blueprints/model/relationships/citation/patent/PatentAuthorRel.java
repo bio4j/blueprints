@@ -19,7 +19,6 @@ package com.ohnosequences.bio4j.blueprints.model.relationships.citation.patent;
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.PersonNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.PatentNode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.citation.patent.PatentAuthor;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -28,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  * Patent author
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class PatentAuthorRel extends BasicRelationshipBlueprints implements PatentAuthor{
+public class PatentAuthorRel extends Edge implements PatentAuthor{
 
     public static final String NAME = "PATENT_AUTHOR";
 

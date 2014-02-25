@@ -19,7 +19,6 @@ package com.ohnosequences.bio4j.blueprints.model.relationships.comment;
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.CommentTypeNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.comment.BasicComment;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -28,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  *
  * @author ppareja
  */
-public abstract class BasicCommentRel extends BasicRelationshipBlueprints implements BasicComment{
+public abstract class BasicCommentRel extends Edge implements BasicComment{
 
     // public static final String NAME = "BASIC_COMMENT";
     public static String NAME;

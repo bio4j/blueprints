@@ -18,7 +18,6 @@ package com.ohnosequences.bio4j.blueprints.model.relationships.refseq;
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.refseq.GenomeElementNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.refseq.rna.TRNANode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.refseq.GenomeElementTRna;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -27,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class GenomeElementTRnaRel extends BasicRelationshipBlueprints implements GenomeElementTRna{
+public class GenomeElementTRnaRel extends Edge implements GenomeElementTRna{
 
     public static final String NAME = "GENOME_ELEMENT_TRNA";
 

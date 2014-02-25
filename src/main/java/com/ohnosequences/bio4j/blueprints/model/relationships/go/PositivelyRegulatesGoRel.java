@@ -16,7 +16,6 @@
  */
 package com.ohnosequences.bio4j.blueprints.model.relationships.go;
 
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.go.PositivelyRegulatesGo;
 import com.tinkerpop.blueprints.Edge;
 
@@ -27,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class PositivelyRegulatesGoRel extends BasicRelationshipBlueprints implements PositivelyRegulatesGo{
+public class PositivelyRegulatesGoRel extends Edge implements PositivelyRegulatesGo{
 
     public static final String NAME = "POSITIVELY_REGULATES_GO";
     public static final String OBOXML_RELATIONSHIP_NAME = "positively_regulates";

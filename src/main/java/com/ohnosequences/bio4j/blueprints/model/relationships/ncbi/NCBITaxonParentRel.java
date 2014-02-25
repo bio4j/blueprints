@@ -17,7 +17,6 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.ncbi;
 
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.ncbi.NCBITaxonParent;
 import com.tinkerpop.blueprints.Edge;
 
@@ -26,7 +25,7 @@ import com.tinkerpop.blueprints.Edge;
  * Rel. leading to the child of the current NCBITaxon node
  * @author ppareja
  */
-public class NCBITaxonParentRel extends BasicRelationshipBlueprints implements NCBITaxonParent{
+public class NCBITaxonParentRel extends Edge implements NCBITaxonParent{
 
     public static final String NAME = "TAXON_PARENT_NCBI";
 

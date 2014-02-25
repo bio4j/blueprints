@@ -17,7 +17,6 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.go;
 
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.go.IsAGo;
 import com.tinkerpop.blueprints.Edge;
 
@@ -27,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class IsAGoRel extends BasicRelationshipBlueprints implements IsAGo{
+public class IsAGoRel extends Edge implements IsAGo{
 
     public static final String NAME = "IS_A_GO";
 

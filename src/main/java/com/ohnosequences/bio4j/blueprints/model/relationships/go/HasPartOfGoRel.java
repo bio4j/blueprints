@@ -17,7 +17,6 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.go;
 
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.go.HasPartOfGo;
 import com.tinkerpop.blueprints.Edge;
 
@@ -27,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class HasPartOfGoRel extends BasicRelationshipBlueprints implements HasPartOfGo{
+public class HasPartOfGoRel extends Edge implements HasPartOfGo{
 
     public static final String NAME = "HAS_PART_GO";
 

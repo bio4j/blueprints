@@ -18,7 +18,6 @@ package com.ohnosequences.bio4j.blueprints.model.relationships.refseq;
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.refseq.GenomeElementNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.refseq.rna.MiscRNANode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.refseq.GenomeElementMiscRna;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -27,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class GenomeElementMiscRnaRel extends BasicRelationshipBlueprints implements GenomeElementMiscRna{
+public class GenomeElementMiscRnaRel extends Edge implements GenomeElementMiscRna{
 
     public static final String NAME = "GENOME_ELEMENT_MISCRNA";
 

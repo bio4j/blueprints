@@ -19,7 +19,6 @@ package com.ohnosequences.bio4j.blueprints.model.relationships.citation.book;
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.PersonNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.BookNode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.citation.book.BookEditor;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -28,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  * Book editors
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class BookEditorRel extends BasicRelationshipBlueprints implements BookEditor{
+public class BookEditorRel extends Edge implements BookEditor{
 
     public static final String NAME = "BOOK_EDITOR";
 

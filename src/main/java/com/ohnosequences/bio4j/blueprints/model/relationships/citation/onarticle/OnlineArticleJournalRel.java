@@ -19,7 +19,6 @@ package com.ohnosequences.bio4j.blueprints.model.relationships.citation.onarticl
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.OnlineArticleNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.OnlineJournalNode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.citation.onarticle.OnlineArticleJournal;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -28,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  * Online journal where an online article is published
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class OnlineArticleJournalRel extends BasicRelationshipBlueprints implements OnlineArticleJournal{
+public class OnlineArticleJournalRel extends Edge implements OnlineArticleJournal{
 
     public static final String NAME = "ONLINE_ARTICLE_JOURNAL";
 

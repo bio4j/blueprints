@@ -17,7 +17,6 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.ncbi;
 
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.ncbi.NCBITaxon;
 import com.tinkerpop.blueprints.Edge;
 
@@ -25,7 +24,7 @@ import com.tinkerpop.blueprints.Edge;
  * Relationship linking Uniprot and NCBI taxonomy
  * @author ppareja
  */
-public class NCBITaxonRel extends BasicRelationshipBlueprints implements NCBITaxon{
+public class NCBITaxonRel extends Edge implements NCBITaxon{
 
     public static final String NAME = "TAXON_NCBI";
 

@@ -19,7 +19,6 @@ package com.ohnosequences.bio4j.blueprints.model.relationships.protein;
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.IsoformNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.protein.ProteinIsoform;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -28,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinIsoformRel extends BasicRelationshipBlueprints implements ProteinIsoform{
+public class ProteinIsoformRel extends Edge implements ProteinIsoform{
 
     public static final String NAME = "PROTEIN_ISOFORM";
 

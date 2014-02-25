@@ -17,7 +17,6 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.aproducts;
 
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.aproducts.AlternativeProductPromoter;
 import com.tinkerpop.blueprints.Edge;
 
@@ -25,7 +24,7 @@ import com.tinkerpop.blueprints.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class AlternativeProductPromoterRel extends BasicRelationshipBlueprints implements AlternativeProductPromoter{
+public class AlternativeProductPromoterRel extends Edge implements AlternativeProductPromoter{
 
     public static final String NAME = "ALTERNATIVE_PRODUCT_PROMOTER";
 

@@ -17,7 +17,6 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.sc;
 
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.sc.ErroneousInitiation;
 import com.tinkerpop.blueprints.Edge;
 
@@ -25,7 +24,7 @@ import com.tinkerpop.blueprints.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ErroneousInitiationRel extends BasicRelationshipBlueprints implements ErroneousInitiation{
+public class ErroneousInitiationRel extends Edge implements ErroneousInitiation{
 
     public static final String NAME = "ERRONEOUS_INITIATION";
 

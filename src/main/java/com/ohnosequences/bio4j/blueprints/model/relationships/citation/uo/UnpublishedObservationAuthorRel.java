@@ -19,7 +19,6 @@ package com.ohnosequences.bio4j.blueprints.model.relationships.citation.uo;
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.PersonNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.UnpublishedObservationNode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.citation.uo.UnpublishedObservationAuthor;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -28,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  * Unpublished observation authors
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class UnpublishedObservationAuthorRel extends BasicRelationshipBlueprints implements UnpublishedObservationAuthor {
+public class UnpublishedObservationAuthorRel extends Edge implements UnpublishedObservationAuthor {
 
     public static final String NAME = "UNPUBLISHED_OBSERVATION_AUTHOR";
 

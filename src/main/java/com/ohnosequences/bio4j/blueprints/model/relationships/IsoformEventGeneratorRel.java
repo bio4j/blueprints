@@ -17,23 +17,23 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.AlternativeProductNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.IsoformNode;
 import com.ohnosequences.bio4j.model.nodes.AlternativeProduct;
 import com.ohnosequences.bio4j.model.nodes.Isoform;
 import com.ohnosequences.bio4j.model.relationships.IsoformEventGenerator;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class IsoformEventGeneratorRel extends BasicRelationshipBlueprints implements IsoformEventGenerator{
+public class IsoformEventGeneratorRel extends Edge implements IsoformEventGenerator{
 
     public static final String NAME = "ISOFORM_EVENT_GENERATOR";
 
-    public IsoformEventGeneratorRel(Edge e){
+    public IsoformEventGeneratorRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
     

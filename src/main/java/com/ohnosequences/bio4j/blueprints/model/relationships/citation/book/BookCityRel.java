@@ -19,7 +19,6 @@ package com.ohnosequences.bio4j.blueprints.model.relationships.citation.book;
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.CityNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.BookNode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.citation.book.BookCity;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -28,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  * City where a book is published in
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class BookCityRel extends BasicRelationshipBlueprints implements BookCity{
+public class BookCityRel extends Edge implements BookCity{
 
     public static final String NAME = "BOOK_CITY_REL";
 

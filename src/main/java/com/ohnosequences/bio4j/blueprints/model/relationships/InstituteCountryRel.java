@@ -17,21 +17,21 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.CountryNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.InstituteNode;
 import com.ohnosequences.bio4j.model.relationships.InstituteCountry;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class InstituteCountryRel extends BasicRelationshipBlueprints implements InstituteCountry{
+public class InstituteCountryRel extends Edge implements InstituteCountry{
 
     public static final String NAME = "INSTITUTE_COUNTRY";
 
-    public InstituteCountryRel(Edge e){
+    public InstituteCountryRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
     

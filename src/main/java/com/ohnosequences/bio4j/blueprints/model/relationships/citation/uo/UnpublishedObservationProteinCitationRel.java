@@ -19,7 +19,6 @@ package com.ohnosequences.bio4j.blueprints.model.relationships.citation.uo;
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.UnpublishedObservationNode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.citation.uo.UnpublishedObservationProteinCitation;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -29,7 +28,7 @@ import com.tinkerpop.blueprints.Edge;
  * Proteins referenced by unpublished observations
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class UnpublishedObservationProteinCitationRel extends BasicRelationshipBlueprints implements UnpublishedObservationProteinCitation{
+public class UnpublishedObservationProteinCitationRel extends Edge implements UnpublishedObservationProteinCitation{
 
     public static final String NAME = "UNPUBLISHED_OBSERVATION_PROTEIN_CITATION";
 

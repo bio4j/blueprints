@@ -19,7 +19,6 @@ package com.ohnosequences.bio4j.blueprints.model.relationships.citation.article;
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.ArticleNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.JournalNode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.citation.article.ArticleJournal;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -28,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  * Article journal
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ArticleJournalRel extends BasicRelationshipBlueprints implements ArticleJournal{
+public class ArticleJournalRel extends Edge implements ArticleJournal{
 
     public static final String NAME = "ARTICLE_JOURNAL";
 

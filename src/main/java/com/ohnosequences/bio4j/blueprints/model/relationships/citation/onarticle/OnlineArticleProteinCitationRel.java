@@ -19,7 +19,6 @@ package com.ohnosequences.bio4j.blueprints.model.relationships.citation.onarticl
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.OnlineArticleNode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.citation.onarticle.OnlineArticleProteinCitation;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -28,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  * Proteins that an online articles references
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class OnlineArticleProteinCitationRel extends BasicRelationshipBlueprints implements OnlineArticleProteinCitation{
+public class OnlineArticleProteinCitationRel extends Edge implements OnlineArticleProteinCitation{
 
     public static final String NAME = "ONLINE_ARTICLE_PROTEIN_CITATION";
 

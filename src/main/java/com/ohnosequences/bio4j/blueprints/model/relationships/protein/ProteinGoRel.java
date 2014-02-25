@@ -19,7 +19,6 @@ package com.ohnosequences.bio4j.blueprints.model.relationships.protein;
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.GoTermNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.protein.ProteinGo;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -28,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinGoRel extends BasicRelationshipBlueprints implements ProteinGo{
+public class ProteinGoRel extends Edge implements ProteinGo{
 
     public static final String NAME = "PROTEIN_GO";
 

@@ -19,7 +19,6 @@ package com.ohnosequences.bio4j.blueprints.model.relationships.protein;
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.DatasetNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.protein.ProteinDataset;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -28,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  * Protein's dataset (Swiss-prot or trembl)
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinDatasetRel extends BasicRelationshipBlueprints implements ProteinDataset{
+public class ProteinDatasetRel extends Edge implements ProteinDataset{
 
     public static final String NAME = "PROTEIN_DATASET";
 

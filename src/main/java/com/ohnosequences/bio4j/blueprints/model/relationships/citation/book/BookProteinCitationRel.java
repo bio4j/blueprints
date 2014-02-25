@@ -19,7 +19,6 @@ package com.ohnosequences.bio4j.blueprints.model.relationships.citation.book;
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.BookNode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.citation.book.BookProteinCitation;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -28,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  * Proteins one book references
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class BookProteinCitationRel extends BasicRelationshipBlueprints implements BookProteinCitation{
+public class BookProteinCitationRel extends Edge implements BookProteinCitation{
 
     public static final String NAME = "BOOK_PROTEIN_CITATION";
 

@@ -19,7 +19,6 @@ package com.ohnosequences.bio4j.blueprints.model.relationships.citation.submissi
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.SubmissionNode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.citation.submission.SubmissionProteinCitation;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -28,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  * Proteins referenced by a submission
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class SubmissionProteinCitationRel extends BasicRelationshipBlueprints implements SubmissionProteinCitation{
+public class SubmissionProteinCitationRel extends Edge implements SubmissionProteinCitation{
 
     public static final String NAME = "SUBMISSION_PROTEIN_CITATION";
 

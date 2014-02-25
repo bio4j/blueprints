@@ -18,7 +18,6 @@
 package com.ohnosequences.bio4j.blueprints.model.relationships.citation.thesis;
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.ThesisNode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.citation.thesis.ThesisAuthor;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -27,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  * Thesis author
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ThesisAuthorRel extends BasicRelationshipBlueprints implements ThesisAuthor{
+public class ThesisAuthorRel extends Edge implements ThesisAuthor{
 
     public static final String NAME = "THESIS_AUTHOR";
 

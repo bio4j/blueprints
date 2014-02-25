@@ -24,7 +24,7 @@ import com.tinkerpop.blueprints.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class TaxonParentRel extends BasicRelationshipBlueprints implements TaxonParent{
+public class TaxonParentRel extends Edge implements TaxonParent{
 
     public static final String NAME = "TAXON_PARENT";
 

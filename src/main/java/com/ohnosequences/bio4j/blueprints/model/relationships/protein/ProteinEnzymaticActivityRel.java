@@ -19,7 +19,6 @@ package com.ohnosequences.bio4j.blueprints.model.relationships.protein;
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.EnzymeNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.protein.ProteinEnzymaticActivity;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -28,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  * Protein enzymatic activity (EC number connections)
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinEnzymaticActivityRel extends BasicRelationshipBlueprints implements ProteinEnzymaticActivity{
+public class ProteinEnzymaticActivityRel extends Edge implements ProteinEnzymaticActivity{
 
     public static final String NAME = "PROTEIN_ENZYMATIC_ACTIVITY";
 

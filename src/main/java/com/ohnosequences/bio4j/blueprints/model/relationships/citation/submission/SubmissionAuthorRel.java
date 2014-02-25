@@ -18,7 +18,6 @@
 package com.ohnosequences.bio4j.blueprints.model.relationships.citation.submission;
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.SubmissionNode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.citation.submission.SubmissionAuthor;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -27,7 +26,7 @@ import com.tinkerpop.blueprints.Edge;
  * Submission authors
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class SubmissionAuthorRel extends BasicRelationshipBlueprints implements SubmissionAuthor{
+public class SubmissionAuthorRel extends Edge implements SubmissionAuthor{
 
     public static final String NAME = "SUBMISSION_AUTHOR";
 

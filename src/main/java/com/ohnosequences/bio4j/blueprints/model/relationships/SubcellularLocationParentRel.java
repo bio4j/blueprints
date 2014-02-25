@@ -24,7 +24,7 @@ import com.tinkerpop.blueprints.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class SubcellularLocationParentRel extends BasicRelationshipBlueprints implements SubcellularLocationParent{
+public class SubcellularLocationParentRel extends Edge implements SubcellularLocationParent{
 
     public static final String NAME = "SUBCELLULAR_LOCATION_PARENT";
 

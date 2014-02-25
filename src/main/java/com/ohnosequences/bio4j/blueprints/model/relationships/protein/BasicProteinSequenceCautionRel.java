@@ -19,7 +19,6 @@ package com.ohnosequences.bio4j.blueprints.model.relationships.protein;
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.SequenceCautionNode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.protein.BasicProteinSequenceCaution;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -28,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  *
  * @author ppareja
  */
-public class BasicProteinSequenceCautionRel extends BasicRelationshipBlueprints implements BasicProteinSequenceCaution{
+public class BasicProteinSequenceCautionRel extends Edge implements BasicProteinSequenceCaution{
 
     public static final String NAME = "BASIC_PROTEIN_SEQUENCE_CAUTION";
 

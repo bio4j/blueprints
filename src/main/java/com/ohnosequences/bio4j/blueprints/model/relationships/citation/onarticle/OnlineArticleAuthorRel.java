@@ -19,7 +19,6 @@ package com.ohnosequences.bio4j.blueprints.model.relationships.citation.onarticl
 
 import com.ohnosequences.bio4j.blueprints.model.nodes.PersonNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.OnlineArticleNode;
-import com.ohnosequences.bio4j.blueprints.model.relationships.BasicRelationshipBlueprints;
 import com.ohnosequences.bio4j.model.relationships.citation.onarticle.OnlineArticleAuthor;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.Edge;
@@ -28,7 +27,7 @@ import com.tinkerpop.blueprints.Edge;
  * Online article authors 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class OnlineArticleAuthorRel extends BasicRelationshipBlueprints implements OnlineArticleAuthor{
+public class OnlineArticleAuthorRel extends Edge implements OnlineArticleAuthor{
 
     public static final String NAME = "ONLINE_ARTICLE_AUTHOR";
 
