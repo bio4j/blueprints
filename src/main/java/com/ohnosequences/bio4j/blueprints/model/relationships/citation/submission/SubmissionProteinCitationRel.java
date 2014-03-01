@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.citation.submission;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.SubmissionNode;
 import com.ohnosequences.bio4j.model.relationships.citation.submission.SubmissionProteinCitation;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * Proteins referenced by a submission
@@ -31,7 +31,7 @@ public class SubmissionProteinCitationRel extends Edge implements SubmissionProt
 
     public static final String NAME = "SUBMISSION_PROTEIN_CITATION";
 
-    public SubmissionProteinCitationRel(Edge e){
+    public SubmissionProteinCitationRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
     

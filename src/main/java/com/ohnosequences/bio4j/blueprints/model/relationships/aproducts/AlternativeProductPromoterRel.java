@@ -17,8 +17,8 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.aproducts;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.model.relationships.aproducts.AlternativeProductPromoter;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * 
@@ -30,7 +30,7 @@ public class AlternativeProductPromoterRel extends Edge implements AlternativePr
 
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "alternative promoter";
 
-    public AlternativeProductPromoterRel(Edge e){
+    public AlternativeProductPromoterRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

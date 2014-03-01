@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.citation.onarticle;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.PersonNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.OnlineArticleNode;
 import com.ohnosequences.bio4j.model.relationships.citation.onarticle.OnlineArticleAuthor;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * Online article authors 
@@ -31,7 +31,7 @@ public class OnlineArticleAuthorRel extends Edge implements OnlineArticleAuthor{
 
     public static final String NAME = "ONLINE_ARTICLE_AUTHOR";
 
-    public OnlineArticleAuthorRel(Edge e){
+    public OnlineArticleAuthorRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

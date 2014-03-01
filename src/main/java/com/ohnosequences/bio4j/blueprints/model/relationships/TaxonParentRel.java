@@ -17,8 +17,8 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.model.relationships.TaxonParent;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * 
@@ -28,7 +28,7 @@ public class TaxonParentRel extends Edge implements TaxonParent{
 
     public static final String NAME = "TAXON_PARENT";
 
-    public TaxonParentRel(Edge e){
+    public TaxonParentRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.citation.onarticle;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.OnlineArticleNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.OnlineJournalNode;
 import com.ohnosequences.bio4j.model.relationships.citation.onarticle.OnlineArticleJournal;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * Online journal where an online article is published
@@ -33,7 +33,7 @@ public class OnlineArticleJournalRel extends Edge implements OnlineArticleJourna
 
     public static final String LOCATOR_PROPERTY = "locator";
 
-    public OnlineArticleJournalRel(Edge e){
+    public OnlineArticleJournalRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

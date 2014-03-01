@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.comment;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.CommentTypeNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.model.relationships.comment.BasicComment;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  *
@@ -37,7 +37,7 @@ public abstract class BasicCommentRel extends Edge implements BasicComment{
     public static final String EVIDENCE_PROPERTY = "comment_evidence";
 
 
-    public BasicCommentRel(Edge e){
+    public BasicCommentRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

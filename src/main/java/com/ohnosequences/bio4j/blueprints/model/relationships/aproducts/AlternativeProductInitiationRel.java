@@ -17,8 +17,8 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.aproducts;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.model.relationships.aproducts.AlternativeProductInitiation;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * 
@@ -30,7 +30,7 @@ public class AlternativeProductInitiationRel extends Edge implements Alternative
 
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "alternative initiation";
 
-    public AlternativeProductInitiationRel(Edge e){
+    public AlternativeProductInitiationRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

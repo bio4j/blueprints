@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.citation.thesis;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.ThesisNode;
 import com.ohnosequences.bio4j.model.relationships.citation.thesis.ThesisProteinCitation;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * Proteins referenced by a Thesis
@@ -31,7 +31,7 @@ public class ThesisProteinCitationRel extends Edge implements ThesisProteinCitat
 
     public static final String NAME = "THESIS_PROTEIN_CITATION";
 
-    public ThesisProteinCitationRel(Edge e){
+    public ThesisProteinCitationRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
     

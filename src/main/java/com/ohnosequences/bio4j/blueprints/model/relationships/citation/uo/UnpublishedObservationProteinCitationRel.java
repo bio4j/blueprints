@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.citation.uo;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.UnpublishedObservationNode;
 import com.ohnosequences.bio4j.model.relationships.citation.uo.UnpublishedObservationProteinCitation;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 
 /**
@@ -32,7 +32,7 @@ public class UnpublishedObservationProteinCitationRel extends Edge implements Un
 
     public static final String NAME = "UNPUBLISHED_OBSERVATION_PROTEIN_CITATION";
 
-    public UnpublishedObservationProteinCitationRel(Edge e){
+    public UnpublishedObservationProteinCitationRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
     

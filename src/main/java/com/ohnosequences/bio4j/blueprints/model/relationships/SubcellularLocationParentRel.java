@@ -17,8 +17,8 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.model.relationships.SubcellularLocationParent;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * 

@@ -17,8 +17,8 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.go;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.model.relationships.go.NegativelyRegulatesGo;
-import com.tinkerpop.blueprints.Edge;
 
 
 /**
@@ -33,7 +33,7 @@ public class NegativelyRegulatesGoRel extends Edge implements NegativelyRegulate
 
     public static final String OBOXML_RELATIONSHIP_NAME = "negatively_regulates";
 
-    public NegativelyRegulatesGoRel(Edge e){
+    public NegativelyRegulatesGoRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

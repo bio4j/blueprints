@@ -17,8 +17,8 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.aproducts;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.model.relationships.aproducts.AlternativeProductSplicing;
-import com.tinkerpop.blueprints.Edge;
 
 
 /**
@@ -31,7 +31,7 @@ public class AlternativeProductSplicingRel extends Edge implements AlternativePr
 
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "alternative splicing";
 
-    public AlternativeProductSplicingRel(Edge e){
+    public AlternativeProductSplicingRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

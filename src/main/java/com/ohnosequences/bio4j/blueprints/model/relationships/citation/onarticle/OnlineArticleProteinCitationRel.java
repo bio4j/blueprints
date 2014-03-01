@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.citation.onarticle;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.OnlineArticleNode;
 import com.ohnosequences.bio4j.model.relationships.citation.onarticle.OnlineArticleProteinCitation;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * Proteins that an online articles references
@@ -31,7 +31,7 @@ public class OnlineArticleProteinCitationRel extends Edge implements OnlineArtic
 
     public static final String NAME = "ONLINE_ARTICLE_PROTEIN_CITATION";
 
-    public OnlineArticleProteinCitationRel(Edge e){
+    public OnlineArticleProteinCitationRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
     

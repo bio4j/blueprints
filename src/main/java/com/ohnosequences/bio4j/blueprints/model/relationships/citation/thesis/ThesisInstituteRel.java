@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.citation.thesis;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.InstituteNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.ThesisNode;
 import com.ohnosequences.bio4j.model.relationships.citation.thesis.ThesisInstitute;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * Thesis institute
@@ -31,7 +31,7 @@ public class ThesisInstituteRel extends Edge implements ThesisInstitute{
 
     public static final String NAME = "THESIS_INSTITUTE";
 
-    public ThesisInstituteRel(Edge e){
+    public ThesisInstituteRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
     

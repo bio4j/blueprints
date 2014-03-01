@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.features;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.FeatureTypeNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.model.relationships.features.BasicFeature;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * Basic feature relationship
@@ -42,7 +42,7 @@ public abstract class BasicFeatureRel extends Edge implements BasicFeature{
     public static final String REF_PROPERTY = "feature_ref";
     
 
-    public BasicFeatureRel(Edge e){
+    public BasicFeatureRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.citation.submission;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.DBNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.SubmissionNode;
 import com.ohnosequences.bio4j.model.relationships.citation.submission.SubmissionDb;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * Submission database
@@ -33,7 +33,7 @@ public class SubmissionDbRel extends Edge implements SubmissionDb{
 
     public static final String DATE_PROPERTY = "submission_db_date";
 
-    public SubmissionDbRel(Edge e){
+    public SubmissionDbRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

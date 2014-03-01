@@ -17,8 +17,8 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.aproducts;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.model.relationships.aproducts.AlternativeProductRibosomalFrameshifting;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * 
@@ -30,7 +30,7 @@ public class AlternativeProductRibosomalFrameshiftingRel extends Edge implements
 
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "ribosomal frameshifting";
 
-    public AlternativeProductRibosomalFrameshiftingRel(Edge e){
+    public AlternativeProductRibosomalFrameshiftingRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

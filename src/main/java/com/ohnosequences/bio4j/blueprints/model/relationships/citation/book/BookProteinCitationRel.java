@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.citation.book;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.BookNode;
 import com.ohnosequences.bio4j.model.relationships.citation.book.BookProteinCitation;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * Proteins one book references
@@ -36,7 +36,7 @@ public class BookProteinCitationRel extends Edge implements BookProteinCitation{
     public static final String FIRST_PROPERTY = "book_protein_citation_first";
     public static final String LAST_PROPERTY = "book_protein_citation_last";
 
-    public BookProteinCitationRel(Edge e){
+    public BookProteinCitationRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

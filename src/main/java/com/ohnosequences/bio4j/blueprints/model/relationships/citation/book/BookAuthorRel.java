@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.citation.book;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.PersonNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.BookNode;
 import com.ohnosequences.bio4j.model.relationships.citation.book.BookAuthor;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * Book authors
@@ -31,7 +31,7 @@ public class BookAuthorRel extends Edge implements BookAuthor{
 
     public static final String NAME = "BOOK_AUTHOR";
 
-    public BookAuthorRel(Edge e){
+    public BookAuthorRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
     

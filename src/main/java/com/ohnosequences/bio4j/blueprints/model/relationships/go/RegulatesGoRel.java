@@ -16,8 +16,8 @@
  */
 package com.ohnosequences.bio4j.blueprints.model.relationships.go;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.model.relationships.go.RegulatesGo;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  *
@@ -31,7 +31,7 @@ public class RegulatesGoRel extends Edge implements RegulatesGo{
 
     public static final String OBOXML_RELATIONSHIP_NAME = "regulates";
 
-    public RegulatesGoRel(Edge e){
+    public RegulatesGoRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

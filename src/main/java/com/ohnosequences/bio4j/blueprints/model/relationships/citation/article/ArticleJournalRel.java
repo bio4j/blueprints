@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.citation.article;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.ArticleNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.JournalNode;
 import com.ohnosequences.bio4j.model.relationships.citation.article.ArticleJournal;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * Article journal
@@ -36,7 +36,7 @@ public class ArticleJournalRel extends Edge implements ArticleJournal{
     public static final String FIRST_PROPERTY = "first";
     public static final String LAST_PROPERTY = "last";
 
-    public ArticleJournalRel(Edge e){
+    public ArticleJournalRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

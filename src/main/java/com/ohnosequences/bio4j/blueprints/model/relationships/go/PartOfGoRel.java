@@ -17,8 +17,8 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.go;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.model.relationships.go.PartOfGo;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  *
@@ -32,7 +32,7 @@ public class PartOfGoRel extends Edge implements PartOfGo{
 
     public static final String OBOXML_RELATIONSHIP_NAME = "part_of";
 
-    public PartOfGoRel(Edge e){
+    public PartOfGoRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

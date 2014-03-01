@@ -35,8 +35,8 @@ public class IsoformEventGeneratorRel extends Edge implements IsoformEventGenera
 
     public IsoformEventGeneratorRel(com.tinkerpop.blueprints.Edge e){
         super(e);
-    }
-    
+    }   
+   
 
     @Override
     public String getType() {

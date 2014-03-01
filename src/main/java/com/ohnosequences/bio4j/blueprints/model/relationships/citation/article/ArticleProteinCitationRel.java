@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.citation.article;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.citation.ArticleNode;
 import com.ohnosequences.bio4j.model.relationships.citation.article.ArticleProteinCitation;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 
 /**
@@ -32,7 +32,7 @@ public class ArticleProteinCitationRel extends Edge implements ArticleProteinCit
 
     public static final String NAME = "ARTICLE_PROTEIN_CITATION";
 
-    public ArticleProteinCitationRel(Edge e){
+    public ArticleProteinCitationRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
     
