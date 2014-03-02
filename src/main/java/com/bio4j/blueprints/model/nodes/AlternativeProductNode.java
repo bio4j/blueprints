@@ -22,7 +22,7 @@ public class AlternativeProductNode extends Vertex implements AlternativeProduct
 
 
     public AlternativeProductNode(com.tinkerpop.blueprints.Vertex v){
-        super(v);
+        super(v, NODE_TYPE);
     }
 
 

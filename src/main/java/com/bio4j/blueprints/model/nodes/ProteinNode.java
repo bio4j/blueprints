@@ -79,7 +79,7 @@ public class ProteinNode extends Vertex implements Protein {
        
 
     public ProteinNode(com.tinkerpop.blueprints.Vertex v) {
-        super(v);
+        super(v, NODE_TYPE);
     }
 
     @Override

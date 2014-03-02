@@ -47,7 +47,7 @@ public class NCBITaxonNode extends Vertex implements NCBITaxon{
 
 
     public NCBITaxonNode(com.tinkerpop.blueprints.Vertex v){
-        super(v);
+        super(v, NODE_TYPE);
     }
 
     //----------------GETTERS---------------------

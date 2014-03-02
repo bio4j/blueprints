@@ -11,13 +11,10 @@ public class TaxonParentRel extends Edge implements TaxonParent{
 
     public static final String NAME = "TAXON_PARENT";
 
-    public TaxonParentRel(com.tinkerpop.blueprints.Edge e){
-        super(e);
-    }
+    public TaxonParentRel(com.tinkerpop.blueprints.Edge e){ super(e); }
 
     @Override
     public String getType() {
         return NAME;
     }
-
 }

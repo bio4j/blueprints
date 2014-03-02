@@ -36,7 +36,7 @@ public class GenomeElementNode extends Vertex implements GenomeElement{
 
 
     public GenomeElementNode(com.tinkerpop.blueprints.Vertex v){
-        super(v);
+        super(v, NODE_TYPE);
     }
 
 

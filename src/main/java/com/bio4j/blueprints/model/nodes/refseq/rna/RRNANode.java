@@ -14,7 +14,7 @@ public class RRNANode extends RNANode implements RRNA{
     public static final String NODE_TYPE = RRNANode.class.getCanonicalName();
     
     public RRNANode(com.tinkerpop.blueprints.Vertex v){
-        super(v);
+        super(v, NODE_TYPE);
     }
     
     @Override

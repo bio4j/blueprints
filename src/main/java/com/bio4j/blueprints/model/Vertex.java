@@ -9,9 +9,9 @@ import java.util.Set;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class Vertex implements com.tinkerpop.blueprints.Vertex, Node {
+public abstract class Vertex implements com.tinkerpop.blueprints.Vertex, Node {
     
-    public static final String NODE_TYPE_PROPERTY = "nodeType";
+    public static String NODE_TYPE_PROPERTY = "node_type";
     
     protected com.tinkerpop.blueprints.Vertex vertex;
     public Vertex(com.tinkerpop.blueprints.Vertex v){ vertex = v; }
@@ -20,14 +20,11 @@ public class Vertex implements com.tinkerpop.blueprints.Vertex, Node {
     
     @Override
     public String getType(){
-        return String.valueOf(vertex.getProperty(NODE_TYPE_PROPERTY));
+      return String.valueOf(vertex.getProperty(NODE_TYPE_PROPERTY));
     }    
-    @Override
-    public void setType(String value){
-        vertex.setProperty(NODE_TYPE_PROPERTY, value);
-    }
-
-    // Blueprints-specific stuff
+    
+    protected void setType(String type) { vertex.setProperty(NODE_TYPE_PROPERTY, type); }
+    protected Vertex(com.tinkerpop.blueprints.Vertex v, String type) { vertex = v; setType(type); }
 
     // Vertex-specific
 
