@@ -11,7 +11,7 @@ import com.bio4j.blueprints.model.Edge;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinGenomeElementRel extends Edge implements ProteinGenomeElement{
+public final class ProteinGenomeElementRel extends Edge implements ProteinGenomeElement{
     
     public static final String NAME = "PROTEIN_GENOME_ELEMENT";
 

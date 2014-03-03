@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Extent of an active peptide in the mature protein
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class PeptideFeatureRel extends BasicFeatureRel implements PeptideFeature{
+public final class PeptideFeatureRel extends BasicFeatureRel implements PeptideFeature{
 
     public static final String NAME = "FEATURE_PEPTIDE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "peptide";

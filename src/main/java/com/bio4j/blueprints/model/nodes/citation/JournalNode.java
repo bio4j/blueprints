@@ -15,7 +15,7 @@ import java.util.List;
  * Journals where article citations are published
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class JournalNode extends Vertex implements Journal{
+public final class JournalNode extends Vertex implements Journal{
 
     public static final String NODE_TYPE = JournalNode.class.getCanonicalName();
 

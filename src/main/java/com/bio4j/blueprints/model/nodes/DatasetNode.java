@@ -10,7 +10,7 @@ import com.bio4j.model.nodes.Dataset;
  * Datasets proteins come from (either SwissProt or Trembl)
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class DatasetNode extends Vertex implements Dataset{
+public final class DatasetNode extends Vertex implements Dataset{
     
     public static final String SWISS_PROT_DATASET_NAME = "Swiss-Prot";
     public static final String TREMBL_DATASET_NAME = "TrEMBL";

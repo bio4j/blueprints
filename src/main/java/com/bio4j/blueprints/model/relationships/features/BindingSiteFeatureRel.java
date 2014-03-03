@@ -10,7 +10,7 @@ import com.bio4j.blueprints.model.Edge;
  * Binding site for any chemical group (co-enzyme, prosthetic group, etc.)
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class BindingSiteFeatureRel extends BasicFeatureRel implements BindingSiteFeature{
+public final class BindingSiteFeatureRel extends BasicFeatureRel implements BindingSiteFeature{
 
     public static final String NAME = "FEATURE_BINDING_SITE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "binding site";

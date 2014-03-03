@@ -9,7 +9,7 @@ import com.bio4j.model.nodes.Institute;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class InstituteNode extends Vertex implements Institute{
+public final class InstituteNode extends Vertex implements Institute{
 
     public static final String NODE_TYPE = InstituteNode.class.getCanonicalName();
     /**

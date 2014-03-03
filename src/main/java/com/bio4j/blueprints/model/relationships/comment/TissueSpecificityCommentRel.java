@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Expression of the gene product in different tissues
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class TissueSpecificityCommentRel extends BasicCommentRel implements TissueSpecificityComment{
+public final class TissueSpecificityCommentRel extends BasicCommentRel implements TissueSpecificityComment{
 
     public static final String NAME = "COMMENT_TISSUE_SPECIFICITY";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "tissue specificity";

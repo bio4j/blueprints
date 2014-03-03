@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Nucleotide phosphate binding region
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class NucleotidePhosphateBindingRegionFeatureRel extends BasicFeatureRel implements NucleotidePhosphateBindingRegionFeature{
+public final class NucleotidePhosphateBindingRegionFeatureRel extends BasicFeatureRel implements NucleotidePhosphateBindingRegionFeature{
 
     public static final String NAME = "FEATURE_NUCLEOTIDE_PHOSPHATE_BINDING_REGION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "nucleotide phosphate-binding region";

@@ -8,7 +8,7 @@ import com.bio4j.blueprints.model.Edge;
  * Post-translational modifications
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class PostTranslationalModificationCommentRel extends BasicCommentRel{
+public final class PostTranslationalModificationCommentRel extends BasicCommentRel{
 
     public static final String NAME = "COMMENT_POST_TRANSLATIONAL_MODIFICATION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "PTM";

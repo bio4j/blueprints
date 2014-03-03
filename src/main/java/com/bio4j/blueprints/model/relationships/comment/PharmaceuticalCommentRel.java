@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Use of as a pharmaceutical drug
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class PharmaceuticalCommentRel extends BasicCommentRel implements PharmaceuticalComment{
+public final class PharmaceuticalCommentRel extends BasicCommentRel implements PharmaceuticalComment{
 
     public static final String NAME = "COMMENT_PHARMACEUTICAL";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "pharmaceutical";

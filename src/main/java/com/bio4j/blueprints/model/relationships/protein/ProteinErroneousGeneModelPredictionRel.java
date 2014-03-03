@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinErroneousGeneModelPredictionRel extends BasicProteinSequenceCautionRel implements ProteinErroneousGeneModelPrediction{
+public final class ProteinErroneousGeneModelPredictionRel extends BasicProteinSequenceCautionRel implements ProteinErroneousGeneModelPrediction{
 
     public static final String NAME = "PROTEIN_ERRONEOUS_GENE_MODEL_PREDICTION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "erroneous gene model prediction";

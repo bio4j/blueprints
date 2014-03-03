@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ErroneousTerminationRel extends Edge implements ErroneousTermination{
+public final class ErroneousTerminationRel extends Edge implements ErroneousTermination{
 
     public static final String NAME = "ERRONEOUS_TERMINATION";
 

@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Covalently attached lipid group(s)
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class LipidMoietyBindingRegionFeatureRel extends BasicFeatureRel implements LipidMoietyBindingRegionFeature{
+public final class LipidMoietyBindingRegionFeatureRel extends BasicFeatureRel implements LipidMoietyBindingRegionFeature{
 
     public static final String NAME = "FEATURE_LIPID_MOIETY_BINDING_REGION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "lipid moiety-binding region";

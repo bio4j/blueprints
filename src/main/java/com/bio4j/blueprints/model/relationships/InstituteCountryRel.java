@@ -12,7 +12,7 @@ import com.tinkerpop.blueprints.Direction;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class InstituteCountryRel extends Edge implements InstituteCountry{
+public final class InstituteCountryRel extends Edge implements InstituteCountry{
 
     public static final String NAME = "INSTITUTE_COUNTRY";
     public InstituteCountryRel(com.tinkerpop.blueprints.Edge e){ super(e); }

@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Residues participating in covalent linkage(s) between proteins
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class CrossLinkFeatureRel extends BasicFeatureRel implements CrossLinkFeature{
+public final class CrossLinkFeatureRel extends BasicFeatureRel implements CrossLinkFeature{
 
     public static final String NAME = "FEATURE_CROSS_LINK";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "cross-link";

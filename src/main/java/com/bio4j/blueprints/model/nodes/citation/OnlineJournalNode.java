@@ -16,7 +16,7 @@ import java.util.List;
  * Online journals where online article protein citations are published
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class OnlineJournalNode extends Vertex implements OnlineJournal{
+public final class OnlineJournalNode extends Vertex implements OnlineJournal{
 
     public static final String NODE_TYPE = OnlineJournalNode.class.getCanonicalName();
 

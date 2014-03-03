@@ -10,7 +10,7 @@ import com.bio4j.blueprints.model.Edge;
  * Reaction(s) catalyzed by an enzyme
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class CatalyticActivityCommentRel extends BasicCommentRel implements CatalyticActivityComment{
+public final class CatalyticActivityCommentRel extends BasicCommentRel implements CatalyticActivityComment{
 
     public static final String NAME = "COMMENT_CATALYTIC_ACTIVITY";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "catalytic activity";

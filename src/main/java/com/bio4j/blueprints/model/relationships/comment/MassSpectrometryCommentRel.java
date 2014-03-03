@@ -10,7 +10,7 @@ import com.bio4j.blueprints.model.Edge;
  * Information derived from mass spectrometry experiments
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class MassSpectrometryCommentRel extends BasicCommentRel implements MassSpectometryComment{
+public final class MassSpectrometryCommentRel extends BasicCommentRel implements MassSpectometryComment{
 
     public static final String NAME = "COMMENT_MASS_SPECTROMETRY";
 

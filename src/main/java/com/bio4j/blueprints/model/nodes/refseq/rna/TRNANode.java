@@ -10,7 +10,7 @@ import com.bio4j.model.nodes.refseq.rna.TRNA;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class TRNANode extends RNANode implements TRNA{
+public final class TRNANode extends RNANode implements TRNA{
     
     public static final String NODE_TYPE = TRNANode.class.getCanonicalName();
     

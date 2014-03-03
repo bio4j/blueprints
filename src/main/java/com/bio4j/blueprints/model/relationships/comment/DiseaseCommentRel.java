@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Disease(s) associated with protein defect(s)
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class DiseaseCommentRel extends BasicCommentRel implements DiseaseComment{
+public final class DiseaseCommentRel extends BasicCommentRel implements DiseaseComment{
 
     public static final String NAME = "COMMENT_DISEASE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "disease";

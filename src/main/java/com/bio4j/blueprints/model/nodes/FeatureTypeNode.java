@@ -75,7 +75,7 @@ import com.bio4j.model.nodes.FeatureType;
  * </table>
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class FeatureTypeNode extends Vertex implements FeatureType{
+public final class FeatureTypeNode extends Vertex implements FeatureType{
 
     public static final String NODE_TYPE = FeatureTypeNode.class.getCanonicalName();
 

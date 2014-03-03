@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * Proteins referenced by a Thesis
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ThesisProteinCitationRel extends Edge implements ThesisProteinCitation{
+public final class ThesisProteinCitationRel extends Edge implements ThesisProteinCitation{
 
     public static final String NAME = "THESIS_PROTEIN_CITATION";
 

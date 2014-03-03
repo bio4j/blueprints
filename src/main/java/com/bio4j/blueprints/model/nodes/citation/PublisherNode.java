@@ -16,7 +16,7 @@ import java.util.List;
  * Publishers regarding to book protein citations
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class PublisherNode extends Vertex implements Publisher{
+public final class PublisherNode extends Vertex implements Publisher{
 
     public static final String NODE_TYPE = PublisherNode.class.getCanonicalName();
 

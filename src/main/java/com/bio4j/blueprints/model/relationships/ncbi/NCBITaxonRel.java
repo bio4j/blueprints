@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Relationship linking Uniprot and NCBI taxonomy
  * @author ppareja
  */
-public class NCBITaxonRel extends Edge implements NCBITaxon{
+public final class NCBITaxonRel extends Edge implements NCBITaxon{
 
     public static final String NAME = "TAXON_NCBI";
 

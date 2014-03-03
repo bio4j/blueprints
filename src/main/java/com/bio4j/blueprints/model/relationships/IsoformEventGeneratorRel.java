@@ -14,7 +14,7 @@ import com.tinkerpop.blueprints.Direction;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class IsoformEventGeneratorRel extends Edge implements IsoformEventGenerator{
+public final class IsoformEventGeneratorRel extends Edge implements IsoformEventGenerator{
 
     public static final String NAME = "ISOFORM_EVENT_GENERATOR";
 

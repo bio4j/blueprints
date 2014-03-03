@@ -10,7 +10,7 @@ import com.bio4j.model.nodes.Country;
  * It simply models a country of the world
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class CountryNode extends Vertex implements Country{
+public final class CountryNode extends Vertex implements Country{
 
     public static final String NODE_TYPE = CountryNode.class.getCanonicalName();
 

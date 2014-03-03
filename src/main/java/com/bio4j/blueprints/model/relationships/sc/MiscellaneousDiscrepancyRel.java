@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class MiscellaneousDiscrepancyRel extends Edge implements MiscellaneousDiscrepancy{
+public final class MiscellaneousDiscrepancyRel extends Edge implements MiscellaneousDiscrepancy{
 
     public static final String NAME = "MISCELLANEOUS_DISCREPANCY";
 

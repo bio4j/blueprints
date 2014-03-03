@@ -16,7 +16,7 @@ import java.util.List;
  * Interpro term
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class InterproNode extends Vertex implements Interpro{
+public final class InterproNode extends Vertex implements Interpro{
 
     public static final String NODE_TYPE = InterproNode.class.getCanonicalName();
 

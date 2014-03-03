@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinSubcellularLocationRel extends Edge implements ProteinSubcellularLocation{
+public final class ProteinSubcellularLocationRel extends Edge implements ProteinSubcellularLocation{
 
     public static final String NAME = "PROTEIN_SUBCELLULAR_LOCATION";
 

@@ -11,7 +11,7 @@ import com.tinkerpop.blueprints.Direction;
  * Gene
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class GeneNode extends Vertex implements Gene{
+public final class GeneNode extends Vertex implements Gene{
 
     public static final String NODE_TYPE = GeneNode.class.getCanonicalName();
 

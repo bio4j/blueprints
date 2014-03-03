@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Associated metabolic pathways
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class PathwayCommentRel extends BasicCommentRel implements PathwayComment{
+public final class PathwayCommentRel extends BasicCommentRel implements PathwayComment{
 
     public static final String NAME = "COMMENT_PATHWAY";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "pathway";

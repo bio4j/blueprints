@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  *
  * @author ppareja
  */
-public class OnlineInformationCommentRel extends BasicCommentRel implements OnlineInformationComment{
+public final class OnlineInformationCommentRel extends BasicCommentRel implements OnlineInformationComment{
 
     public static final String NAME = "COMMENT_ONLINE_INFORMATION";
 

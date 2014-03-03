@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * City where a book is published in
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class BookCityRel extends Edge implements BookCity{
+public final class BookCityRel extends Edge implements BookCity{
 
     public static final String NAME = "BOOK_CITY_REL";
 

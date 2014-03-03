@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Biophysical and physicochemical properties
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class BioPhysicoChemicalPropertiesCommentRel extends BasicCommentRel implements BioPhysicoChemicalPropertiesComment{
+public final class BioPhysicoChemicalPropertiesCommentRel extends BasicCommentRel implements BioPhysicoChemicalPropertiesComment{
 
     public static final String NAME = "COMMENT_BIO_PHYSICO_CHEMICAL_PROPERTIES";
 

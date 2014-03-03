@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * Proteins referenced by a submission
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class SubmissionProteinCitationRel extends Edge implements SubmissionProteinCitation{
+public final class SubmissionProteinCitationRel extends Edge implements SubmissionProteinCitation{
 
     public static final String NAME = "SUBMISSION_PROTEIN_CITATION";
 

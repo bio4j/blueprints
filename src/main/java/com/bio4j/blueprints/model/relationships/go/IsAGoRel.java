@@ -11,7 +11,7 @@ import com.bio4j.blueprints.model.Edge;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class IsAGoRel extends Edge implements IsAGo{
+public final class IsAGoRel extends Edge implements IsAGo{
 
     public static final String NAME = "IS_A_GO";
 

@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Vertex;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class MRNANode extends RNANode implements MRNA{
+public final class MRNANode extends RNANode implements MRNA{
     
     public static final String NODE_TYPE = MRNANode.class.getCanonicalName();
     

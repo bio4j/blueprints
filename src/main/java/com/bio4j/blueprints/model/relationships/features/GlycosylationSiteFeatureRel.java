@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Covalently attached glycan group(s)
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class GlycosylationSiteFeatureRel extends BasicFeatureRel implements GlycosylationSiteFeature{
+public final class GlycosylationSiteFeatureRel extends BasicFeatureRel implements GlycosylationSiteFeature{
 
     public static final String NAME = "FEATURE_GLYCOSYLATION_SITE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "glycosylation site";

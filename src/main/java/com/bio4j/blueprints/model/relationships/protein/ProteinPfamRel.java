@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinPfamRel extends Edge implements ProteinPfam{
+public final class ProteinPfamRel extends Edge implements ProteinPfam{
 
     public static final String NAME = "PROTEIN_PFAM";
 

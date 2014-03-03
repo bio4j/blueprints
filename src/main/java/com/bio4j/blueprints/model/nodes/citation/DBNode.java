@@ -14,7 +14,7 @@ import java.util.List;
  * Databases where submission protein citations are submitted to
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class DBNode extends Vertex implements DB{
+public final class DBNode extends Vertex implements DB{
 
     public static final String NODE_TYPE = DBNode.class.getCanonicalName();
 

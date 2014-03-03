@@ -22,7 +22,7 @@ import java.util.List;
  * the book name, the volume number, the page range, the publisher, the city and the year.
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class BookNode extends Vertex implements Book{
+public final class BookNode extends Vertex implements Book{
 
     public static final String NODE_TYPE = BookNode.class.getCanonicalName();
 

@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Interaction with other protein(s)
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class SubunitCommentRel extends BasicCommentRel implements SubunitComment{
+public final class SubunitCommentRel extends BasicCommentRel implements SubunitComment{
 
     public static final String NAME = "COMMENT_SUBUNIT";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "subunit";

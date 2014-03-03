@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Region of compositional bias in the protein
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class CompositionallyBiasedRegionFeatureRel extends BasicFeatureRel implements CompositionallyBiasedRegionFeature{
+public final class CompositionallyBiasedRegionFeatureRel extends BasicFeatureRel implements CompositionallyBiasedRegionFeature{
 
     public static final String NAME = "FEATURE_COMPOSITIONALLY_BIASED_REGION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "compositionally biased region";

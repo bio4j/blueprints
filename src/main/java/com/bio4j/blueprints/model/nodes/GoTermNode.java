@@ -17,7 +17,7 @@ import java.util.List;
  * Gene ontology term
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class GoTermNode extends Vertex implements GoTerm{
+public final class GoTermNode extends Vertex implements GoTerm{
     
     public static final String MOLECULAR_FUNCTION_GO_ID = "GO:0003674";
     public static final String BIOLOGICAL_PROCESS_GO_ID = "GO:0008150";

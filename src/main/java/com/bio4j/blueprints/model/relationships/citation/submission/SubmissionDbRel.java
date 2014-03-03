@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * Submission database
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class SubmissionDbRel extends Edge implements SubmissionDb{
+public final class SubmissionDbRel extends Edge implements SubmissionDb{
 
     public static final String NAME = "SUBMISSION_DB";
 

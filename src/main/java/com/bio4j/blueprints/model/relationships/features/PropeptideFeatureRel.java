@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Part of a protein that is cleaved during maturation or activation
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class PropeptideFeatureRel extends BasicFeatureRel implements PropeptideFeature{
+public final class PropeptideFeatureRel extends BasicFeatureRel implements PropeptideFeature{
 
     public static final String NAME = "FEATURE_PROPEPTIDE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "propeptide";

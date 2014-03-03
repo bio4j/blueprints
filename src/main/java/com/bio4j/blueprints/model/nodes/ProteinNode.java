@@ -63,7 +63,7 @@ import java.util.List;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinNode extends Vertex implements Protein {
+public final class ProteinNode extends Vertex implements Protein {
 
     public static final String NODE_TYPE = ProteinNode.class.getCanonicalName();
     public static final String NAME_PROPERTY = "protein_name";

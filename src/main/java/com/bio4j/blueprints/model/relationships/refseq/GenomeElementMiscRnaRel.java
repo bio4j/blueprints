@@ -11,7 +11,7 @@ import com.bio4j.blueprints.model.Edge;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class GenomeElementMiscRnaRel extends Edge implements GenomeElementMiscRna{
+public final class GenomeElementMiscRnaRel extends Edge implements GenomeElementMiscRna{
 
     public static final String NAME = "GENOME_ELEMENT_MISCRNA";
 

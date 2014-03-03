@@ -10,7 +10,7 @@ import com.bio4j.blueprints.model.Edge;
  * Warning about possible errors and/or grounds for confusion
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class CautionCommentRel extends BasicCommentRel implements CautionComment{
+public final class CautionCommentRel extends BasicCommentRel implements CautionComment{
 
     public static final String NAME = "COMMENT_CAUTION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "caution";

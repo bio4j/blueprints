@@ -22,7 +22,7 @@ import java.util.List;
  * Submission protein citations
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class SubmissionNode extends Vertex implements Submission{
+public final class SubmissionNode extends Vertex implements Submission{
 
     public static final String NODE_TYPE = SubmissionNode.class.getCanonicalName();
 

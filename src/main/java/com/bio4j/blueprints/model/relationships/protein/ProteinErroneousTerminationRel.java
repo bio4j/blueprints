@@ -8,7 +8,7 @@ import com.bio4j.blueprints.model.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinErroneousTerminationRel extends BasicProteinSequenceCautionRel implements ProteinErroneousTermination{
+public final class ProteinErroneousTerminationRel extends BasicProteinSequenceCautionRel implements ProteinErroneousTermination{
 
     public static final String NAME = "PROTEIN_ERRONEOUS_TERMINATION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "erroneous termination";

@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinOrganismRel extends Edge implements ProteinOrganism{
+public final class ProteinOrganismRel extends Edge implements ProteinOrganism{
 
     public static final String NAME = "PROTEIN_ORGANISM";
 

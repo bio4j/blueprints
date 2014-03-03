@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Effects of environmental factors on gene expression
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class InductionCommentRel extends BasicCommentRel implements InductionComment{
+public final class InductionCommentRel extends BasicCommentRel implements InductionComment{
 
     public static final String NAME = "COMMENT_INDUCTION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "induction";

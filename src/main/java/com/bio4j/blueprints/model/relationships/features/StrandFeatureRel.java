@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Beta strand regions within the experimentally determined protein structure
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class StrandFeatureRel extends BasicFeatureRel implements StrandFeature{
+public final class StrandFeatureRel extends BasicFeatureRel implements StrandFeature{
 
     public static final String NAME = "FEATURE_STRAND";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "strand";

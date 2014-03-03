@@ -13,7 +13,7 @@ import com.bio4j.blueprints.model.Edge;
  * Book publisher
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class BookPublisherRel extends Edge implements BookPublisher{
+public final class BookPublisherRel extends Edge implements BookPublisher{
 
     public static final String NAME = "BOOK_PUBLISHER";
 

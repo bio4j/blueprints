@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class UniRef90MemberRel extends Edge implements UniRef90Member{
+public final class UniRef90MemberRel extends Edge implements UniRef90Member{
 
     public static final String NAME = "UNIREF_90_MEMBER";
 

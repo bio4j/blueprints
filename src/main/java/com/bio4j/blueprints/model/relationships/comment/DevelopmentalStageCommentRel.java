@@ -10,7 +10,7 @@ import com.bio4j.blueprints.model.Edge;
  * Expression of the gene product according to the cell stage and/or tissue or organism development
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class DevelopmentalStageCommentRel extends BasicCommentRel implements DevelopmentalStageComment{
+public final class DevelopmentalStageCommentRel extends BasicCommentRel implements DevelopmentalStageComment{
 
     public static final String NAME = "COMMENT_DEVELOPMENTAL_STAGE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "developmental stage";

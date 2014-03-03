@@ -17,7 +17,7 @@ import java.util.List;
  * Gene ontology term
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ReactomeTermNode extends Vertex implements ReactomeTerm{
+public final class ReactomeTermNode extends Vertex implements ReactomeTerm{
 
     public static final String NODE_TYPE = ReactomeTermNode.class.getCanonicalName();
 

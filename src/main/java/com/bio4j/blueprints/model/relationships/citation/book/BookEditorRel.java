@@ -27,7 +27,7 @@ import com.bio4j.blueprints.model.Edge;
  * Book editors
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class BookEditorRel extends Edge implements BookEditor{
+public final class BookEditorRel extends Edge implements BookEditor{
 
     public static final String NAME = "BOOK_EDITOR";
 

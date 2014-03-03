@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * The sequence is incomplete. Indicate that a residue is not the terminal residue of the complete protein
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class NonTerminalResidueFeatureRel extends BasicFeatureRel implements NonTerminalResidueFeature{
+public final class NonTerminalResidueFeatureRel extends BasicFeatureRel implements NonTerminalResidueFeature{
 
     public static final String NAME = "FEATURE_NON_TERMINAL_RESIDUE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "non-terminal residue";

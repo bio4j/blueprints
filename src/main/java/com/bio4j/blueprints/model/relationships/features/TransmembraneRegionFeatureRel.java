@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Extent of a membrane-spanning region
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class TransmembraneRegionFeatureRel extends BasicFeatureRel implements TransmembraneRegionFeature{
+public final class TransmembraneRegionFeatureRel extends BasicFeatureRel implements TransmembraneRegionFeature{
 
     public static final String NAME = "FEATURE_TRANSMEMBRANE_REGION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "transmembrane region";

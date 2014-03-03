@@ -10,7 +10,7 @@ import com.bio4j.blueprints.model.Edge;
  * Rel. leading to the child of the current NCBITaxon node
  * @author ppareja
  */
-public class NCBITaxonParentRel extends Edge implements NCBITaxonParent{
+public final class NCBITaxonParentRel extends Edge implements NCBITaxonParent{
 
     public static final String NAME = "TAXON_PARENT_NCBI";
 

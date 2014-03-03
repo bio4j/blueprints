@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * Thesis institute
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ThesisInstituteRel extends Edge implements ThesisInstitute{
+public final class ThesisInstituteRel extends Edge implements ThesisInstitute{
 
     public static final String NAME = "THESIS_INSTITUTE";
 

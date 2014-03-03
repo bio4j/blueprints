@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * Proteins referenced by a patent
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class PatentProteinCitationRel extends Edge implements PatentProteinCitation{
+public final class PatentProteinCitationRel extends Edge implements PatentProteinCitation{
 
     public static final String NAME = "PATENT_PROTEIN_CITATION";
 

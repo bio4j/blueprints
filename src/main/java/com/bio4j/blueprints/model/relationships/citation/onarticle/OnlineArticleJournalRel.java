@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * Online journal where an online article is published
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class OnlineArticleJournalRel extends Edge implements OnlineArticleJournal{
+public final class OnlineArticleJournalRel extends Edge implements OnlineArticleJournal{
 
     public static final String NAME = "ONLINE_ARTICLE_JOURNAL";
 

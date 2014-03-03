@@ -26,7 +26,7 @@ import java.util.List;
  * Organisms genome elements
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class GenomeElementNode extends Vertex implements GenomeElement{
+public final class GenomeElementNode extends Vertex implements GenomeElement{
 
     public static final String NODE_TYPE = GenomeElementNode.class.getCanonicalName();
 

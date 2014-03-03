@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * Unpublished observation authors
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class UnpublishedObservationAuthorRel extends Edge implements UnpublishedObservationAuthor {
+public final class UnpublishedObservationAuthorRel extends Edge implements UnpublishedObservationAuthor {
 
     public static final String NAME = "UNPUBLISHED_OBSERVATION_AUTHOR";
 

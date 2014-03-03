@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Description of sequence discrepancies of unknown origin
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class SequenceConflictFeatureRel extends BasicFeatureRel implements SequenceConflictFeature{
+public final class SequenceConflictFeatureRel extends BasicFeatureRel implements SequenceConflictFeature{
 
     public static final String NAME = "FEATURE_SEQUENCE_CONFLICT";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "sequence conflict";

@@ -9,7 +9,7 @@ import com.bio4j.model.nodes.Isoform;
  * Protein isoforms. Their information is retrieved from entries' binary interactions.
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class IsoformNode extends Vertex implements Isoform{
+public final class IsoformNode extends Vertex implements Isoform{
 
     public static final String NODE_TYPE = IsoformNode.class.getCanonicalName();
 

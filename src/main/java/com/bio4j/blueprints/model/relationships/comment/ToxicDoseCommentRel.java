@@ -8,7 +8,7 @@ import com.bio4j.blueprints.model.Edge;
  * Lethal, paralytic, effect dose or lethal concentration of a toxin
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ToxicDoseCommentRel extends BasicCommentRel implements ToxicDoseComment{ 
+public final class ToxicDoseCommentRel extends BasicCommentRel implements ToxicDoseComment{ 
 
     public static final String NAME = "COMMENT_TOXIC_DOSE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "toxic dose";

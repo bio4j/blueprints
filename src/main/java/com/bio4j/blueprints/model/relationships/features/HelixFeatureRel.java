@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Helical regions within the experimentally determined protein structure
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class HelixFeatureRel extends BasicFeatureRel implements HelixFeature{
+public final class HelixFeatureRel extends BasicFeatureRel implements HelixFeature{
 
     public static final String NAME = "FEATURE_HELIX";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "helix";

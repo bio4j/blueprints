@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinInterproRel extends Edge implements ProteinInterpro{
+public final class ProteinInterproRel extends Edge implements ProteinInterpro{
 
     public static final String NAME = "PROTEIN_INTERPRO";
 

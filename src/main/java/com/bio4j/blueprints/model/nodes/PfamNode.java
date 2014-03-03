@@ -16,7 +16,7 @@ import java.util.List;
  * Pfam family
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class PfamNode extends Vertex implements Pfam{
+public final class PfamNode extends Vertex implements Pfam{
 
     public static final String NODE_TYPE = PfamNode.class.getCanonicalName();
 

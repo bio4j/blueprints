@@ -13,7 +13,7 @@ import com.bio4j.blueprints.model.Edge;
  * Article authors
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ArticleAuthorRel extends Edge implements ArticleAuthor{
+public final class ArticleAuthorRel extends Edge implements ArticleAuthor{
 
     public static final String NAME = "ARTICLE_AUTHOR";
 

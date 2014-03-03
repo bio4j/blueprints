@@ -10,7 +10,7 @@ import com.bio4j.blueprints.model.Edge;
  * Description of the sequence similarities with other proteins and family attribution
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class SimilarityCommentRel extends BasicCommentRel implements SimilarityComment{
+public final class SimilarityCommentRel extends BasicCommentRel implements SimilarityComment{
 
     public static final String NAME = "COMMENT_SIMILARITY";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "similarity";

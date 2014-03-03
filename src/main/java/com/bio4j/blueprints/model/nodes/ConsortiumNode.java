@@ -9,7 +9,7 @@ import com.bio4j.model.nodes.Consortium;
  * Models consortium entities that take part in publications.
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ConsortiumNode extends Vertex implements Consortium{
+public final class ConsortiumNode extends Vertex implements Consortium{
 
     public static final String NODE_TYPE = ConsortiumNode.class.getCanonicalName();
 

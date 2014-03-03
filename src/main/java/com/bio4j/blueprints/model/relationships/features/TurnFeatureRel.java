@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Turns within the experimentally determined protein structure
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class TurnFeatureRel extends BasicFeatureRel implements TurnFeature{
+public final class TurnFeatureRel extends BasicFeatureRel implements TurnFeature{
 
     public static final String NAME = "FEATURE_TURN";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "turn";

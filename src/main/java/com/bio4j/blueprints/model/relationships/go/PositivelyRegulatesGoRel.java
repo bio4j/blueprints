@@ -11,7 +11,7 @@ import com.bio4j.blueprints.model.Edge;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class PositivelyRegulatesGoRel extends Edge implements PositivelyRegulatesGo{
+public final class PositivelyRegulatesGoRel extends Edge implements PositivelyRegulatesGo{
 
     public static final String NAME = "POSITIVELY_REGULATES_GO";
     public static final String OBOXML_RELATIONSHIP_NAME = "positively_regulates";

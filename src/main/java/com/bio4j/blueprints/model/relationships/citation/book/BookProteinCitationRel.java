@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * Proteins one book references
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class BookProteinCitationRel extends Edge implements BookProteinCitation{
+public final class BookProteinCitationRel extends Edge implements BookProteinCitation{
 
     public static final String NAME = "BOOK_PROTEIN_CITATION";
 

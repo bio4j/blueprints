@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Positions of repeated sequence motifs or repeated domains
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class RepeatFeatureRel extends BasicFeatureRel implements RepeatFeature{
+public final class RepeatFeatureRel extends BasicFeatureRel implements RepeatFeature{
 
     public static final String NAME = "FEATURE_REPEAT";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "repeat";

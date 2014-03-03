@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinIsoformInteractionRel extends Edge implements ProteinIsoformInteraction{
+public final class ProteinIsoformInteractionRel extends Edge implements ProteinIsoformInteraction{
 
     public static final String NAME = "PROTEIN_ISOFORM_INTERACTION";
 

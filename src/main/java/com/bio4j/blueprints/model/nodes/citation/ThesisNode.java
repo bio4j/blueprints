@@ -23,7 +23,7 @@ import java.util.List;
  * Thesis protein citations
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ThesisNode extends Vertex implements Thesis{
+public final class ThesisNode extends Vertex implements Thesis{
 
     public static final String NODE_TYPE = ThesisNode.class.getCanonicalName();
 

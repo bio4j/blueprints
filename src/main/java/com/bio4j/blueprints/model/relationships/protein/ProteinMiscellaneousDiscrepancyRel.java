@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinMiscellaneousDiscrepancyRel extends BasicProteinSequenceCautionRel implements ProteinMiscellaneousDiscrepancy{
+public final class ProteinMiscellaneousDiscrepancyRel extends BasicProteinSequenceCautionRel implements ProteinMiscellaneousDiscrepancy{
 
     public static final String NAME = "PROTEIN_MISCELLANEOUS_DISCREPANCY";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "miscellaneous discrepancy";

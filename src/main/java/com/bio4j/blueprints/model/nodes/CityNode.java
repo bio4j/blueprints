@@ -17,7 +17,7 @@ import java.util.List;
  * Just nodes representing different cities of the world
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class CityNode extends Vertex implements City{
+public final class CityNode extends Vertex implements City{
 
     public static final String NODE_TYPE = CityNode.class.getCanonicalName();
 

@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * Patent author
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class PatentAuthorRel extends Edge implements PatentAuthor{
+public final class PatentAuthorRel extends Edge implements PatentAuthor{
 
     public static final String NAME = "PATENT_AUTHOR";
 

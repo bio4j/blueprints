@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Amino acid change(s) producing alternate protein isoforms
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class SpliceVariantFeatureRel extends BasicFeatureRel implements SpliceVariantFeature{
+public final class SpliceVariantFeatureRel extends BasicFeatureRel implements SpliceVariantFeature{
 
     public static final String NAME = "FEATURE_SPLICE_VARIANT";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "splice variant";

@@ -10,7 +10,7 @@ import com.bio4j.blueprints.model.Edge;
  *
  * @author ppareja
  */
-public class ProteinErroneousInitiationRel extends BasicProteinSequenceCautionRel implements ProteinErroneousInitiation{
+public final class ProteinErroneousInitiationRel extends BasicProteinSequenceCautionRel implements ProteinErroneousInitiation{
 
     public static final String NAME = "PROTEIN_ERRONEOUS_INITIATION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "erroneous initiation";

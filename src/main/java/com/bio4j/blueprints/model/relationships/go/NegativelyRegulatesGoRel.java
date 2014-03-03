@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class NegativelyRegulatesGoRel extends Edge implements NegativelyRegulatesGo{
+public final class NegativelyRegulatesGoRel extends Edge implements NegativelyRegulatesGo{
 
     public static final String NAME = "NEGATIVELY_REGULATES_GO";
 

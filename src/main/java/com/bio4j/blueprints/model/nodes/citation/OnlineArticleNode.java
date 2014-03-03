@@ -25,7 +25,7 @@ import java.util.List;
  * the locator and the title, (plus author list information).
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class OnlineArticleNode extends Vertex implements OnlineArticle{
+public final class OnlineArticleNode extends Vertex implements OnlineArticle{
 
     public static final String NODE_TYPE = OnlineArticleNode.class.getCanonicalName();
 

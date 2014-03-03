@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * Proteins that an online articles references
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class OnlineArticleProteinCitationRel extends Edge implements OnlineArticleProteinCitation{
+public final class OnlineArticleProteinCitationRel extends Edge implements OnlineArticleProteinCitation{
 
     public static final String NAME = "ONLINE_ARTICLE_PROTEIN_CITATION";
 

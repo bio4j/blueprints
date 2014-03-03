@@ -11,7 +11,7 @@ import com.bio4j.blueprints.model.Edge;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class PartOfGoRel extends Edge implements PartOfGo{
+public final class PartOfGoRel extends Edge implements PartOfGo{
 
     public static final String NAME = "PART_OF_GO";
 

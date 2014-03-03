@@ -16,7 +16,7 @@ import java.util.List;
  * Enzyme node
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class EnzymeNode extends Vertex implements Enzyme{
+public final class EnzymeNode extends Vertex implements Enzyme{
 
     public static final String NODE_TYPE = EnzymeNode.class.getCanonicalName();
 

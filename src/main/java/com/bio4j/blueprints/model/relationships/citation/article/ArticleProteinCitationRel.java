@@ -13,7 +13,7 @@ import com.bio4j.blueprints.model.Edge;
  * Proteins one article references
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ArticleProteinCitationRel extends Edge implements ArticleProteinCitation{
+public final class ArticleProteinCitationRel extends Edge implements ArticleProteinCitation{
 
     public static final String NAME = "ARTICLE_PROTEIN_CITATION";
 

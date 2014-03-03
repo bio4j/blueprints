@@ -21,7 +21,7 @@ import java.util.List;
  * Patent protein citations
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class PatentNode extends Vertex implements Patent{
+public final class PatentNode extends Vertex implements Patent{
 
     public static final String NODE_TYPE = PatentNode.class.getCanonicalName();
 

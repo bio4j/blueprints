@@ -10,7 +10,7 @@ import com.bio4j.blueprints.model.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinProteinInteractionRel extends Edge implements ProteinProteinInteraction{
+public final class ProteinProteinInteractionRel extends Edge implements ProteinProteinInteraction{
 
     public static final String NAME = "PROTEIN_PROTEIN_INTERACTION";
 

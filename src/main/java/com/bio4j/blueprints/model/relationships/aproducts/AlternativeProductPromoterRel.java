@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class AlternativeProductPromoterRel extends Edge implements AlternativeProductPromoter{
+public final class AlternativeProductPromoterRel extends Edge implements AlternativeProductPromoter{
 
     public static final String NAME = "ALTERNATIVE_PRODUCT_PROMOTER";
 

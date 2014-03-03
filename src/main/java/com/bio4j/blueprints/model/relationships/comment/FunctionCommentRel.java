@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * General function(s) of a protein
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class FunctionCommentRel extends BasicCommentRel implements FunctionComment{
+public final class FunctionCommentRel extends BasicCommentRel implements FunctionComment{
 
     public static final String NAME = "COMMENT_FUNCTION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "function";

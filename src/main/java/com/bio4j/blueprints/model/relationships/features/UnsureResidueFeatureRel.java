@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Regions of uncertainty in the sequence
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class UnsureResidueFeatureRel extends BasicFeatureRel implements UnsureResidueFeature{
+public final class UnsureResidueFeatureRel extends BasicFeatureRel implements UnsureResidueFeature{
 
     public static final String NAME = "FEATURE_UNSURE_RESIDUE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "unsure residue";

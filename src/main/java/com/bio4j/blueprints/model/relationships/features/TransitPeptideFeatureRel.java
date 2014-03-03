@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Extent of a transit peptide for organelle targeting
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class TransitPeptideFeatureRel extends BasicFeatureRel implements TransitPeptideFeature{
+public final class TransitPeptideFeatureRel extends BasicFeatureRel implements TransitPeptideFeature{
 
     public static final String NAME = "FEATURE_TRANSIT_PEPTIDE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "transit peptide";

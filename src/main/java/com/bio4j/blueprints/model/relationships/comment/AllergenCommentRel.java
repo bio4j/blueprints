@@ -24,7 +24,7 @@ import com.bio4j.blueprints.model.Edge;
  * Information relevant to allergenic proteins
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class AllergenCommentRel extends BasicCommentRel implements AllergenComment{
+public final class AllergenCommentRel extends BasicCommentRel implements AllergenComment{
 
     public static final String NAME = "COMMENT_ALLERGEN";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "allergen";

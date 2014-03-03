@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Region of interest in the sequence
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class RegionOfInterestFeatureRel extends BasicFeatureRel implements RegionOfInterestFeature{
+public final class RegionOfInterestFeatureRel extends BasicFeatureRel implements RegionOfInterestFeature{
 
     public static final String NAME = "FEATURE_REGION_OF_INTEREST";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "region of interest";

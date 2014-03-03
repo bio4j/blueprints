@@ -11,7 +11,7 @@ import com.bio4j.blueprints.model.Edge;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class GenomeElementGeneRel extends Edge implements GenomeElementGene{
+public final class GenomeElementGeneRel extends Edge implements GenomeElementGene{
 
     public static final String NAME = "GENOME_ELEMENT_GENE";
 

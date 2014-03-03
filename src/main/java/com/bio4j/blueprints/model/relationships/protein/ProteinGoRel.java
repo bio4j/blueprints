@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinGoRel extends Edge implements ProteinGo{
+public final class ProteinGoRel extends Edge implements ProteinGo{
 
     public static final String NAME = "PROTEIN_GO";
 

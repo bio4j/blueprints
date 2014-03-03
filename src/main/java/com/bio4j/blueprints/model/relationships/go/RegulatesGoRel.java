@@ -10,7 +10,7 @@ import com.bio4j.blueprints.model.Edge;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class RegulatesGoRel extends Edge implements RegulatesGo{
+public final class RegulatesGoRel extends Edge implements RegulatesGo{
 
     public static final String NAME = "REGULATES_GO";
 

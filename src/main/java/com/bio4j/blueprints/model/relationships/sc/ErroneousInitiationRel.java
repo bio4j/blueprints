@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ErroneousInitiationRel extends Edge implements ErroneousInitiation{
+public final class ErroneousInitiationRel extends Edge implements ErroneousInitiation{
 
     public static final String NAME = "ERRONEOUS_INITIATION";
 

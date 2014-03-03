@@ -11,7 +11,7 @@ import com.bio4j.blueprints.model.Edge;
  * Thesis author
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ThesisAuthorRel extends Edge implements ThesisAuthor{
+public final class ThesisAuthorRel extends Edge implements ThesisAuthor{
 
     public static final String NAME = "THESIS_AUTHOR";
 

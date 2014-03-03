@@ -10,7 +10,7 @@ import com.bio4j.blueprints.model.Edge;
  * Non-protein substance required for enzyme activity
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class CofactorCommentRel extends BasicCommentRel implements CofactorComment{
+public final class CofactorCommentRel extends BasicCommentRel implements CofactorComment{
 
     public static final String NAME = "COMMENT_COFACTOR";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "cofactor";

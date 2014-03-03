@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Cysteine residues participating in disulfide bonds
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class DisulfideBondFeatureRel extends BasicFeatureRel implements DisulfideBondFeature{
+public final class DisulfideBondFeatureRel extends BasicFeatureRel implements DisulfideBondFeature{
 
     public static final String NAME = "FEATURE_DISULFIDE_BOND";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "disulfide bond";

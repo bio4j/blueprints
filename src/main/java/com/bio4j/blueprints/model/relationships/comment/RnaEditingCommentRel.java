@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Amino acid variation(s) due to RNA editing
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class RnaEditingCommentRel extends BasicCommentRel implements RnaEditingComment{
+public final class RnaEditingCommentRel extends BasicCommentRel implements RnaEditingComment{
 
     public static final String NAME = "COMMENT_RNA_EDITING";
 

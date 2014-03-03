@@ -27,7 +27,7 @@ import com.bio4j.blueprints.model.Edge;
  * Protein enzymatic activity (EC number connections)
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinEnzymaticActivityRel extends Edge implements ProteinEnzymaticActivity{
+public final class ProteinEnzymaticActivityRel extends Edge implements ProteinEnzymaticActivity{
 
     public static final String NAME = "PROTEIN_ENZYMATIC_ACTIVITY";
 

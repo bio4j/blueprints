@@ -13,7 +13,7 @@ import com.bio4j.blueprints.model.Edge;
  * Proteins referenced by unpublished observations
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class UnpublishedObservationProteinCitationRel extends Edge implements UnpublishedObservationProteinCitation{
+public final class UnpublishedObservationProteinCitationRel extends Edge implements UnpublishedObservationProteinCitation{
 
     public static final String NAME = "UNPUBLISHED_OBSERVATION_PROTEIN_CITATION";
 

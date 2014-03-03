@@ -12,7 +12,7 @@ import com.tinkerpop.blueprints.Direction;
  * CDS
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class CDSNode extends Vertex implements CDS{
+public final class CDSNode extends Vertex implements CDS{
 
     public static final String NODE_TYPE = CDSNode.class.getCanonicalName();
     

@@ -7,7 +7,7 @@ import com.bio4j.model.nodes.SequenceCaution;
  * Sequence caution
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public final class SequenceCautionNode extends Vertex implements SequenceCaution{
+public final class SequenceCautionNode extends Vertex implements SequenceCaution {
 
     public static final String NODE_TYPE = SequenceCautionNode.class.getCanonicalName();
 

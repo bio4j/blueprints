@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Position(s) and type(s) of zinc fingers within the protein
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ZincFingerRegionFeatureRel extends BasicFeatureRel implements ZincFingerRegionFeature{
+public final class ZincFingerRegionFeatureRel extends BasicFeatureRel implements ZincFingerRegionFeature{
 
     public static final String NAME = "FEATURE_ZINC_FINGER_REGION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "zinc finger region";

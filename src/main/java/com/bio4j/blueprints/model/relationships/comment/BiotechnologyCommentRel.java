@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Use in a biotechnological process
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class BiotechnologyCommentRel extends BasicCommentRel implements BiotechnologyComment{
+public final class BiotechnologyCommentRel extends BasicCommentRel implements BiotechnologyComment{
 
     public static final String NAME = "COMMENT_BIOTECHNOLOGY";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "biotechnology";

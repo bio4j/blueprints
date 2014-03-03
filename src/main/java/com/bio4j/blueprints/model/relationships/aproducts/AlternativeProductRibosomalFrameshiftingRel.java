@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class AlternativeProductRibosomalFrameshiftingRel extends Edge implements AlternativeProductRibosomalFrameshifting{
+public final class AlternativeProductRibosomalFrameshiftingRel extends Edge implements AlternativeProductRibosomalFrameshifting{
 
     public static final String NAME = "ALTERNATIVE_PRODUCT_RIBOSOMAL_FRAMESHIFTING";
 

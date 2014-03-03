@@ -26,7 +26,7 @@ import java.util.List;
  * and are based on the existing ISO and ANSI standards.
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ArticleNode extends Vertex implements Article{
+public final class ArticleNode extends Vertex implements Article{
 
     public static final String NODE_TYPE = ArticleNode.class.getCanonicalName();
 

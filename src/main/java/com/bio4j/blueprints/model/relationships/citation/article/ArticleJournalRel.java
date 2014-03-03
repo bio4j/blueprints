@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * Article journal
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ArticleJournalRel extends Edge implements ArticleJournal{
+public final class ArticleJournalRel extends Edge implements ArticleJournal{
 
     public static final String NAME = "ARTICLE_JOURNAL";
 

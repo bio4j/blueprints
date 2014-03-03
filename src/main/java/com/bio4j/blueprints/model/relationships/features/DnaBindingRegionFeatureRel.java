@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Position and type of a DNA-binding domain
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class DnaBindingRegionFeatureRel extends BasicFeatureRel implements DnaBindingFeature{
+public final class DnaBindingRegionFeatureRel extends BasicFeatureRel implements DnaBindingFeature{
 
     public static final String NAME = "FEATURE_DNA_BINDING_REGION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "DNA-binding region";

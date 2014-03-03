@@ -11,7 +11,7 @@ import com.bio4j.blueprints.model.Edge;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class GenomeElementCDSRel extends Edge implements GenomeElementCDS{
+public final class GenomeElementCDSRel extends Edge implements GenomeElementCDS{
 
     public static final String NAME = "GENOME_ELEMENT_CDS";
 

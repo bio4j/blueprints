@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Amino acid(s) directly involved in the activity of an enzyme
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ActiveSiteFeatureRel extends BasicFeatureRel implements ActiveSiteFeature{
+public final class ActiveSiteFeatureRel extends BasicFeatureRel implements ActiveSiteFeature{
 
     public static final String NAME = "FEATURE_ACTIVE_SITE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "active site";

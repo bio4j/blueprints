@@ -10,7 +10,7 @@ import com.bio4j.blueprints.model.Edge;
  * Description of the effects caused by the disruption of a protein-encoding gene
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class DisruptionPhenotypeCommentRel extends BasicCommentRel implements DisruptionPhenotypeComment{
+public final class DisruptionPhenotypeCommentRel extends BasicCommentRel implements DisruptionPhenotypeComment{
 
     public static final String NAME = "COMMENT_DISRUPTION_PHENOTYPE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "disruption phenotype";

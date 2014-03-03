@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Location of non-membrane regions of membrane-spanning proteins
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class TopologicalDomainFeatureRel extends BasicFeatureRel implements TopologicalDomainFeature{
+public final class TopologicalDomainFeatureRel extends BasicFeatureRel implements TopologicalDomainFeature{
 
     public static final String NAME = "FEATURE_TOPOLOGICAL_DOMAIN";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "topological domain";

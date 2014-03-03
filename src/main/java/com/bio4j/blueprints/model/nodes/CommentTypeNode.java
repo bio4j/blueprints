@@ -36,7 +36,7 @@ import com.bio4j.model.nodes.CommentType;
  * - Caution: Warning about possible errors and/or grounds of confusion
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class CommentTypeNode extends Vertex implements CommentType{
+public final class CommentTypeNode extends Vertex implements CommentType{
 
     public static final String NODE_TYPE = CommentTypeNode.class.getCanonicalName();
 

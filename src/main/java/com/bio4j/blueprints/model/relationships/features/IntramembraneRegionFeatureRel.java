@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Extent of a region located in a membrane without crossing it
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class IntramembraneRegionFeatureRel extends BasicFeatureRel implements IntramembraneRegionFeature{
+public final class IntramembraneRegionFeatureRel extends BasicFeatureRel implements IntramembraneRegionFeature{
 
     public static final String NAME = "FEATURE_INTRAMEMBRANE_REGION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "intramembrane region";

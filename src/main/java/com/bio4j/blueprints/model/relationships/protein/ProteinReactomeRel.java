@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinReactomeRel extends Edge implements ProteinReactome{
+public final class ProteinReactomeRel extends Edge implements ProteinReactome{
 
     public static final String NAME = "PROTEIN_REACTOME";
 

@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Binding site for a metal ion
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class MetalIonBindingSiteFeatureRel extends BasicFeatureRel implements MetalIonBindingSiteFeature{
+public final class MetalIonBindingSiteFeatureRel extends BasicFeatureRel implements MetalIonBindingSiteFeature{
 
     public static final String NAME = "FEATURE_METAL_ION_BINDING_SITE";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "metal ion-binding site";

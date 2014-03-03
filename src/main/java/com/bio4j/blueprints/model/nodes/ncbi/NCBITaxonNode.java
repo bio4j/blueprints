@@ -32,7 +32,7 @@ import java.util.List;
  *
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class NCBITaxonNode extends Vertex implements NCBITaxon{
+public final class NCBITaxonNode extends Vertex implements NCBITaxon{
 
     public static final String NODE_TYPE = NCBITaxonNode.class.getCanonicalName();
 

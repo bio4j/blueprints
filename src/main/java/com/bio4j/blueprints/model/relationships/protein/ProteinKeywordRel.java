@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinKeywordRel extends Edge implements ProteinKeyword{
+public final class ProteinKeywordRel extends Edge implements ProteinKeyword{
 
     public static final String NAME = "PROTEIN_KEYWORD";
 

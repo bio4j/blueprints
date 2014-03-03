@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class FrameshiftRel extends Edge implements Frameshift{
+public final class FrameshiftRel extends Edge implements Frameshift{
 
     public static final String NAME = "FRAMESHIFT";
 

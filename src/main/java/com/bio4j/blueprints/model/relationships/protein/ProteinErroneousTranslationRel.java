@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinErroneousTranslationRel extends BasicProteinSequenceCautionRel implements ProteinErroneousTranslation{
+public final class ProteinErroneousTranslationRel extends BasicProteinSequenceCautionRel implements ProteinErroneousTranslation{
 
     public static final String NAME = "PROTEIN_ERRONEOUS_TRANSLATION";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "erroneous translation";

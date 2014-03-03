@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinFrameshiftRel extends BasicProteinSequenceCautionRel implements ProteinFrameshift{
+public final class ProteinFrameshiftRel extends BasicProteinSequenceCautionRel implements ProteinFrameshift{
 
     public static final String NAME = "PROTEIN_FRAMESHIFT";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "frameshift";

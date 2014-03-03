@@ -12,7 +12,7 @@ import com.bio4j.blueprints.model.Edge;
  * Protein's dataset (Swiss-prot or trembl)
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ProteinDatasetRel extends Edge implements ProteinDataset{
+public final class ProteinDatasetRel extends Edge implements ProteinDataset{
 
     public static final String NAME = "PROTEIN_DATASET";
 

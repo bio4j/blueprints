@@ -26,7 +26,7 @@ import com.bio4j.blueprints.model.Edge;
  * Submission authors
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class SubmissionAuthorRel extends Edge implements SubmissionAuthor{
+public final class SubmissionAuthorRel extends Edge implements SubmissionAuthor{
 
     public static final String NAME = "SUBMISSION_AUTHOR";
 

@@ -10,7 +10,7 @@ import com.bio4j.blueprints.model.Edge;
  * Extent of a polypeptide chain in the mature protein
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class ChainFeatureRel extends BasicFeatureRel implements ChainFeature{
+public final class ChainFeatureRel extends BasicFeatureRel implements ChainFeature{
 
     public static final String NAME = "FEATURE_CHAIN";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "chain";

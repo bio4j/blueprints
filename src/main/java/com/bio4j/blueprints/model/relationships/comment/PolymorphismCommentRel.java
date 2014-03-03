@@ -9,7 +9,7 @@ import com.bio4j.blueprints.model.Edge;
  * Description of polymorphism(s)
  * @author Pablo Pareja Tobes <ppareja@era7.com>
  */
-public class PolymorphismCommentRel extends BasicCommentRel implements PolymorphismComment{
+public final class PolymorphismCommentRel extends BasicCommentRel implements PolymorphismComment{
 
     public static final String NAME = "COMMENT_POLYMORPHISM";
     public static final String UNIPROT_ATTRIBUTE_TYPE_VALUE = "polymorphism";
