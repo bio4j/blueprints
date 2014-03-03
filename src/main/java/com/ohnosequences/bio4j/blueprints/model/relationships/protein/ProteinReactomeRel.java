@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.protein;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.reactome.ReactomeTermNode;
 import com.ohnosequences.bio4j.model.relationships.protein.ProteinReactome;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * 
@@ -31,7 +31,7 @@ public class ProteinReactomeRel extends Edge implements ProteinReactome{
 
     public static final String NAME = "PROTEIN_REACTOME";
 
-    public ProteinReactomeRel(Edge e){
+    public ProteinReactomeRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
     

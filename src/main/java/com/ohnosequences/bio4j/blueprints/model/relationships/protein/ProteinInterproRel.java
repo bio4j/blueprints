@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.protein;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.InterproNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.model.relationships.protein.ProteinInterpro;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * 
@@ -31,7 +31,7 @@ public class ProteinInterproRel extends Edge implements ProteinInterpro{
 
     public static final String NAME = "PROTEIN_INTERPRO";
 
-    public ProteinInterproRel(Edge e){
+    public ProteinInterproRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
     

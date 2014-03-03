@@ -17,12 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.protein;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.IsoformNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.model.relationships.protein.ProteinIsoformInteraction;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
-
 /**
  * 
  * @author Pablo Pareja Tobes <ppareja@era7.com>
@@ -38,7 +37,7 @@ public class ProteinIsoformInteractionRel extends Edge implements ProteinIsoform
     public static final String INTACT_ID_1_PROPERTY = "protein_isoform_interaction_intact_id_1";
     public static final String INTACT_ID_2_PROPERTY = "protein_isoform_interaction_intact_id_2";
 
-    public ProteinIsoformInteractionRel(Edge e){
+    public ProteinIsoformInteractionRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

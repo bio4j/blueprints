@@ -17,8 +17,8 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.sc;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.model.relationships.sc.MiscellaneousDiscrepancy;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * 
@@ -28,7 +28,7 @@ public class MiscellaneousDiscrepancyRel extends Edge implements MiscellaneousDi
 
     public static final String NAME = "MISCELLANEOUS_DISCREPANCY";
 
-    public MiscellaneousDiscrepancyRel(Edge e){
+    public MiscellaneousDiscrepancyRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

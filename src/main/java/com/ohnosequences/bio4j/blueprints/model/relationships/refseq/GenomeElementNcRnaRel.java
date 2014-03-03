@@ -16,11 +16,11 @@
  */
 package com.ohnosequences.bio4j.blueprints.model.relationships.refseq;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.refseq.GenomeElementNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.refseq.rna.NcRNANode;
 import com.ohnosequences.bio4j.model.relationships.refseq.GenomeElementNcRna;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  *
@@ -30,7 +30,7 @@ public class GenomeElementNcRnaRel extends Edge implements GenomeElementNcRna{
 
     public static final String NAME = "GENOME_ELEMENT_NCRNA";
 
-    public GenomeElementNcRnaRel(Edge e){
+    public GenomeElementNcRnaRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
     

@@ -17,8 +17,8 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.sc;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.model.relationships.sc.ErroneousTranslation;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * 
@@ -28,7 +28,7 @@ public class ErroneousTranslationRel extends Edge implements ErroneousTranslatio
 
     public static final String NAME = "ERRONEOUS_TRANSLATION";
 
-    public ErroneousTranslationRel(Edge e){
+    public ErroneousTranslationRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

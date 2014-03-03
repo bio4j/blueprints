@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.protein;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.EnzymeNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.model.relationships.protein.ProteinEnzymaticActivity;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * Protein enzymatic activity (EC number connections)
@@ -31,7 +31,7 @@ public class ProteinEnzymaticActivityRel extends Edge implements ProteinEnzymati
 
     public static final String NAME = "PROTEIN_ENZYMATIC_ACTIVITY";
 
-    public ProteinEnzymaticActivityRel(Edge e){
+    public ProteinEnzymaticActivityRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
     

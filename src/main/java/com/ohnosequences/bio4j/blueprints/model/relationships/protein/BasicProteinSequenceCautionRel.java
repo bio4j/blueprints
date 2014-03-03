@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.protein;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.SequenceCautionNode;
 import com.ohnosequences.bio4j.model.relationships.protein.BasicProteinSequenceCaution;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  *
@@ -40,7 +40,7 @@ public class BasicProteinSequenceCautionRel extends Edge implements BasicProtein
     public static final String VERSION_PROPERTY = "protein_sequence_caution_version";
 
 
-    public BasicProteinSequenceCautionRel(Edge e){
+    public BasicProteinSequenceCautionRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

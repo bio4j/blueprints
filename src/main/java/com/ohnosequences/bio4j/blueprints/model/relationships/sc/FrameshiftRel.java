@@ -17,8 +17,8 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.sc;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.model.relationships.sc.Frameshift;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * 
@@ -28,7 +28,7 @@ public class FrameshiftRel extends Edge implements Frameshift{
 
     public static final String NAME = "FRAMESHIFT";
 
-    public FrameshiftRel(Edge e){
+    public FrameshiftRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

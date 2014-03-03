@@ -16,10 +16,10 @@
  */
 package com.ohnosequences.bio4j.blueprints.model.relationships.protein;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.model.relationships.protein.ProteinProteinInteraction;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * 
@@ -36,7 +36,7 @@ public class ProteinProteinInteractionRel extends Edge implements ProteinProtein
     public static final String INTACT_ID_1_PROPERTY = "protein_protein_interaction_intact_id_1";
     public static final String INTACT_ID_2_PROPERTY = "protein_protein_interaction_intact_id_2";
 
-    public ProteinProteinInteractionRel(Edge e){
+    public ProteinProteinInteractionRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

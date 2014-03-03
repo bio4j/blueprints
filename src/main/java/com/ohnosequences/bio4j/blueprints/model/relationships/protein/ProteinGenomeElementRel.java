@@ -16,11 +16,11 @@
  */
 package com.ohnosequences.bio4j.blueprints.model.relationships.protein;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.refseq.GenomeElementNode;
 import com.ohnosequences.bio4j.model.relationships.protein.ProteinGenomeElement;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  *
@@ -30,7 +30,7 @@ public class ProteinGenomeElementRel extends Edge implements ProteinGenomeElemen
     
     public static final String NAME = "PROTEIN_GENOME_ELEMENT";
 
-    public ProteinGenomeElementRel(Edge e){
+    public ProteinGenomeElementRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
     

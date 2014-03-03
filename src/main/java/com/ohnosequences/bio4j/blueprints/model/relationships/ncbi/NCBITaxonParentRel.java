@@ -17,8 +17,8 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.ncbi;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.model.relationships.ncbi.NCBITaxonParent;
-import com.tinkerpop.blueprints.Edge;
 
 
 /**
@@ -29,7 +29,7 @@ public class NCBITaxonParentRel extends Edge implements NCBITaxonParent{
 
     public static final String NAME = "TAXON_PARENT_NCBI";
 
-    public NCBITaxonParentRel(Edge e){
+    public NCBITaxonParentRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

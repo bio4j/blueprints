@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.protein;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.GoTermNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.model.relationships.protein.ProteinGo;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * 
@@ -33,7 +33,7 @@ public class ProteinGoRel extends Edge implements ProteinGo{
 
     public static final String EVIDENCE_PROPERTY = "evidence";
 
-    public ProteinGoRel(Edge e){
+    public ProteinGoRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

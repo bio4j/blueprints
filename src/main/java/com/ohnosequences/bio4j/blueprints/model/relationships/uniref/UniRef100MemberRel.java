@@ -17,8 +17,8 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.uniref;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.model.relationships.uniref.UniRef100Member;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * 
@@ -28,7 +28,7 @@ public class UniRef100MemberRel extends Edge implements UniRef100Member{
 
     public static final String NAME = "UNIREF_100_MEMBER";
 
-    public UniRef100MemberRel(Edge e){
+    public UniRef100MemberRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

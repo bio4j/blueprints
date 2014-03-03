@@ -17,11 +17,11 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.protein;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.PfamNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.ProteinNode;
 import com.ohnosequences.bio4j.model.relationships.protein.ProteinPfam;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * 
@@ -31,7 +31,7 @@ public class ProteinPfamRel extends Edge implements ProteinPfam{
 
     public static final String NAME = "PROTEIN_PFAM";
 
-    public ProteinPfamRel(Edge e){
+    public ProteinPfamRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
     

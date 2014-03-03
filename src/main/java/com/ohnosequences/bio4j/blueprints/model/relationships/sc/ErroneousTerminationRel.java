@@ -17,8 +17,8 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.sc;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.model.relationships.sc.ErroneousTermination;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * 
@@ -28,7 +28,7 @@ public class ErroneousTerminationRel extends Edge implements ErroneousTerminatio
 
     public static final String NAME = "ERRONEOUS_TERMINATION";
 
-    public ErroneousTerminationRel(Edge e){
+    public ErroneousTerminationRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 

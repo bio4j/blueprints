@@ -16,11 +16,11 @@
  */
 package com.ohnosequences.bio4j.blueprints.model.relationships.refseq;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.blueprints.model.nodes.refseq.GenomeElementNode;
 import com.ohnosequences.bio4j.blueprints.model.nodes.refseq.rna.TmRNANode;
 import com.ohnosequences.bio4j.model.relationships.refseq.GenomeElementTmRna;
 import com.tinkerpop.blueprints.Direction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  *
@@ -30,7 +30,7 @@ public class GenomeElementTmRnaRel extends Edge implements GenomeElementTmRna{
 
     public static final String NAME = "GENOME_ELEMENT_TMRNA";
 
-    public GenomeElementTmRnaRel(Edge e){
+    public GenomeElementTmRnaRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
     

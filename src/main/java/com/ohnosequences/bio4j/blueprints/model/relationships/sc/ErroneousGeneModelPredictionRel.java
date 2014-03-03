@@ -17,8 +17,8 @@
 
 package com.ohnosequences.bio4j.blueprints.model.relationships.sc;
 
+import com.ohnosequences.bio4j.blueprints.model.Edge;
 import com.ohnosequences.bio4j.model.relationships.sc.ErroneousGeneModelPrediction;
-import com.tinkerpop.blueprints.Edge;
 
 /**
  * 
@@ -28,7 +28,7 @@ public class ErroneousGeneModelPredictionRel extends Edge implements ErroneousGe
 
     public static final String NAME = "ERRONEOUS_GENE_MODEL_PREDICTION";
 
-    public ErroneousGeneModelPredictionRel(Edge e){
+    public ErroneousGeneModelPredictionRel(com.tinkerpop.blueprints.Edge e){
         super(e);
     }
 
